@@ -1,0 +1,37 @@
+br {
+    user-select: none;
+}
+
+.card.m-3.p-0.col {
+    width: 18em;
+}
+
+.user-select-none.m-3 {
+    width: 100%;
+}
+
+.card.mx-auto.d-block {
+    width: 80%;
+}
+
+.card.rounded.mx-auto.d-block {
+    width: 26rem;
+}
+
+.btn.m-1.col.text-nowrap {
+    width: 8rem;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+}
+
+.link-disabled {
+    opacity: 50%;
+}
+
+.song {
+    background-color: lightgray;
+}
