@@ -19,6 +19,18 @@ window.onresize = function() {
 let buttonStates = {
     yu: false,
     ayumu: false,
+    kasumi: false,
+    shizuku: false,
+    karin: false,
+    ai: false,
+    kanata: false,
+    setsuna: false,
+    emma: false,
+    rina: false,
+    nana: false,
+    president: false,
+    hanpen: false,
+    other: false
 }
 
 function displayOnly(name) {
