@@ -1,17 +1,31 @@
 window.onload = function() {
+    let titleClassName = document.getElementById("title").className;
     if (window.innerWidth < window.innerHeight * 0.74) {
         document.getElementById("thumbnail").style.width = "80%";
-        document.getElementById("title").className = "card-title text-light text-nowrap fs-6";
+        if (titleClassName === "card-title text-light text-nowrap") {
+            titleClassName = "card-title text-light text-nowrap fs-6";
+        } else {
+            titleClassName = "card-title text-dark text-nowrap fs-6";
+        }
     }
 }
 
 window.onresize = function() {
+    let titleClassName = document.getElementById("title").className;
     if (window.innerWidth < window.innerHeight * 0.74) {
         document.getElementById("thumbnail").style.width = "80%";
-        document.getElementById("title").className = "card-title text-light text-nowrap fs-6";
+        if (titleClassName === "card-title text-light text-nowrap") {
+            titleClassName = "card-title text-light text-nowrap fs-6";
+        } else {
+            titleClassName = "card-title text-dark text-nowrap fs-6";
+        }
     } else {
         document.getElementById("thumbnail").style.width = "26rem";
-        document.getElementById("title").className = "card-title text-light text-nowrap";
+        if (titleClassName === "card-title text-light text-nowrap fs-6") {
+            titleClassName = "card-title text-light text-nowrap";
+        } else {
+            titleClassName = "card-title text-dark text-nowrap";
+        }
     }
 
 }
