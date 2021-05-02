@@ -1,5 +1,39 @@
+@keyframes expand {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1) rotate(180deg);
+    }
+}
+
+@keyframes collapse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1) rotate(-180deg);
+    }
+}
+
 br {
     user-select: none;
+}
+
+.plus {
+    float: right;
+    padding: 1px 8px 4px 8px;
+    background-color: #212529;
+    font-size: large;
+    color: #f8f9fa;
+}
+
+.minus {
+    float: right;
+    padding: 1px 9.5px 4px 9.5px;
+    background-color: #212529;
+    font-size: large;
+    color: #f8f9fa;
 }
 
 .card.m-3.p-0.col {
@@ -33,5 +67,5 @@ br {
 }
 
 .song {
-    background-color: lightgray;
+    background-color: #dee2e6;
 }

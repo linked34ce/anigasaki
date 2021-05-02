@@ -31,27 +31,28 @@ window.onresize = function() {
 }
 
 let buttonStates = {
-    yu: false,
-    ayumu: false,
-    kasumi: false,
-    shizuku: false,
-    karin: false,
-    ai: false,
-    kanata: false,
-    setsuna: false,
-    emma: false,
-    rina: false,
-    nana: false,
-    president: false,
-    hanpen: false,
-    other: false
+    yu: true,
+    ayumu: true,
+    kasumi: true,
+    shizuku: true,
+    karin: true,
+    ai: true,
+    kanata: true,
+    setsuna: true,
+    emma: true,
+    rina: true,
+    nana: true,
+    president: true,
+    hanpen: true,
+    other: true,
+    song: true
 }
 
 function displayOnly(name) {
     let quotes = document.getElementsByClassName(name);
     let allQuotes = document.getElementsByTagName("p");
     let breaks = document.getElementById("main-contents").getElementsByTagName("br");
-    let cards = document.getElementsByClassName("card p-0");
+    let songs = document.getElementsByClassName("card p-0");
 
     for (i = 0; i < allQuotes.length; i++) {
         allQuotes.item(i).style.display = "none";
@@ -59,22 +60,47 @@ function displayOnly(name) {
     for (i = 0; i < breaks.length; i++) {
         breaks.item(i).style.display = "none";
     }
-    for (i = 0; i < cards.length; i++) {
-        cards.item(i).style.display = "none";
+    for (i = 0; i < songs.length; i++) {
+        songs.item(i).style.display = "none";
     }
     for (i = 0; i < quotes.length; i++) {
         quotes.item(i).style.display = "block";
     }
-    for (let buttonState in buttonStates) {
-        buttonState = false;
+    for (let key in buttonStates) {
+        buttonStates[key] = false;
     }
     buttonStates[name] = true;
+}
+
+function displayOnlySongs() {
+    let allQuotes = document.getElementsByTagName("p");
+    let breaks = document.getElementById("main-contents").getElementsByTagName("br");
+    let songs = document.getElementsByClassName("card p-0");
+    let lylics = document.getElementsByClassName("lylic");
+
+    for (i = 0; i < allQuotes.length; i++) {
+        allQuotes.item(i).style.display = "none";
+    }
+    for (i = 0; i < breaks.length; i++) {
+        breaks.item(i).style.display = "none";
+    }
+    for (i = 0; i < songs.length; i++) {
+        songs.item(i).style.display = "block";
+    }
+    for (i = 0; i < lylics.length; i++) {
+        lylics.item(i).style.display = "block";
+    }
+
+    for (let key in buttonStates) {
+        buttonStates[key] = false;
+    }
+    buttonStates["song"] = true;
 }
 
 function displayAll() {
     let allQuotes = document.getElementsByTagName("p");
     let breaks = document.getElementById("main-contents").getElementsByTagName("br");
-    let cards = document.getElementsByClassName("card p-0");
+    let songs = document.getElementsByClassName("card p-0");
 
     for (i = 0; i < allQuotes.length; i++) {
         allQuotes.item(i).style.display = "block";
@@ -82,10 +108,47 @@ function displayAll() {
     for (i = 0; i < breaks.length; i++) {
         breaks.item(i).style.display = "block";
     }
-    for (i = 0; i < cards.length; i++) {
-        cards.item(i).style.display = "block";
+    for (i = 0; i < songs.length; i++) {
+        songs.item(i).style.display = "block";
     }
-    for (let buttonState in buttonStates) {
-        buttonState = false;
+    for (let key in buttonStates) {
+        buttonStates[key] = true;
     }
+}
+
+let isOpeningPressed = false;
+let isEndingPressed = false;
+
+function openAccordion(isOpening) {
+    if (isOpening) {
+        if (!isOpeningPressed) {
+            document.getElementById("op-expansion").style.animation = "expand 500ms ease 100ms 1 normal none running";
+            setTimeout(minusToPlus, 350);
+            isOpeningPressed = true;
+        } else {
+            setTimeout(plusToMinus, 350);
+            document.getElementById("op-expansion").style.animation = "collapse 500ms ease 100ms 1 normal none running";
+            isOpeningPressed = false;
+        }
+    } else {
+        if (!isEndingPressed) {
+            document.getElementById("ed-expansion").style.animation = "expand 500ms ease 100ms 1 normal none running";
+            setTimeout(minusToPlus, 350);
+            isEndingPressed = true;
+        } else {
+            setTimeout(plusToMinus, 350);
+            document.getElementById("ed-expansion").style.animation = "collapse 500ms ease 100ms 1 normal none running";
+            isEndingPressed = false;
+        }
+    }
+}
+
+function minusToPlus() {
+    document.getElementById("op-expansion").innerHTML = "-"
+    document.getElementById("op-expansion").className = "minus";
+}
+
+function plusToMinus() {
+    document.getElementById("op-expansion").innerHTML = "+"
+    document.getElementById("op-expansion").className = "plus";
 }
