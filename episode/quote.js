@@ -121,21 +121,21 @@ let accordionStates = {
 function openAccordion(isOpening) {
     if (isOpening) {
         if (!accordionStates["opening"]) {
-            document.getElementById("op-expansion").style.animation = "expand 500ms ease 100ms 1 normal none running";
+            document.getElementById("op-expansion").style.animation = "500ms ease 100ms 1 normal none running expand";
             setTimeout(plusToMinus, 350, isOpening);
             accordionStates["opening"] = true;
         } else {
-            document.getElementById("op-expansion").style.animation = "collapse 500ms ease 100ms 1 normal none running";
+            document.getElementById("op-expansion").style.animation = "500ms ease 100ms 1 normal none running collapse";
             setTimeout(minusToPlus, 350, isOpening);
             accordionStates["opening"] = false;
         }
     } else {
         if (!accordionStates["ending"]) {
-            document.getElementById("ed-expansion").style.animation = "expand 500ms ease 100ms 1 normal none running";
+            document.getElementById("ed-expansion").style.animation = "500ms ease 100ms 1 normal none running expand";
             setTimeout(plusToMinus, 350, isOpening);
             accordionStates["ending"] = true;
         } else {
-            document.getElementById("ed-expansion").style.animation = "collapse 500ms ease 100ms 1 normal none running";
+            document.getElementById("ed-expansion").style.animation = "500ms ease 100ms 1 notmal none running collapse";
             setTimeout(minusToPlus, 350, isOpening);
             accordionStates["ending"] = false;
         }
