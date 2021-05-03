@@ -72,7 +72,7 @@ function displayOnly(name) {
 function displayOnlySongs() {
     let allQuotes = document.getElementsByTagName("p");
     let breaks = document.getElementById("main-contents").getElementsByTagName("br");
-    let songs = document.getElementsByClassName("card p-0");
+    let songs = document.getElementsByClassName("song");
     let lylics = document.getElementsByClassName("lylic");
 
     for (i = 0; i < allQuotes.length; i++) {
@@ -97,7 +97,7 @@ function displayOnlySongs() {
 function displayAll() {
     let allQuotes = document.getElementsByTagName("p");
     let breaks = document.getElementById("main-contents").getElementsByTagName("br");
-    let songs = document.getElementsByClassName("card p-0");
+    let songs = document.getElementsByClassName("song");
 
     for (i = 0; i < allQuotes.length; i++) {
         allQuotes.item(i).style.display = "block";
@@ -121,22 +121,22 @@ let accordionStates = {
 function openAccordion(isOpening) {
     if (isOpening) {
         if (!accordionStates["opening"]) {
-            document.getElementById("op-expansion").style.animation = "500ms ease 100ms 1 normal none running expand";
-            setTimeout(plusToMinus, 350, isOpening);
+            document.getElementById("op-expansion").style.animation = "350ms ease-in 0s 1 normal forwards running expand";
+            setTimeout(plusToMinus, 175, isOpening);
             accordionStates["opening"] = true;
         } else {
-            document.getElementById("op-expansion").style.animation = "500ms ease 100ms 1 normal none running collapse";
-            setTimeout(minusToPlus, 350, isOpening);
+            document.getElementById("op-expansion").style.animation = "350ms ease-out 0s 1 normal forwards running collapse";
+            setTimeout(minusToPlus, 175, isOpening);
             accordionStates["opening"] = false;
         }
     } else {
         if (!accordionStates["ending"]) {
-            document.getElementById("ed-expansion").style.animation = "500ms ease 100ms 1 normal none running expand";
-            setTimeout(plusToMinus, 350, isOpening);
+            document.getElementById("ed-expansion").style.animation = "350ms ease-in 0s 1 normal forwards running expand";
+            setTimeout(plusToMinus, 175, isOpening);
             accordionStates["ending"] = true;
         } else {
-            document.getElementById("ed-expansion").style.animation = "500ms ease 100ms 1 normal none running collapse";
-            setTimeout(minusToPlus, 350, isOpening);
+            document.getElementById("ed-expansion").style.animation = "350ms ease-out 0s 1 normal forwards running collapse";
+            setTimeout(minusToPlus, 175, isOpening);
             accordionStates["ending"] = false;
         }
     }

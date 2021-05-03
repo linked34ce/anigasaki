@@ -1,19 +1,40 @@
-@keyframes expand {
+@keyframes show-website {
     from {
-        transform: scale(1);
+        opacity: 0%;
     }
     to {
-        transform: scale(1) rotate(180deg);
+        opacity: 100%;
+    }
+}
+
+@keyframes show-quotes {
+    from {
+        opacity: 0%;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+@keyframes expand {
+    to {
+        transform: rotate(180deg);
     }
 }
 
 @keyframes collapse {
-    from {
-        transform: scale(1);
-    }
     to {
-        transform: scale(1) rotate(-180deg);
+        transform: rotate(-180deg);
     }
+}
+
+html {
+    animation: 0.8s ease 0s 1 normal none running show-website;
+}
+
+p {
+    animation: 0.8s ease 0s 1 normal none running show-quotes;
 }
 
 br {
@@ -52,6 +73,10 @@ br {
     width: 8.5rem;
 }
 
+.accordion {
+    animation: 0.8s ease 0s 1 normal none running show-quotes;
+}
+
 .card-header {
     -webkit-appearance: none;
 }
@@ -73,5 +98,16 @@ br {
 }
 
 .song {
+    animation: 0.8s ease 0s 1 normal none running show-quotes;
     background-color: #dee2e6;
+}
+
+.plus {
+    user-select: none;
+    -webkit-appearance: none;
+}
+
+.minus {
+    user-select: none;
+    -webkit-appearance: none;
 }
