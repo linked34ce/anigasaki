@@ -30,6 +30,7 @@
 }
 
 html {
+    -webkit-appearance: none;
     animation: 0.8s ease 0s 1 normal none running show-website;
 }
 
@@ -77,10 +78,6 @@ br {
     animation: 0.8s ease 0s 1 normal none running show-quotes;
 }
 
-.card-header {
-    -webkit-appearance: none;
-}
-
 .main {
     display: flex;
     flex-direction: column;
@@ -104,10 +101,8 @@ br {
 
 .plus {
     user-select: none;
-    -webkit-appearance: none;
 }
 
 .minus {
     user-select: none;
-    -webkit-appearance: none;
 }
