@@ -127,7 +127,7 @@ function openAccordion(isOpening) {
         } else {
             document.getElementById("op-expansion").style.animation = "500ms ease 100ms 1 normal none running collapse";
             setTimeout(minusToPlus, 350, isOpening);
-            accordionStates["opening"] = false;
+            accordionStates["opening"] = false
         }
     } else {
         if (!accordionStates["ending"]) {
