@@ -24,7 +24,6 @@ function adjustEpisodePage() {
             titleElement.className = "card-title text-dark text-nowrap";
         }
     }
-
 }
 
 let buttonStates = {
@@ -121,21 +120,21 @@ let accordionStates = {
 function openAccordion(isOpening) {
     if (isOpening) {
         if (!accordionStates["opening"]) {
-            document.getElementById("op-expansion").style.animation = "350ms ease-in 0s 1 normal forwards running expand";
+            document.getElementById("op-expansion").style.animation = "350ms ease-in 0s 1 normal none running expand";
             setTimeout(plusToMinus, 175, isOpening);
             accordionStates["opening"] = true;
         } else {
-            document.getElementById("op-expansion").style.animation = "350ms ease-out 0s 1 normal forwards running collapse";
+            document.getElementById("op-expansion").style.animation = "350ms ease-out 0s 1 normal none running collapse";
             setTimeout(minusToPlus, 175, isOpening);
             accordionStates["opening"] = false;
         }
     } else {
         if (!accordionStates["ending"]) {
-            document.getElementById("ed-expansion").style.animation = "350ms ease-in 0s 1 normal forwards running expand";
+            document.getElementById("ed-expansion").style.animation = "350ms ease-in 0s 1 normal none running expand";
             setTimeout(plusToMinus, 175, isOpening);
             accordionStates["ending"] = true;
         } else {
-            document.getElementById("ed-expansion").style.animation = "350ms ease-out 0s 1 normal forwards running collapse";
+            document.getElementById("ed-expansion").style.animation = "350ms ease-out 0s 1 normal none running collapse";
             setTimeout(minusToPlus, 175, isOpening);
             accordionStates["ending"] = false;
         }
@@ -150,6 +149,7 @@ function plusToMinus(isOpening) {
         document.getElementById("ed-expansion").innerHTML = "-"
         document.getElementById("ed-expansion").className = "minus";
     }
+    setTimeout(reset, 300);
 }
 
 function minusToPlus(isOpening) {
@@ -160,4 +160,10 @@ function minusToPlus(isOpening) {
         document.getElementById("ed-expansion").innerHTML = "+"
         document.getElementById("ed-expansion").className = "plus";
     }
+    setTimeout(reset, 300);
+}
+
+function reset() {
+    document.getElementById("op-expansion").style.animation = "";
+    document.getElementById("ed-expansion").style.animation = "";
 }

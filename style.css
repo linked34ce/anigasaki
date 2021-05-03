@@ -1,16 +1,6 @@
-@keyframes show-website {
+@keyframes appear {
     from {
         opacity: 0%;
-    }
-    to {
-        opacity: 100%;
-    }
-}
-
-@keyframes show-quotes {
-    from {
-        opacity: 0%;
-        transform: translateY(20px);
     }
     to {
         opacity: 100%;
@@ -29,12 +19,8 @@
     }
 }
 
-html {
-    animation: 0.8s ease 0s 1 normal none running show-website;
-}
-
-p {
-    animation: 0.8s ease 0s 1 normal none running show-quotes;
+body {
+    animation: 0.8s ease 0s 1 normal none running appear;
 }
 
 br {
@@ -75,10 +61,6 @@ br {
     width: 8.5rem;
 }
 
-.accordion {
-    animation: 0.8s ease 0s 1 normal none running show-quotes;
-}
-
 .card-header {
     -webkit-appearance: none;
 }
@@ -100,6 +82,5 @@ br {
 }
 
 .song {
-    animation: 0.8s ease 0s 1 normal none running show-quotes;
     background-color: #dee2e6;
 }
