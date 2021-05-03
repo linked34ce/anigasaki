@@ -52,6 +52,10 @@ br {
     width: 8.5rem;
 }
 
+.card-header {
+    -webkit-appearance: none;
+}
+
 .main {
     display: flex;
     flex-direction: column;
