@@ -35,10 +35,12 @@ html {
 
 p {
     animation: 0.8s ease 0s 1 normal none running show-quotes;
+    -webkit-appearance: none;
 }
 
 br {
     user-select: none;
+    -webkit-appearance: none;
 }
 
 .plus {
