@@ -1,30 +1,27 @@
-window.onload = function() {
-    let titleClassName = document.getElementById("title").className;
-    if (window.innerWidth < window.innerHeight * 0.74) {
-        document.getElementById("thumbnail").style.width = "80%";
-        if (titleClassName === "card-title text-light text-nowrap") {
-            titleClassName = "card-title text-light text-nowrap fs-6";
-        } else {
-            titleClassName = "card-title text-dark text-nowrap fs-6";
-        }
-    }
-}
+window.addEventListener("DOMContentLoaded", adjustEpisodePage);
 
-window.onresize = function() {
-    let titleClassName = document.getElementById("title").className;
+let queue = null;
+
+window.addEventListener("resize", function() {
+    clearTimeout(queue);
+    queue = setTimeout(adjustEpisodePage, 200);
+});
+
+function adjustEpisodePage() {
+    let titleElement = document.getElementById("title");
     if (window.innerWidth < window.innerHeight * 0.74) {
         document.getElementById("thumbnail").style.width = "80%";
-        if (titleClassName === "card-title text-light text-nowrap") {
-            titleClassName = "card-title text-light text-nowrap fs-6";
-        } else {
-            titleClassName = "card-title text-dark text-nowrap fs-6";
+        if (titleElement.className === "card-title text-light text-nowrap") {
+            titleElement.className = "card-title text-light text-nowrap fs-6";
+        } else if (titleElement.className === "card-title text-dark text-nowrap") {
+            titleElement.className = "card-title text-dark text-nowrap fs-6";
         }
     } else {
         document.getElementById("thumbnail").style.width = "26rem";
-        if (titleClassName === "card-title text-light text-nowrap fs-6") {
-            titleClassName = "card-title text-light text-nowrap";
-        } else {
-            titleClassName = "card-title text-dark text-nowrap";
+        if (titleElement.className === "card-title text-light text-nowrap fs-6") {
+            titleElement.className = "card-title text-light text-nowrap";
+        } else if (titleElement.className === "card-title text-dark text-nowrap fs-6") {
+            titleElement.className = "card-title text-dark text-nowrap";
         }
     }
 
@@ -116,39 +113,51 @@ function displayAll() {
     }
 }
 
-let isOpeningPressed = false;
-let isEndingPressed = false;
+let accordionStates = {
+    opening: false,
+    ending: false
+}
 
 function openAccordion(isOpening) {
     if (isOpening) {
-        if (!isOpeningPressed) {
+        if (!accordionStates["opening"]) {
             document.getElementById("op-expansion").style.animation = "expand 500ms ease 100ms 1 normal none running";
-            setTimeout(minusToPlus, 350);
-            isOpeningPressed = true;
+            setTimeout(plusToMinus, 350, isOpening);
+            accordionStates["opening"] = true;
         } else {
-            setTimeout(plusToMinus, 350);
             document.getElementById("op-expansion").style.animation = "collapse 500ms ease 100ms 1 normal none running";
-            isOpeningPressed = false;
+            setTimeout(minusToPlus, 350, isOpening);
+            accordionStates["opening"] = false;
         }
     } else {
-        if (!isEndingPressed) {
+        if (!accordionStates["ending"]) {
             document.getElementById("ed-expansion").style.animation = "expand 500ms ease 100ms 1 normal none running";
-            setTimeout(minusToPlus, 350);
-            isEndingPressed = true;
+            setTimeout(plusToMinus, 350, isOpening);
+            accordionStates["ending"] = true;
         } else {
-            setTimeout(plusToMinus, 350);
             document.getElementById("ed-expansion").style.animation = "collapse 500ms ease 100ms 1 normal none running";
-            isEndingPressed = false;
+            setTimeout(minusToPlus, 350, isOpening);
+            accordionStates["ending"] = false;
         }
     }
 }
 
-function minusToPlus() {
-    document.getElementById("op-expansion").innerHTML = "-"
-    document.getElementById("op-expansion").className = "minus";
+function plusToMinus(isOpening) {
+    if (isOpening) {
+        document.getElementById("op-expansion").innerHTML = "-"
+        document.getElementById("op-expansion").className = "minus";
+    } else if (!isOpening) {
+        document.getElementById("ed-expansion").innerHTML = "-"
+        document.getElementById("ed-expansion").className = "minus";
+    }
 }
 
-function plusToMinus() {
-    document.getElementById("op-expansion").innerHTML = "+"
-    document.getElementById("op-expansion").className = "plus";
+function minusToPlus(isOpening) {
+    if (isOpening) {
+        document.getElementById("op-expansion").innerHTML = "+"
+        document.getElementById("op-expansion").className = "plus";
+    } else if (!isOpening) {
+        document.getElementById("ed-expansion").innerHTML = "+"
+        document.getElementById("ed-expansion").className = "plus";
+    }
 }

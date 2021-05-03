@@ -40,10 +40,6 @@ br {
     width: 18em;
 }
 
-.user-select-none.m-3 {
-    width: 100%;
-}
-
 .card.mx-auto.d-block {
     width: 80%;
 }
@@ -64,6 +60,12 @@ br {
 
 .link-disabled {
     opacity: 50%;
+}
+
+.page-transition {
+    width: 5.1rem;
+    padding-left: 2.5px;
+    padding-right: 2.5px;
 }
 
 .song {
