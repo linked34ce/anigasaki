@@ -47,6 +47,8 @@ br {
     background-color: #212529;
     font-size: large;
     color: #f8f9fa;
+    user-select: none;
+    -webkit-appearance: none;
 }
 
 .minus {
@@ -55,6 +57,8 @@ br {
     background-color: #212529;
     font-size: large;
     color: #f8f9fa;
+    user-select: none;
+    -webkit-appearance: none;
 }
 
 .card.m-3.p-0.col {
@@ -82,7 +86,6 @@ br {
 }
 
 .main {
-    -webkit-appearance: none;
     display: flex;
     flex-direction: column;
     min-height: 80vh;
@@ -101,14 +104,4 @@ br {
 .song {
     animation: 0.8s ease 0s 1 normal none running show-quotes;
     background-color: #dee2e6;
-}
-
-.plus {
-    user-select: none;
-    -webkit-appearance: none;
-}
-
-.minus {
-    user-select: none;
-    -webkit-appearance: none;
 }
