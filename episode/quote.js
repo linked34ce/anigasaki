@@ -135,7 +135,7 @@ function openAccordion(isOpening) {
             setTimeout(plusToMinus, 350, isOpening);
             accordionStates["ending"] = true;
         } else {
-            document.getElementById("ed-expansion").style.animation = "500ms ease 100ms 1 notmal none running collapse";
+            document.getElementById("ed-expansion").style.animation = "500ms ease 100ms 1 normal none running collapse";
             setTimeout(minusToPlus, 350, isOpening);
             accordionStates["ending"] = false;
         }
