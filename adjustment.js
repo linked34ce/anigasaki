@@ -12,20 +12,20 @@ function adjustHomePage() {
     let cardTitles = document.getElementsByClassName("card-title text-center");
 
     if (window.innerWidth < window.innerHeight * 0.74) {
-        for (let i = 0; i < 3; i++) {
+        for (let i = 0; i < 4; i++) {
             cards.item(i).className = "card m-3 p-0 mx-auto d-block";
             cards.item(i).style.width = "75%";
         }
-        for (let i = 3; i < cards.length; i++) {
+        for (let i = 4; i < cards.length; i++) {
             cards.item(i).className = "card m-3 p-0 mx-auto d-block link-disabled";
             cards.item(i).style.width = "75%";
         }
     } else {
-        for (let i = 0; i < 3; i++) {
+        for (let i = 0; i < 4; i++) {
             cards.item(i).className = "card m-3 p-0 col";
             cards.item(i).style.width = "18rem";
         }
-        for (let i = 3; i < cards.length; i++) {
+        for (let i = 4; i < cards.length; i++) {
             cards.item(i).className = "card m-3 p-0 col link-disabled";
             cards.item(i).style.width = "18rem";
         }
