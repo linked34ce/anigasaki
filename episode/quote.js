@@ -72,7 +72,7 @@ function displayOnlySongs() {
     let allQuotes = document.getElementsByTagName("p");
     let breaks = document.getElementById("main-contents").getElementsByTagName("br");
     let songs = document.getElementsByClassName("song");
-    let lylics = document.getElementsByClassName("lylic");
+    let lyrics = document.getElementsByClassName("lyric");
 
     for (i = 0; i < allQuotes.length; i++) {
         allQuotes.item(i).style.display = "none";
@@ -83,8 +83,8 @@ function displayOnlySongs() {
     for (i = 0; i < songs.length; i++) {
         songs.item(i).style.display = "block";
     }
-    for (i = 0; i < lylics.length; i++) {
-        lylics.item(i).style.display = "block";
+    for (i = 0; i < lyrics.length; i++) {
+        lyrics.item(i).style.display = "block";
     }
 
     for (let key in buttonStates) {
