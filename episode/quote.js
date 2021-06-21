@@ -40,6 +40,9 @@ let buttonStates = {
     nana: true,
     president: true,
     hanpen: true,
+    iroha: true,
+    kyoko: true,
+    asagi: true,
     other: true,
     song: true
 }
