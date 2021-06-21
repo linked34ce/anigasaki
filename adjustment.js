@@ -25,7 +25,7 @@ function adjustHomePage() {
             cards.item(i).className = "card m-3 p-0 col";
             cards.item(i).style.width = "18rem";
         }
-        for (let i = 5; i < cards.length; i++) {
+        for (let i = 6; i < cards.length; i++) {
             cards.item(i).className = "card m-3 p-0 col link-disabled";
             cards.item(i).style.width = "18rem";
         }
