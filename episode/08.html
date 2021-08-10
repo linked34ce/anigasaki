@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H0PM61FGET"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-H0PM61FGET');
+    </script>
+    <meta charset="UTF-8" description="TVアニメ『ラブライブ！虹ヶ咲学園スクールアイドル同好会』第8話「しずく、モノクローム」の台詞をまとめています。キャラクターごとの台詞を表示する機能も実装しています。">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="quote.js"></script>
+    <title>第8話 「しずく、モノクローム」| アニガサキ台詞集 - アニメ『ラブライブ！虹ヶ咲』の台詞まとめ</title>
+</head>
+
+<body class="bg-light">
+    <div class="main">
+        <div>
+            <div class="position-relative m-5">
+                <a href="07.html" class="page-transition btn btn-primary position-absolute start-0">第7話へ</a>
+                <a href="../index.html" class="btn btn-secondary position-absolute start-50 translate-middle-x">もどる</a>
+                <a class="page-transition btn btn-primary position-absolute end-0 disabled">第9話へ</a>
+            </div>
+            <br><br><br>
+        </div>
+        <hr>
+        <div class="container">
+            <div id="thumbnail" class="card rounded mx-auto d-block user-select-none">
+                <img src="../image/episode8.jpeg" class="card-img-top" alt="第8話">
+                <div class="card-img-overlay">
+                    <div class="card-body text-end p-0">
+                        <h5 id="title" class="card-title text-light text-nowrap">第8話「しずく、モノクローム」</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="p-2"><span class="text-danger">*</span> 以下のボタンでキャラクターごとの台詞を表示できます。</div>
+            <div class="card bg-light border-dark">
+                <div class="card-body">
+                    <div id="buttons" class="row row-cols-auto mx-auto d-block m-2 p-2">
+                        <button type="button" class="btn btn-secondary m-1 col text-nowrap" onclick="displayOnly('yu')">高咲 侑</button>
+                        <button type="button" class="btn btn-secondary m-1 col text-nowrap" onclick="displayOnly('ayumu')">上原 歩夢</button>
+                        <button type="button" class="btn btn-secondary m-1 col text-nowrap" onclick="displayOnly('kasumi')">中須 かすみ</button>
+                        <button type="button" class="btn btn-secondary m-1 col text-nowrap" onclick="displayOnly('shizuku')">桜坂 しずく</button>
+                        <button type="button" class="btn btn-secondary m-1 col text-nowrap" onclick="displayOnly('karin')">朝香 果林</button>
+                        <button type="button" class="btn btn-secondary m-1 col text-nowrap" onclick="displayOnly('ai')">宮下 愛</button>
+                        <button type="button" class="btn btn-secondary m-1 col text-nowrap" onclick="displayOnly('kanata')">近江 彼方</button>
+                        <button type="button" class="btn btn-secondary m-1 col text-nowrap" onclick="displayOnly('setsuna')">優木 せつ菜</button>
+                        <button type="button" class="btn btn-secondary m-1 col text-nowrap" onclick="displayOnly('emma')">エマ・ヴェルデ</button>
+                        <button type="button" class="btn btn-secondary m-1 col text-nowrap" onclick="displayOnly('rina')">天王寺 璃奈</button>
+                        <button type="button" class="btn btn-secondary m-1 col text-nowrap" onclick="displayOnly('haruka')">近江 遥</button>
+                        <button type="button" class="btn btn-secondary m-1 col text-nowrap" onclick="displayOnly('president')">演劇部部長</button>
+                        <button type="button" class="btn btn-secondary m-1 col text-nowrap" onclick="displayOnly('himeno')">綾小路 姫乃</button>
+                        <button type="button" class="btn btn-secondary m-1 col text-nowrap" onclick="displayOnly('misaki')">紫藤 美咲</button>
+                        <button type="button" class="btn btn-dark m-1 col text-nowrap" onclick="displayOnlySongs()">OP / ED / 挿入歌</button>
+                        <button type="button" class="btn btn-primary m-1 col text-nowrap" onclick="displayAll()">すべて表示</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="main-contents" class="m-5 p-1 text-left">
+            <br><br>
+
+            <div id="op-accordion" class="accordion">
+                <div class="card p-0 song">
+                    <h5 class="card-header" id="headingOne" type="button" onclick="openAccordion(true)" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        『虹色Passions!』<span id="op-expansion" class="plus">+</span>
+                    </h5>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-bs-parent="#op-accordion">
+                        <div class="card-body song">
+                            <br class="lyric">
+                            <p class="lyric">いこう！　明日へ</p>
+
+                            <p class="lyric">虹のMelodies</p>
+                            <br class="lyric">
+
+                            <p class="lyric">青空　雨あがり</p>
+
+                            <p class="lyric">希望の　風吹いて（Blowing）</p>
+
+                            <p class="lyric">予感のなか　踏み出すよ　最初の一歩</p>
+                            <br class="lyric">
+
+                            <p class="lyric">世界が　きらめいて</p>
+
+                            <p class="lyric">ココロに　湧き上がる（Feeling）</p>
+
+                            <p class="lyric">「いま駆け出したいんだ…！！」</p>
+
+                            <p class="lyric">（Move on!&nbsp; Move on!）</p>
+                            <br class="lyric">
+
+                            <p class="lyric">重ねあう　小さなメロディ（Our Colors）</p>
+
+                            <p class="lyric">弧を描いてほら　街中に響くよ</p>
+
+                            <p class="lyric">（Reaching for far blue sky!）</p>
+
+                            <p class="lyric">いっしょに歌おう！</p>
+                            <br class="lyric">
+
+                            <p class="lyric">溢れだす　この気持ち</p>
+
+                            <p class="lyric">胸の奥　もう止まらない</p>
+
+                            <p class="lyric">虹色Passions!</p>
+
+                            <p class="lyric">勇気に染まるColors</p>
+                            <br class="lyric">
+
+                            <p class="lyric">果てしない　空のむこう</p>
+
+                            <p class="lyric">ミライへと　橋をかけよう</p>
+                            <br class="lyric">
+
+                            <p class="lyric">高鳴る　シンパシー</p>
+
+                            <p class="lyric">キセキ咲いてくよ</p>
+
+                            <p class="lyric">いこう！　明日へ</p>
+
+                            <p class="lyric">光れMelodies</p>
+                            <br class="lyric">
+
+                            <p class="lyric">そうきっと　ひとりじゃないよ</p>
+
+                            <p class="lyric">いつもみんな　いるから</p>
+
+                            <p class="lyric">夢と夢　繋いでいこう</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br class="lyric"><br class="lyric">
+
+
+            <br><br>
+
+            <div class="card p-0 song">
+                <h5 class="card-header">『Solitude Rain』</h5>
+                <div class="card-body">
+                    <br class="lyric">
+
+                </div>
+            </div>
+            <br class="lyric"><br class="lyric">
+
+            <br><br>
+
+            <div id="ed-accordion" class="accordion">
+                <div class="card p-0 song">
+                    <h5 class="card-header" id="headingTwo" type="button" onclick="openAccordion(false)" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        『NEO SKY, NEO MAP!』<span id="ed-expansion" class="plus">+</span>
+                    </h5>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#ed-accordion">
+                        <div class="card-body">
+                            <br class="lyric">
+                            <p class="lyric">ゆっくりと走るこの道　何かが生まれかけてるんだ</p>
+
+                            <p class="lyric">それを伝えたいよ　君へと伝えたいんだ</p>
+                            <br class="lyric">
+
+                            <p class="lyric">毎日見上げる空の　青さも　季節ごと変わって</p>
+
+                            <p class="lyric">決まりはないね　自由に　描いてと　誘われてるよ</p>
+                            <br class="lyric">
+
+                            <p class="lyric">あせらないで　行こう！</p>
+
+                            <p class="lyric">ときめく　時間を楽しんで　もっと！</p>
+
+                            <p class="lyric">みんな　自分が好きなことを　追求しちゃおう</p>
+                            <br class="lyric">
+
+                            <p class="lyric">どこに向かうか　まだ分からないけど</p>
+
+                            <p class="lyric">面白そうな未来が待ってると</p>
+
+                            <p class="lyric">笑いあえる　君がいれば</p>
+
+                            <p class="lyric">嬉しい　今日も　ありがとう</p>
+                            <br class="lyric">
+
+                            <p class="lyric">さあ　これからはそれぞれの<ruby><rb>地図</rb><rp>《</rp><rt>マップ</rt><rp>》</rp></ruby></p>
+
+                            <p class="lyric">広げたら　気軽に飛び出そう</p>
+
+                            <p class="lyric">夢見て　憧れて　また夢が見たいんだ</p>
+
+                            <p class="lyric">見たい、見たいんだ！</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+
+        </div>
+        <hr>
+        <div class="position-relative m-4">
+            <a href="#" class="btn btn-primary position-absolute start-50 top-0 translate-middle-x">ページ先頭へ</a>
+        </div>
+        <div id="bottom" class="position-relative m-5 p-3">
+            <a href="07.html" class="page-transition btn btn-primary position-absolute start-0">第7話へ</a>
+            <a href="../index.html" class="btn btn-secondary position-absolute start-50 translate-middle-x">もどる</a>
+            <a class="page-transition btn btn-primary position-absolute end-0 disabled">第9話へ</a>
+        </div>
+    </div>
+</body>
