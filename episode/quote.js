@@ -38,6 +38,7 @@ let buttonStates = {
     emma: true,
     rina: true,
     nana: true,
+    dark: true,
     president: true,
     hanpen: true,
     iroha: true,
