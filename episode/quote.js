@@ -44,6 +44,7 @@ let buttonStates = {
     iroha: true,
     kyoko: true,
     asagi: true,
+    haruka: true,
     christina: true,
     kasane: true,
     himeno: true,
