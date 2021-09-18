@@ -117,7 +117,17 @@ br {
     color: var(--bs-white)
 }
 
+.btn-return:hover {
+    background-color: var(--bs-dark);
+    color: var(--bs-white)
+}
+
 .btn-songs {
+    background-color: #884dff;
+    color: var(--bs-white)
+}
+
+.btn-songs:hover {
     background-color: var(--bs-purple);
     color: var(--bs-white)
 }
