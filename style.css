@@ -27,6 +27,39 @@ br {
     user-select: none;
 }
 
+.bs-callout {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #adb5bd;
+    border-left-width: 4px;
+    border-radius: 5px;
+}
+
+.bs-callout h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.bs-callout p:last-child {
+    margin-bottom: 0;
+}
+
+.bs-callout code {
+    border-radius: 3px;
+}
+
+.bs-callout+.bs-callout {
+    margin-top: -5px;
+}
+
+.bs-callout-info {
+    border-left-color: #5bc0de;
+}
+
+.bs-callout-info h4 {
+    color: #5bc0de;
+}
+
 .plus {
     float: right;
     padding: 1px 8px 4px 8px;
