@@ -112,6 +112,16 @@ br {
     opacity: 50%;
 }
 
+.btn-return {
+    background-color: var(--bs-gray-dark);
+    color: var(--bs-white)
+}
+
+.btn-songs {
+    background-color: var(--bs-purple);
+    color: var(--bs-white)
+}
+
 .page-transition {
     width: 5.1rem;
     padding-left: 2.5px;
