@@ -64,6 +64,18 @@ br {
     color: #5bc0de;
 }
 
+.nav-link-hover:hover {
+    background-color: var(--bs-gray);
+}
+
+.nav-link {
+    color: var(--bs-light);
+}
+
+.nav-link:hover {
+    color: var(--bs-light);
+}
+
 .plus {
     float: right;
     padding: 1px 8px 4px 8px;
