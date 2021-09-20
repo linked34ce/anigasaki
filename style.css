@@ -76,6 +76,11 @@ br {
     color: var(--bs-light);
 }
 
+#in-this-page {
+    background-color: var(--bs-gray-dark);
+    cursor: default;
+}
+
 .plus {
     float: right;
     padding: 1px 8px 4px 8px;
