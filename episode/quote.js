@@ -9,6 +9,9 @@ window.addEventListener("resize", function() {
 
 function adjustEpisodePage() {
     let titleElement = document.getElementById("title");
+    let episodes = document.getElementById("episodes");
+    let episodeTable = document.getElementById("episode-table");
+
     if (window.innerWidth < window.innerHeight * 0.74) {
         document.getElementById("thumbnail").style.width = "80%";
         if (titleElement.className === "card-title text-light text-nowrap") {
@@ -23,6 +26,17 @@ function adjustEpisodePage() {
         } else if (titleElement.className === "card-title text-dark text-nowrap fs-6") {
             titleElement.className = "card-title text-dark text-nowrap";
         }
+    }
+
+    if (window.innerWidth < 370) {
+        episodes.innerHTML = '<tr><td class="nav-link-hover"><a href="episode/01.html" class="nav-link fs-6">第1話</a></td><td class="nav-link-hover"><a href="episode/02.html" class="nav-link fs-6">第2話</a></td></tr><tr><td class="nav-link-hover"><a href="episode/03.html" class="nav-link fs-6">第3話</a></td><td class="nav-link-hover"><a href="episode/04.html" class="nav-link fs-6">第4話</a></td></tr><tr><td class="nav-link-hover"><a href="episode/05.html" class="nav-link fs-6">第5話</a></td><td class="nav-link-hover"><a href="episode/06.html" class="nav-link fs-6">第6話</a></td></tr><tr><td class="nav-link-hover"><a href="episode/07.html" class="nav-link fs-6">第7話</a></td><td class="nav-link-hover"><a href="episode/08.html" class="nav-link fs-6">第8話</a></td></tr><tr><td class="nav-link-hover"><a href="episode/09.html" class="nav-link fs-6">第9話</a></td><td><a class="nav-link fs-6 disabled">第10話</a></td></tr><tr><td><a class="nav-link fs-6 disabled">第11話</a></td><td><a class="nav-link fs-6 disabled">第12話</a></td></tr><tr><td><a class="nav-link fs-6 disabled">第13話</a></td></tr>';
+        if (window.innerHeight < 605) {
+            episodeTable.className = "table table-sm table-dark border-white"
+        }
+    } else if (window.innerWidth < 570) {
+        episodes.innerHTML = '<tr><td class="nav-link-hover"><a href="episode/01.html" class="nav-link fs-5">第1話</a></td><td class="nav-link-hover"><a href="episode/02.html" class="nav-link fs-5">第2話</a></td><td class="nav-link-hover"><a href="episode/03.html" class="nav-link fs-5">第3話</a></td></tr><tr><td class="nav-link-hover"><a href="episode/04.html" class="nav-link fs-5">第4話</a></td><td class="nav-link-hover"><a href="episode/05.html" class="nav-link fs-5">第5話</a></td><td class="nav-link-hover"><a href="episode/06.html" class="nav-link fs-5">第6話</a></td></tr><tr><td class="nav-link-hover"><a href="episode/07.html" class="nav-link fs-5">第7話</a></td><td class="nav-link-hover"><a href="episode/08.html" class="nav-link fs-5">第8話</a></td><td class="nav-link-hover"><a href="episode/09.html" class="nav-link fs-5">第9話</a></td></tr><tr><td><a class="nav-link fs-5 disabled">第10話</a></td><td><a class="nav-link fs-5 disabled">第11話</a></td><td><a class="nav-link fs-5 disabled">第12話</a></td></tr><tr><td><a class="nav-link fs-5 disabled">第13話</a></td></tr>';
+    } else {
+        episodes.innerHTML = '<tr><td class="nav-link-hover"><a href="episode/01.html" class="nav-link fs-5">第1話</a></td><td class="nav-link-hover"><a href="episode/02.html" class="nav-link fs-5">第2話</a></td><td class="nav-link-hover"><a href="episode/03.html" class="nav-link fs-5">第3話</a></td><td class="nav-link-hover"><a href="episode/04.html" class="nav-link fs-5">第4話</a></td><td class="nav-link-hover"><a href="episode/05.html" class="nav-link fs-5">第5話</a></tr><tr></td><td class="nav-link-hover"><a href="episode/06.html" class="nav-link fs-5">第6話</a></td><td class="nav-link-hover"><a href="episode/07.html" class="nav-link fs-5">第7話</a></td><td class="nav-link-hover"><a href="episode/08.html" class="nav-link fs-5">第8話</a></td><td class="nav-link-hover"><a href="episode/09.html" class="nav-link fs-5">第9話</a></td><td><a class="nav-link fs-5 disabled">第10話</a></td></tr><tr><td><a class="nav-link fs-5 disabled">第11話</a></td><td><a class="nav-link fs-5 disabled">第12話</a></td><td><a class="nav-link fs-5 disabled">第13話</a></td></tr>';
     }
 }
 
