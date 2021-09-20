@@ -14,20 +14,20 @@ function adjustHomePage() {
     let episodeTable = document.getElementById("episode-table");
 
     if (window.innerWidth < window.innerHeight * 0.74) {
-        for (let i = 0; i < 9; i++) {
+        for (let i = 0; i < 11; i++) {
             cards.item(i).className = "card border-secondary m-3 p-0 mx-auto d-block";
             cards.item(i).style.width = "75%";
         }
-        for (let i = 9; i < cards.length; i++) {
+        for (let i = 11; i < cards.length; i++) {
             cards.item(i).className = "card border-secondary m-3 p-0 mx-auto d-block link-disabled";
             cards.item(i).style.width = "75%";
         }
     } else {
-        for (let i = 0; i < 9; i++) {
+        for (let i = 0; i < 11; i++) {
             cards.item(i).className = "card border-secondary m-3 p-0 col d-block";
             cards.item(i).style.width = "18rem";
         }
-        for (let i = 9; i < cards.length; i++) {
+        for (let i = 11; i < cards.length; i++) {
             cards.item(i).className = "card border-secondary m-3 p-0 col d-block link-disabled";
             cards.item(i).style.width = "18rem";
         }
