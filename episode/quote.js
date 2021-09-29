@@ -48,6 +48,7 @@ function adjustEpisodePage() {
     }
 }
 
+/*
 let buttonStates = {
     "yu": true,
     "ayumu": true,
@@ -76,6 +77,7 @@ let buttonStates = {
     "other": true,
     "song": true
 }
+*/
 
 function displayOnly(name) {
     let quotes = document.getElementsByClassName(name);
@@ -95,10 +97,6 @@ function displayOnly(name) {
     for (i = 0; i < quotes.length; i++) {
         quotes.item(i).style.display = "block";
     }
-    for (let key in buttonStates) {
-        buttonStates[key] = false;
-    }
-    buttonStates[name] = true;
 }
 
 function displayOnlySongs() {
@@ -119,11 +117,6 @@ function displayOnlySongs() {
     for (i = 0; i < lyrics.length; i++) {
         lyrics.item(i).style.display = "block";
     }
-
-    for (let key in buttonStates) {
-        buttonStates[key] = false;
-    }
-    buttonStates["song"] = true;
 }
 
 function displayAll() {
@@ -139,9 +132,6 @@ function displayAll() {
     }
     for (i = 0; i < songs.length; i++) {
         songs.item(i).style.display = "block";
-    }
-    for (let key in buttonStates) {
-        buttonStates[key] = true;
     }
 }
 
