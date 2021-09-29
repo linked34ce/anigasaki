@@ -99,6 +99,10 @@ br {
     user-select: none;
 }
 
+.navbar.fixed-top.navbar-light {
+    margin-right: 50%;
+}
+
 .card.m-3.p-0.col {
     width: 18em;
 }
