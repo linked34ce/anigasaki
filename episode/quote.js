@@ -9,24 +9,27 @@ window.addEventListener("resize", function() {
 
 function adjustEpisodePage() {
     let titleElement = document.getElementById("title");
+    let buttons = document.getElementById("buttons");
     let episodes = document.getElementById("episodes");
     let episodeTable = document.getElementById("episode-table");
     let episodeLinks = episodes.getElementsByTagName("a");
 
     if (window.innerWidth < window.innerHeight * 0.74) {
         document.getElementById("thumbnail").style.width = "80%";
-        if (titleElement.className === "card-title text-light text-nowrap") {
-            titleElement.className = "card-title text-light text-nowrap fs-6";
-        } else if (titleElement.className === "card-title text-dark text-nowrap") {
-            titleElement.className = "card-title text-dark text-nowrap fs-6";
+        if (titleElement.className === "card-title text-white text-nowrap") {
+            titleElement.className = "card-title text-white text-nowrap fs-6";
+        } else if (titleElement.className === "card-title text-black text-nowrap") {
+            titleElement.className = "card-title text-black text-nowrap fs-6";
         }
+        buttons.className = "row row-cols-auto g-0";
     } else {
         document.getElementById("thumbnail").style.width = "26rem";
-        if (titleElement.className === "card-title text-light text-nowrap fs-6") {
-            titleElement.className = "card-title text-light text-nowrap";
-        } else if (titleElement.className === "card-title text-dark text-nowrap fs-6") {
-            titleElement.className = "card-title text-dark text-nowrap";
+        if (titleElement.className === "card-title text-white text-nowrap fs-6") {
+            titleElement.className = "card-title text-white text-nowrap";
+        } else if (titleElement.className === "card-title text-black text-nowrap fs-6") {
+            titleElement.className = "card-title text-black text-nowrap";
         }
+        buttons.className = "row row-cols-auto d-block g-0";
     }
 
     if (window.innerWidth < 370) {
