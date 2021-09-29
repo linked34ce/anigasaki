@@ -8,28 +8,31 @@ window.addEventListener("resize", function() {
 });
 
 function adjustEpisodePage() {
-    let titleElement = document.getElementById("title");
+    let title = document.getElementById("title");
     let buttons = document.getElementById("buttons");
     let episodes = document.getElementById("episodes");
     let episodeTable = document.getElementById("episode-table");
     let episodeLinks = episodes.getElementsByTagName("a");
+    let mainContent = document.getElementById("main-contents");
 
     if (window.innerWidth < window.innerHeight * 0.74) {
         document.getElementById("thumbnail").style.width = "80%";
-        if (titleElement.className === "card-title text-white text-nowrap") {
-            titleElement.className = "card-title text-white text-nowrap fs-6";
-        } else if (titleElement.className === "card-title text-black text-nowrap") {
-            titleElement.className = "card-title text-black text-nowrap fs-6";
+        if (title.className === "card-title text-white text-nowrap") {
+            title.className = "card-title text-white text-nowrap fs-6";
+        } else if (title.className === "card-title text-black text-nowrap") {
+            title.className = "card-title text-black text-nowrap fs-6";
         }
         buttons.className = "row row-cols-auto g-0";
+        mainContent.className = "mx-3 my-5 p-1 text-left"
     } else {
         document.getElementById("thumbnail").style.width = "26rem";
-        if (titleElement.className === "card-title text-white text-nowrap fs-6") {
-            titleElement.className = "card-title text-white text-nowrap";
-        } else if (titleElement.className === "card-title text-black text-nowrap fs-6") {
-            titleElement.className = "card-title text-black text-nowrap";
+        if (title.className === "card-title text-white text-nowrap fs-6") {
+            title.className = "card-title text-white text-nowrap";
+        } else if (title.className === "card-title text-black text-nowrap fs-6") {
+            title.className = "card-title text-black text-nowrap";
         }
         buttons.className = "row row-cols-auto d-block g-0";
+        mainContent.className = "m-5 p-1 text-left"
     }
 
     if (window.innerWidth < 370) {
