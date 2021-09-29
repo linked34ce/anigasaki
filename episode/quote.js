@@ -41,7 +41,6 @@ function adjustEpisodePage() {
     }
 
     for (i = 0; i <= episodeLinks.length; i++) {
-        console.log(episodeLinks.item(i).href, location.href)
         if (episodeLinks.item(i).href === location.href) {
             episodeLinks.item(i).parentElement.id = "in-this-page";
             episodeLinks.item(i).parentElement.innerHTML = '<a class="nav-link fs-5">第' + (i + 1) + '話</a>';
