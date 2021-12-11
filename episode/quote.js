@@ -54,16 +54,64 @@ window.addEventListener("DOMContentLoaded", () => {
             }
         }
     }
+
+    let accordionStates = [false, false];
+
+    document.getElementById("opening").addEventListener("click", () => {
+
+        if (!accordionStates[0]) {
+            document.getElementById("op-expansion").style.animation = "350ms ease-in 0s 1 normal none running expand";
+            setTimeout(() => {
+                document.getElementById("op-expansion").innerHTML = "-"
+                document.getElementById("op-expansion").className = "minus";
+            }, 175);
+            accordionStates[0] = true;
+        } else {
+            document.getElementById("op-expansion").style.animation = "350ms ease-out 0s 1 normal none running collapse";
+            setTimeout(() => {
+                document.getElementById("op-expansion").innerHTML = "+"
+                document.getElementById("op-expansion").className = "plus";
+            }, 175);
+            accordionStates[0] = false;
+        }
+        setTimeout(() => {
+            document.getElementById("op-expansion").style.animation = "";
+        }, 300);
+
+    });
+
+    document.getElementById("ending").addEventListener("click", () => {
+
+        if (!accordionStates[1]) {
+            document.getElementById("ed-expansion").style.animation = "350ms ease-in 0s 1 normal none running expand";
+            setTimeout(() => {
+                document.getElementById("ed-expansion").innerHTML = "-"
+                document.getElementById("ed-expansion").className = "minus";
+            }, 175);
+            accordionStates[1] = true;
+        } else {
+            document.getElementById("ed-expansion").style.animation = "350ms ease-out 0s 1 normal none running collapse";
+            setTimeout(() => {
+                document.getElementById("ed-expansion").innerHTML = "+"
+                document.getElementById("ed-expansion").className = "plus";
+            }, 175);
+            accordionStates[1] = false;
+        }
+        setTimeout(() => {
+            document.getElementById("ed-expansion").style.animation = "";
+        }, 300);
+
+    });
 });
 
 /*
-let speakers = [
+let characters = [
     "yu", "ayumu", "kasumi", "shizuku", "karin",
     "ai", "kanata", "setsuna", "emma", "rina",
     "shioriko", "mia", "lanzhu", "nana", "dark-shizuku",
     "club-president", "hanpen", "iroha", "kyoko", "asagi",
     "haruka", "christina", "kasane", "himeno", "misaki",
-    "vice-president", "secretary", "other", "song"
+    "vice-president", "secretary", "other"
 ]
 */
 
@@ -121,60 +169,4 @@ function displayAll() {
     for (i = 0; i < songs.length; i++) {
         songs.item(i).style.display = "block";
     }
-}
-
-let accordionStates = {
-    opening: false,
-    ending: false
-}
-
-function openAccordion(isOpening) {
-    if (isOpening) {
-        if (!accordionStates["opening"]) {
-            document.getElementById("op-expansion").style.animation = "350ms ease-in 0s 1 normal none running expand";
-            setTimeout(plusToMinus, 175, isOpening);
-            accordionStates["opening"] = true;
-        } else {
-            document.getElementById("op-expansion").style.animation = "350ms ease-out 0s 1 normal none running collapse";
-            setTimeout(minusToPlus, 175, isOpening);
-            accordionStates["opening"] = false;
-        }
-    } else {
-        if (!accordionStates["ending"]) {
-            document.getElementById("ed-expansion").style.animation = "350ms ease-in 0s 1 normal none running expand";
-            setTimeout(plusToMinus, 175, isOpening);
-            accordionStates["ending"] = true;
-        } else {
-            document.getElementById("ed-expansion").style.animation = "350ms ease-out 0s 1 normal none running collapse";
-            setTimeout(minusToPlus, 175, isOpening);
-            accordionStates["ending"] = false;
-        }
-    }
-}
-
-function plusToMinus(isOpening) {
-    if (isOpening) {
-        document.getElementById("op-expansion").innerHTML = "-"
-        document.getElementById("op-expansion").className = "minus";
-    } else if (!isOpening) {
-        document.getElementById("ed-expansion").innerHTML = "-"
-        document.getElementById("ed-expansion").className = "minus";
-    }
-    setTimeout(reset, 300);
-}
-
-function minusToPlus(isOpening) {
-    if (isOpening) {
-        document.getElementById("op-expansion").innerHTML = "+"
-        document.getElementById("op-expansion").className = "plus";
-    } else if (!isOpening) {
-        document.getElementById("ed-expansion").innerHTML = "+"
-        document.getElementById("ed-expansion").className = "plus";
-    }
-    setTimeout(reset, 300);
-}
-
-function reset() {
-    document.getElementById("op-expansion").style.animation = "";
-    document.getElementById("ed-expansion").style.animation = "";
 }
