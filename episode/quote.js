@@ -58,50 +58,34 @@ window.addEventListener("DOMContentLoaded", () => {
     let accordionStates = [false, false];
 
     document.getElementById("opening").addEventListener("click", () => {
-
-        if (!accordionStates[0]) {
-            document.getElementById("op-expansion").style.animation = "350ms ease-in 0s 1 normal none running expand";
-            setTimeout(() => {
-                document.getElementById("op-expansion").innerHTML = "-"
-                document.getElementById("op-expansion").className = "minus";
-            }, 175);
-            accordionStates[0] = true;
-        } else {
-            document.getElementById("op-expansion").style.animation = "350ms ease-out 0s 1 normal none running collapse";
-            setTimeout(() => {
-                document.getElementById("op-expansion").innerHTML = "+"
-                document.getElementById("op-expansion").className = "plus";
-            }, 175);
-            accordionStates[0] = false;
-        }
-        setTimeout(() => {
-            document.getElementById("op-expansion").style.animation = "";
-        }, 300);
-
+        openAccordion("op-expansion", 0);
     });
 
     document.getElementById("ending").addEventListener("click", () => {
+        openAccordion("ed-expansion", 1);
+    });
 
-        if (!accordionStates[1]) {
-            document.getElementById("ed-expansion").style.animation = "350ms ease-in 0s 1 normal none running expand";
+    function openAccordion(id, index) {
+        if (!accordionStates[index]) {
+            document.getElementById(id).style.animation = "350ms ease-in 0s 1 normal none running expand";
             setTimeout(() => {
-                document.getElementById("ed-expansion").innerHTML = "-"
-                document.getElementById("ed-expansion").className = "minus";
+                document.getElementById(id).innerHTML = "-"
+                document.getElementById(id).className = "minus";
             }, 175);
-            accordionStates[1] = true;
+            accordionStates[index] = true;
         } else {
-            document.getElementById("ed-expansion").style.animation = "350ms ease-out 0s 1 normal none running collapse";
+            document.getElementById(id).style.animation = "350ms ease-out 0s 1 normal none running collapse";
             setTimeout(() => {
-                document.getElementById("ed-expansion").innerHTML = "+"
-                document.getElementById("ed-expansion").className = "plus";
+                document.getElementById(id).innerHTML = "+"
+                document.getElementById(id).className = "plus";
             }, 175);
-            accordionStates[1] = false;
+            accordionStates[index] = false;
         }
         setTimeout(() => {
-            document.getElementById("ed-expansion").style.animation = "";
+            document.getElementById(id).style.animation = "";
         }, 300);
 
-    });
+    };
 });
 
 /*
