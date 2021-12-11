@@ -84,7 +84,6 @@ window.addEventListener("DOMContentLoaded", () => {
         setTimeout(() => {
             document.getElementById(id).style.animation = "";
         }, 300);
-
     };
 });
 
