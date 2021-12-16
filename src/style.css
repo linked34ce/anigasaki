@@ -1,0 +1,160 @@
+@keyframes appear {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+@keyframes expand {
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes collapse {
+    to {
+        transform: rotate(-180deg);
+    }
+}
+
+body {
+    animation: 0.8s ease 0s 1 normal none running appear;
+}
+
+br {
+    user-select: none;
+}
+
+.header-footer-color {
+    background-color: #d3d3d3;
+}
+
+.bs-callout {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid var(--bs-secondary);
+    border-left-width: 4px;
+    border-radius: 5px;
+}
+
+.bs-callout h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.bs-callout p:last-child {
+    margin-bottom: 0;
+}
+
+.bs-callout code {
+    border-radius: 3px;
+}
+
+.bs-callout+.bs-callout {
+    margin-top: -5px;
+}
+
+.bs-callout-info {
+    border-left-color: #5bc0de;
+}
+
+.bs-callout-info h4 {
+    color: #5bc0de;
+}
+
+.nav-link-hover:hover {
+    background-color: var(--bs-gray);
+}
+
+.nav-link {
+    color: var(--bs-light);
+}
+
+.nav-link:hover {
+    color: var(--bs-light);
+}
+
+#in-this-page {
+    background-color: var(--bs-gray-dark);
+    cursor: default;
+}
+
+.plus {
+    float: right;
+    padding: 1px 8px 4px 8px;
+    background-color: #212529;
+    font-size: large;
+    color: #f8f9fa;
+    user-select: none;
+}
+
+.minus {
+    float: right;
+    padding: 1px 9.5px 4px 9.5px;
+    background-color: #212529;
+    font-size: large;
+    color: #f8f9fa;
+    user-select: none;
+}
+
+.card.m-3.p-0.col {
+    width: 18em;
+}
+
+.card.mx-auto.d-block {
+    width: 80%;
+}
+
+.card.rounded.mx-auto.d-block {
+    width: 26rem;
+}
+
+.btn.m-1.col.text-nowrap {
+    width: 8.5rem;
+}
+
+.card-header {
+    -webkit-appearance: none;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+}
+
+.link-disabled {
+    opacity: 50%;
+}
+
+.btn-return {
+    background-color: var(--bs-gray-dark);
+    color: var(--bs-white)
+}
+
+.btn-return:hover {
+    background-color: var(--bs-dark);
+    color: var(--bs-white)
+}
+
+.btn-songs {
+    background-color: #783dee;
+    color: var(--bs-white)
+}
+
+.btn-songs:hover {
+    background-color: var(--bs-purple);
+    color: var(--bs-white)
+}
+
+.page-transition {
+    width: 5.1rem;
+    padding-left: 2.5px;
+    padding-right: 2.5px;
+}
+
+.song {
+    background-color: #dee2e6;
+}
