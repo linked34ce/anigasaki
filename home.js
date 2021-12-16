@@ -13,22 +13,24 @@ window.addEventListener("DOMContentLoaded", () => {
         let cardTitles = document.getElementsByClassName("card-title text-center");
         let episodes = document.getElementById("episodes");
         let episodeTable = document.getElementById("episode-table");
+        const numOfEpisodes = 13;
+        const lastestEpisode = 13;
 
         if (window.innerWidth < window.innerHeight * 0.74) {
-            for (let i = 0; i < 13; i++) {
+            for (let i = 0; i < numOfEpisodes; i++) {
                 cards.item(i).className = "card border-secondary m-3 p-0 mx-auto";
                 cards.item(i).style.width = "75%";
             }
-            for (let i = 13; i < cards.length; i++) {
+            for (let i = lastestEpisode; i < cards.length; i++) {
                 cards.item(i).className = "card border-secondary m-3 p-0 mx-auto link-disabled";
                 cards.item(i).style.width = "75%";
             }
         } else {
-            for (let i = 0; i < 13; i++) {
+            for (let i = 0; i < numOfEpisodes; i++) {
                 cards.item(i).className = "card border-secondary m-3 p-0 mx-auto col";
                 cards.item(i).style.width = "18rem";
             }
-            for (let i = 13; i < cards.length; i++) {
+            for (let i = lastestEpisode; i < cards.length; i++) {
                 cards.item(i).className = "card border-secondary m-3 p-0 mx-auto col link-disabled";
                 cards.item(i).style.width = "18rem";
             }
