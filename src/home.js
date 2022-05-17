@@ -9,6 +9,7 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 
     function adjustHomePage() {
+        let title = document.getElementById("title");
         let cards = document.getElementsByClassName("card");
         let cardTitles = document.getElementsByClassName("card-title text-center");
         let episodes = document.getElementById("episodes");
@@ -17,6 +18,7 @@ window.addEventListener("DOMContentLoaded", () => {
         const lastestEpisode = 13;
 
         if (window.innerWidth < window.innerHeight * 0.74) {
+            title.className = "text-center display-4 mt-5"
             for (let i = 0; i < numOfEpisodes; i++) {
                 cards.item(i).className = "card border-secondary m-3 p-0 mx-auto";
                 cards.item(i).style.width = "75%";
@@ -26,6 +28,7 @@ window.addEventListener("DOMContentLoaded", () => {
                 cards.item(i).style.width = "75%";
             }
         } else {
+            title.className = "text-center display-4 mt-2"
             for (let i = 0; i < numOfEpisodes; i++) {
                 cards.item(i).className = "card border-secondary m-3 p-0 mx-auto col";
                 cards.item(i).style.width = "18rem";
