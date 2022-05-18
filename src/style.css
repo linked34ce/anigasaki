@@ -31,6 +31,10 @@ br {
     background-color: #d3d3d3;
 }
 
+.navbar-collapse.bg-dark {
+    opacity: 95%;
+}
+
 .bs-callout {
     padding: 20px;
     margin: 20px 0;
