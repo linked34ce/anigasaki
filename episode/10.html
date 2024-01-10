@@ -1,1080 +1,1552 @@
 <!DOCTYPE html>
 <html lang="ja">
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-H0PM61FGET"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
 
-<head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H0PM61FGET"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
+            gtag("config", "G-H0PM61FGET");
+        </script>
+        <meta
+            charset="UTF-8"
+            description="TVアニメ『ラブライブ！虹ヶ咲学園スクールアイドル同好会』第10話「夏、はじまる。」の台詞をまとめています。キャラクターごとの台詞を表示する機能も実装しています。"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="../src/style.css" />
+        <link rel="icon" href="../image/favicon.ico" id="favicon" />
+        <link
+            rel="apple-touch-icon"
+            href="../image/favicon.png"
+            sizes="180x180"
+        />
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+            crossorigin="anonymous"
+        ></script>
+        <script defer src="../src/quote.js"></script>
+        <title>
+            第10話「夏、はじまる。」| アニガサキ台詞集 -
+            アニメ『ラブライブ！虹ヶ咲』の台詞まとめ
+        </title>
+    </head>
 
-        gtag('config', 'G-H0PM61FGET');
-    </script>
-    <meta charset="UTF-8" description="TVアニメ『ラブライブ！虹ヶ咲学園スクールアイドル同好会』第10話「夏、はじまる。」の台詞をまとめています。キャラクターごとの台詞を表示する機能も実装しています。">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="../src/style.css">
-    <link rel="icon" href="../image/favicon.ico" id="favicon">
-    <link rel="apple-touch-icon" href="../image/favicon.png" sizes="180x180">
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <script defer src="../src/quote.js"></script>
-    <title>第10話「夏、はじまる。」| アニガサキ台詞集 - アニメ『ラブライブ！虹ヶ咲』の台詞まとめ</title>
-</head>
-
-<body class="bg-light">
-    <nav class="navbar fixed-top navbar-light">
-        <div class="container-fluid">
-            <button class="navbar-toggler bg-dark pb-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="fs-1 text-light">≡</span>
-            </button>
-            <div class="collapse navbar-collapse bg-dark rounded mt-3" id="navbarSupportedContent">
-                <div class="text-light text-nowrap m-3">
-                    <table id="episode-table" class="table table-dark border-white">
-                        <thead>
-                            <tr>
-                                <td colspan="5" class="display-6">Episodes</td>
-                            </tr>
-                        </thead>
-                        <tbody id="episodes" class="text-center"></tbody>
-                    </table>
-                    <a href="../" class="fs-6 ps-2 nav-link">トップページへ</a>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-    <div class="main">
-        <div class="header-footer-color bg-gradient mb-5">
-            <div class="position-relative m-5 p-3">
-                <a href="09.html" class="page-transition btn btn-primary position-absolute start-0 top-50">第9話へ</a>
-                <a href="../" class="btn btn-return position-absolute start-50 top-50 translate-middle-x">もどる</a>
-                <a href="11.html" class="page-transition btn btn-primary position-absolute end-0 top-50">第11話へ</a>
-            </div>
-        </div>
-        <div class="container">
-            <div id="thumbnail" class="card rounded mx-auto user-select-none mb-3">
-                <img src="../image/episode10.jpeg" class="card-img-top" alt="第10話">
-                <div class="card-img-overlay">
-                    <div class="card-body text-end p-0">
-                        <h5 id="title" class="card-title text-black text-nowrap">第10話「夏、はじまる。」</h5>
+    <body class="bg-light">
+        <nav class="navbar fixed-top navbar-light">
+            <div class="container-fluid">
+                <button
+                    class="navbar-toggler bg-dark pb-2 px-3"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="fs-1 text-light">≡</span>
+                </button>
+                <div
+                    class="collapse navbar-collapse bg-dark rounded mt-3"
+                    id="navbarSupportedContent"
+                >
+                    <div class="text-light text-nowrap m-3">
+                        <table
+                            id="episode-table"
+                            class="table table-dark border-white"
+                        >
+                            <thead>
+                                <tr>
+                                    <td colspan="5" class="display-6">
+                                        Episodes
+                                    </td>
+                                </tr>
+                            </thead>
+                            <tbody id="episodes" class="text-center"></tbody>
+                        </table>
+                        <a href="../" class="fs-6 ps-2 nav-link"
+                            >トップページへ</a
+                        >
                     </div>
                 </div>
             </div>
-            <div class="p-2"><span class="text-danger">*</span> 以下のボタンでキャラクターごとの台詞を表示できます。</div>
-            <div class="card bg-light border-dark">
-                <div class="card-body">
-                    <div id="buttons" class="row row-cols-auto g-0">
-                        <button type="button" id="yu" class="btn btn-secondary m-1 col mx-auto text-nowrap">高咲 侑</button>
-                        <button type="button" id="ayumu" class="btn btn-secondary m-1 col mx-auto text-nowrap">上原 歩夢</button>
-                        <button type="button" id="kasumi" class="btn btn-secondary m-1 col mx-auto text-nowrap">中須 かすみ</button>
-                        <button type="button" id="shizuku" class="btn btn-secondary m-1 col mx-auto text-nowrap">桜坂 しずく</button>
-                        <button type="button" id="karin" class="btn btn-secondary m-1 col mx-auto text-nowrap">朝香 果林</button>
-                        <button type="button" id="ai" class="btn btn-secondary m-1 col mx-auto text-nowrap">宮下 愛</button>
-                        <button type="button" id="kanata" class="btn btn-secondary m-1 col mx-auto text-nowrap">近江 彼方</button>
-                        <button type="button" id="setsuna" class="btn btn-secondary m-1 col mx-auto text-nowrap">優木 せつ菜</button>
-                        <button type="button" id="emma" class="btn btn-secondary m-1 col mx-auto text-nowrap">エマ・ヴェルデ</button>
-                        <button type="button" id="rina" class="btn btn-secondary m-1 col mx-auto text-nowrap">天王寺 璃奈</button>
-                        <button type="button" id="other" class="btn btn-secondary m-1 col mx-auto text-nowrap">その他</button>
-                        <button type="button" id="songs" class="btn btn-songs m-1 col mx-auto text-nowrap">OP / ED / 挿入歌</button>
-                        <button type="button" id="all" class="btn btn-primary m-1 col mx-auto text-nowrap">すべて表示</button>
-                    </div>
+        </nav>
+
+        <div class="main">
+            <div class="header-footer-color bg-gradient mb-5">
+                <div class="position-relative m-5 p-3">
+                    <a
+                        href="09.html"
+                        class="page-transition btn btn-primary position-absolute start-0 top-50"
+                        >第9話へ</a
+                    >
+                    <a
+                        href="../"
+                        class="btn btn-return position-absolute start-50 top-50 translate-middle-x"
+                        >もどる</a
+                    >
+                    <a
+                        href="11.html"
+                        class="page-transition btn btn-primary position-absolute end-0 top-50"
+                        >第11話へ</a
+                    >
                 </div>
             </div>
-        </div>
-        <div id="main-contents" class="m-5 p-1 text-left">
-            <p class="kasumi">かすみ「うぐぐぐ…」</p>
-
-            <p class="kasumi">かすみ「こんな点数なんて…」</p>
-
-            <p class="rina">璃奈「うわあ…」</p>
-
-            <p class="shizuku">しずく「22点でにゃんにゃん！　かわいいじゃん」</p>
-
-            <p class="kasumi">かすみ「全然かわいくないよぉ！」</p>
-
-            <p class="yu">侑「まあまあ」</p>
-
-            <p class="yu">侑「テストの結果は置いといて　これで1学期はおしまい！」</p>
-
-            <p class="ayumu">歩夢「明日からいよいよ　待ちに待った夏休み！」</p>
-
-            <p class="setsuna">せつ菜「今から　スクールアイドル同好会　夏合宿　出発です！」</p>
-
-            <p class="setsuna">せつ菜以外「お〜！」</p>
-            <br><br>
-
-            <div id="op-accordion" class="accordion">
-                <div class="card p-0 song">
-                    <h5 class="card-header" id="opening" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                        『虹色Passions!』<span id="op-expansion" class="plus">+</span>
-                    </h5>
-                    <div id="collapseOne" class="collapse" aria-labelledby="opening" data-bs-parent="#op-accordion">
-                        <div class="card-body song">
-                            <br class="lyric">
-                            <p class="lyric">いこう！　明日へ</p>
-
-                            <p class="lyric">虹のMelodies</p>
-                            <br class="lyric">
-
-                            <p class="lyric">青空　雨あがり</p>
-
-                            <p class="lyric">希望の　風吹いて（Blowing）</p>
-
-                            <p class="lyric">予感のなか　踏み出すよ　最初の一歩</p>
-                            <br class="lyric">
-
-                            <p class="lyric">世界が　きらめいて</p>
-
-                            <p class="lyric">ココロに　湧き上がる（Feeling）</p>
-
-                            <p class="lyric">「いま駆け出したいんだ…！！」</p>
-
-                            <p class="lyric">（Move on!&nbsp; Move on!）</p>
-                            <br class="lyric">
-
-                            <p class="lyric">重ねあう　小さなメロディ（Our Colors）</p>
-
-                            <p class="lyric">弧を描いてほら　街中に響くよ</p>
-
-                            <p class="lyric">（Reaching for far blue sky!）</p>
-
-                            <p class="lyric">いっしょに歌おう！</p>
-                            <br class="lyric">
-
-                            <p class="lyric">溢れだす　この気持ち</p>
-
-                            <p class="lyric">胸の奥　もう止まらない</p>
-
-                            <p class="lyric">虹色Passions!</p>
-
-                            <p class="lyric">勇気に染まるColors</p>
-                            <br class="lyric">
-
-                            <p class="lyric">果てしない　空のむこう</p>
-
-                            <p class="lyric">ミライへと　橋をかけよう</p>
-                            <br class="lyric">
-
-                            <p class="lyric">高鳴る　シンパシー</p>
-
-                            <p class="lyric">キセキ咲いてくよ</p>
-
-                            <p class="lyric">いこう！　明日へ</p>
-
-                            <p class="lyric">光れMelodies</p>
-                            <br class="lyric">
-
-                            <p class="lyric">そうきっと　ひとりじゃないよ</p>
-
-                            <p class="lyric">いつもみんな　いるから</p>
-
-                            <p class="lyric">夢と夢　繋いでいこう</p>
+            <div class="container">
+                <div
+                    id="thumbnail"
+                    class="card rounded mx-auto user-select-none mb-3"
+                >
+                    <img
+                        src="../image/episode10.jpeg"
+                        class="card-img-top"
+                        alt="第10話"
+                    />
+                    <div class="card-img-overlay">
+                        <div class="card-body text-end p-0">
+                            <h5
+                                id="title"
+                                class="card-title text-black text-nowrap"
+                            >
+                                第10話「夏、はじまる。」
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-2">
+                    <span class="text-danger">*</span>
+                    以下のボタンでキャラクターごとの台詞を表示できます。
+                </div>
+                <div class="card bg-light border-dark">
+                    <div class="card-body">
+                        <div id="buttons" class="row row-cols-auto g-0">
+                            <button
+                                type="button"
+                                id="yu"
+                                class="btn btn-secondary m-1 col mx-auto text-nowrap"
+                            >
+                                高咲 侑
+                            </button>
+                            <button
+                                type="button"
+                                id="ayumu"
+                                class="btn btn-secondary m-1 col mx-auto text-nowrap"
+                            >
+                                上原 歩夢
+                            </button>
+                            <button
+                                type="button"
+                                id="kasumi"
+                                class="btn btn-secondary m-1 col mx-auto text-nowrap"
+                            >
+                                中須 かすみ
+                            </button>
+                            <button
+                                type="button"
+                                id="shizuku"
+                                class="btn btn-secondary m-1 col mx-auto text-nowrap"
+                            >
+                                桜坂 しずく
+                            </button>
+                            <button
+                                type="button"
+                                id="karin"
+                                class="btn btn-secondary m-1 col mx-auto text-nowrap"
+                            >
+                                朝香 果林
+                            </button>
+                            <button
+                                type="button"
+                                id="ai"
+                                class="btn btn-secondary m-1 col mx-auto text-nowrap"
+                            >
+                                宮下 愛
+                            </button>
+                            <button
+                                type="button"
+                                id="kanata"
+                                class="btn btn-secondary m-1 col mx-auto text-nowrap"
+                            >
+                                近江 彼方
+                            </button>
+                            <button
+                                type="button"
+                                id="setsuna"
+                                class="btn btn-secondary m-1 col mx-auto text-nowrap"
+                            >
+                                優木 せつ菜
+                            </button>
+                            <button
+                                type="button"
+                                id="emma"
+                                class="btn btn-secondary m-1 col mx-auto text-nowrap"
+                            >
+                                エマ・ヴェルデ
+                            </button>
+                            <button
+                                type="button"
+                                id="rina"
+                                class="btn btn-secondary m-1 col mx-auto text-nowrap"
+                            >
+                                天王寺 璃奈
+                            </button>
+                            <button
+                                type="button"
+                                id="other"
+                                class="btn btn-secondary m-1 col mx-auto text-nowrap"
+                            >
+                                その他
+                            </button>
+                            <button
+                                type="button"
+                                id="songs"
+                                class="btn btn-songs m-1 col mx-auto text-nowrap"
+                            >
+                                OP / ED / 挿入歌
+                            </button>
+                            <button
+                                type="button"
+                                id="all"
+                                class="btn btn-primary m-1 col mx-auto text-nowrap"
+                            >
+                                すべて表示
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
-            <br class="lyric"><br class="lyric">
+            <div id="main-contents" class="m-5 p-1 text-left">
+                <p class="kasumi">かすみ「うぐぐぐ…」</p>
+
+                <p class="kasumi">かすみ「こんな点数なんて…」</p>
 
-            <p class="ai">愛「合宿所って…」</p>
+                <p class="rina">璃奈「うわあ…」</p>
 
-            <p class="ayumu kasumi shizuku karin ai kanata emma rina">歩夢, かすみ, しずく, 果林, 愛, 彼方, エマ, 璃奈「学校！？」</p>
+                <p class="shizuku">
+                    しずく「22点でにゃんにゃん！　かわいいじゃん」
+                </p>
 
-            <p class="yu">侑「学校じゃ〜ん！」</p>
-            <br><br>
+                <p class="kasumi">かすみ「全然かわいくないよぉ！」</p>
 
-            <p class="kasumi">かすみ「んも〜　てっきり海辺の別荘とかに泊まるのかと…」</p>
+                <p class="yu">侑「まあまあ」</p>
 
-            <p class="setsuna">せつ菜「そんな無駄遣いはできません！」</p>
+                <p class="yu">
+                    侑「テストの結果は置いといて　これで1学期はおしまい！」
+                </p>
 
-            <p class="setsuna">せつ菜「それに　合宿ならここで十分です」</p>
+                <p class="ayumu">
+                    歩夢「明日からいよいよ　待ちに待った夏休み！」
+                </p>
 
-            <p class="setsuna">せつ菜「研修施設ですから　一とおりの宿泊設備はそろってますし」</p>
+                <p class="setsuna">
+                    せつ菜「今から　スクールアイドル同好会　夏合宿　出発です！」
+                </p>
 
-            <p class="yu">侑「うん　布団もバッチリ！」</p>
+                <p class="setsuna">せつ菜以外「お〜！」</p>
+                <br /><br />
 
-            <p class="ayumu">歩夢「だね」</p>
+                <div id="op-accordion" class="accordion">
+                    <div class="card p-0 song">
+                        <h5
+                            class="card-header"
+                            id="opening"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne"
+                            aria-expanded="false"
+                            aria-controls="collapseOne"
+                        >
+                            『虹色Passions!』<span
+                                id="op-expansion"
+                                class="plus"
+                                >+</span
+                            >
+                        </h5>
+                        <div
+                            id="collapseOne"
+                            class="collapse"
+                            aria-labelledby="opening"
+                            data-bs-parent="#op-accordion"
+                        >
+                            <div class="card-body song">
+                                <br class="lyric" />
+                                <p class="lyric">いこう！　明日へ</p>
 
-            <p class="shizuku">しずく「ステキな合宿になりそうじゃないですか」</p>
+                                <p class="lyric">虹のMelodies</p>
+                                <br class="lyric" />
 
-            <p class="rina">璃奈「璃奈ちゃんボード 『ワクワク』」</p>
+                                <p class="lyric">青空　雨あがり</p>
 
-            <p class="setsuna">せつ菜「では　練習は明日からにして　今から晩御飯にしましょう」</p>
+                                <p class="lyric">希望の　風吹いて（Blowing）</p>
 
-            <p class="yu ayumu">侑&歩夢「フフッ」</p>
-            <br><br>
+                                <p class="lyric">
+                                    予感のなか　踏み出すよ　最初の一歩
+                                </p>
+                                <br class="lyric" />
 
-            <p class="kanata">彼方「う〜ん　いいにおい」</p>
+                                <p class="lyric">世界が　きらめいて</p>
 
-            <p class="yu">侑「うわ〜　すご〜い！」</p>
+                                <p class="lyric">
+                                    ココロに　湧き上がる（Feeling）
+                                </p>
 
-            <p class="emma">エマ「チーズディップのサラダも出来たよ〜」</p>
+                                <p class="lyric">
+                                    「いま駆け出したいんだ…！！」
+                                </p>
 
-            <p class="kasumi">かすみ「デザートもいい感じです〜！」</p>
-            <br>
+                                <p class="lyric">（Move on!&nbsp; Move on!）</p>
+                                <br class="lyric" />
 
-            <p class="rina">璃奈「ん？　独創的な香り…」</p>
+                                <p class="lyric">
+                                    重ねあう　小さなメロディ（Our Colors）
+                                </p>
 
-            <p class="rina">璃奈「くんくん」</p>
+                                <p class="lyric">
+                                    弧を描いてほら　街中に響くよ
+                                </p>
 
-            <p class="setsuna">せつ菜「出来ました〜」</p>
+                                <p class="lyric">
+                                    （Reaching for far blue sky!）
+                                </p>
 
-            <p class="setsuna">せつ菜「お味見いかがですか？」</p>
+                                <p class="lyric">いっしょに歌おう！</p>
+                                <br class="lyric" />
 
-            <p class="rina">璃奈「うっ…　うん…」</p>
-            <br>
+                                <p class="lyric">溢れだす　この気持ち</p>
 
-            <p class="setsuna">せつ菜「どうですか？」</p>
+                                <p class="lyric">胸の奥　もう止まらない</p>
 
-            <p class="rina">璃奈「うっ！？」</p>
+                                <p class="lyric">虹色Passions!</p>
 
-            <p class="setsuna">せつ菜「え！？　驚くほどおいしいんですか？」</p>
+                                <p class="lyric">勇気に染まるColors</p>
+                                <br class="lyric" />
 
-            <p class="rina">璃奈「あわわわわわわ！」</p>
-            <br>
+                                <p class="lyric">果てしない　空のむこう</p>
 
-            <p class="ai">愛「オッケー！　こっちも完成だよ！」</p>
-            <br><br>
+                                <p class="lyric">ミライへと　橋をかけよう</p>
+                                <br class="lyric" />
 
-            <p class="yu">侑「おいしそ〜！」</p>
+                                <p class="lyric">高鳴る　シンパシー</p>
 
-            <p class="yu ayumu kasumi shizuku karin ai kanata setsuna emma rina">全員「いっただっきま〜す！」</p>
-            <br>
+                                <p class="lyric">キセキ咲いてくよ</p>
 
-            <p class="kanata">彼方「どうぞ〜」</p>
+                                <p class="lyric">いこう！　明日へ</p>
 
-            <p class="karin">果林「熱々〜」</p>
+                                <p class="lyric">光れMelodies</p>
+                                <br class="lyric" />
 
-            <p class="emma">エマ「うんうんうん…」</p>
+                                <p class="lyric">
+                                    そうきっと　ひとりじゃないよ
+                                </p>
 
-            <p class="emma">エマ「ん〜！　ピッツァボ〜ノ！」</p>
+                                <p class="lyric">いつもみんな　いるから</p>
 
-            <p class="kanata">彼方「でしょでしょ〜？」</p>
-
-            <p class="kanata">彼方「彼方ちゃん特製ピザ　生地から作ったんだよ〜」</p>
-
-            <p class="shizuku">しずく「こっちのディップも最高です〜！」</p>
-
-            <p class="emma">エマ「あっ　それクラッカーにつけても合うよ」</p>
-
-            <p class="ayumu">歩夢「は〜むっ」</p>
-
-            <p class="ayumu">歩夢「ほんとだ〜！」</p>
-            <br>
-
-            <p class="rina">璃奈「あっ　それは…！」</p>
-
-            <p class="yu">侑「はむっ」</p>
-
-            <p class="yu">侑「ん〜！　こっちも見た目よりもマイルドでおいしい！」</p>
-
-            <p class="setsuna">せつ菜「それはよかったです！」</p>
-            <br>
-
-            <p class="rina">璃奈「え！？」</p>
-            <br>
-
-            <p class="yu">侑「せつ菜ちゃんが作ったの？」</p>
-
-            <p class="setsuna">せつ菜「そうなんです！　自信作ですよ〜！」</p>
-            <br>
-
-            <p class="kanata">彼方「フフッ　ちょっと味を調整したんだ」</p>
-
-            <p class="rina">璃奈「ホッ」</p>
-            <br><br>
-
-            <p class="kasumi">かすみ「さあ〜　パーティー感マシマシにしちゃいますよ〜！」</p>
-
-            <p class="yu ayumu shizuku karin ai kanata setsuna emma">侑, 歩夢, しずく, 果林, 愛, 彼方, せつ菜, エマ「わあ〜…！」</p>
-            <br>
-
-            <p class="shizuku">しずく「は〜むっ」</p>
-
-            <p class="kanata">彼方「フフッ　こんなに楽しいと　合宿だって忘れちゃいそ〜」</p>
-
-            <p class="ai">愛「明日の朝御飯もパーティーみたいにしちゃおっか」</p>
-
-            <p class="emma">エマ「あっ　みんなで卵かけ御飯とかどう？」</p>
-
-            <p class="rina">璃奈「卵かけ御飯　好き」</p>
-
-            <p class="shizuku">しずく「だったら　オムレツと目玉焼きとたまごサンド作って　卵パーティーにしませんか？」</p>
-
-            <p class="yu">侑「それいいかも！」</p>
-
-            <p class="ayumu kasumi shizuku karin ai kanata emma rina">歩夢, かすみ, しずく, 果林, 愛, 彼方, エマ, 璃奈「おいしそ〜！」</p>
-
-            <p class="setsuna">せつ菜「何言ってるんですか　そんな時間ありませんよ」</p>
-
-            <p class="setsuna">せつ菜「この合宿では　日頃足りていない練習と　私たちのライブの内容をまとめるんですから！」</p>
-
-            <p class="yu">侑「ライブか〜　DIVER FES　ほんとすごかったなあ」</p>
-
-            <p class="kasumi">かすみ「あ〜　かすみんも早くステージに立ちたいです！」</p>
-
-            <p class="kasumi">かすみ「そのときはかすみんのめちゃかわパワーで　お客さんをめろめろにしちゃいます〜！」</p>
-
-            <p class="shizuku">しずく「私は自信を持って自分を表現したいです！」</p>
-
-            <p class="kanata">彼方「彼方ちゃんはベッドの上でリラックスしたいな〜」</p>
-
-            <p class="ai">愛「愛さんは　ライブでダジャレぶちかましたい！」</p>
-
-            <p class="emma">エマ「来てくれた人みんなと　手をつないで踊ったりしたいなあ」</p>
-
-            <p class="rina">璃奈「オンライン中継で　離れた人ともつながりたい」</p>
-
-            <p class="karin">果林「DIVER FES以上に　本気の私を見せるつもりよ」</p>
-
-            <p class="setsuna">せつ菜「私も　私の大好きを叫びたいです」</p>
-
-            <p class="ayumu">歩夢「ステージに立つだけで　胸がいっぱいになっちゃいそうだよ〜」</p>
-
-            <p class="yu">侑「フフッ　みんな　ほんとにバラバラだね」</p>
-
-            <p class="ayumu kasumi shizuku karin ai kanata setsuna emma rina">侑以外「あ…」</p>
-
-            <p class="ayumu kasumi shizuku karin ai kanata setsuna emma rina">侑以外「アハハッ」</p>
-
-            <p class="yu">侑「でも　すごいライブができそう！」</p>
-
-            <p class="yu">侑「個性がぶつかり合って　お互いを刺激し合えるような…」</p>
-
-            <p class="setsuna">せつ菜「ですね」</p>
-
-            <p class="setsuna">せつ菜「バラバラな私たちだからこそできる　ソロステージの集合」</p>
-
-            <p class="setsuna">せつ菜「そんな虹ヶ咲のライブをやりましょう！」</p>
-
-            <p class="kasumi kanata">かすみ&彼方「うん！」</p>
-
-            <p class="shizuku">しずく「はい」</p>
-
-            <p class="yu">侑「早く見たいなあ　みんなのライブ…」</p>
-
-            <p class="ai">愛「ねえ　ゆうゆはどんなライブ見てみたい？」</p>
-
-            <p class="yu">侑「え？　う〜ん　私は…」</p>
-
-            <p class="yu">侑「みんなのステージが見られるだけで　トキめいちゃう！」</p>
-            <br><br>
-
-            <p class="yu">侑「はぁ〜　食べ過ぎちゃった〜」</p>
-
-            <p class="ayumu">歩夢「そういえば小学校の時の林間学校でも　二人でお皿洗ったよね〜」</p>
-
-            <p class="yu">侑「ああ　カレー作った時だっけ？」</p>
-
-            <p class="ayumu">歩夢「違うよ〜　それは中学の時でしょ」</p>
-
-            <p class="yu">侑「あっ　そっか」</p>
-
-            <p class="yu">侑「…って　いっつも一緒にやってるね」</p>
-
-            <p class="ayumu">歩夢「フフッ　だね」</p>
-
-            <p class="ayumu">歩夢「これからも　ず〜っと一緒にいたりして」</p>
-
-            <p class="yu">侑「そうだねえ」</p>
-
-            <p class="yu">侑「よろしく頼みますよ　歩夢おばあさん」</p>
-
-            <p class="ayumu">歩夢「もう〜　侑ちゃんたら〜！」</p>
-
-            <p class="ayumu">侑&歩夢「フフフッ」</p>
-            <br><br>
-
-            <p class="shizuku">しずく「うっ　くっ…！」</p>
-            <br>
-
-            <p class="emma">エマ「うわ〜　いろんなメークがあるんだねえ」</p>
-
-            <p class="karin">果林「気分が変わって　楽しいわよ」</p>
-
-            <p class="kanata">彼方「へえ〜」</p>
-            <br>
-
-            <p class="rina">璃奈「今だよ　今」</p>
-
-            <p class="shizuku">しずく「ええ〜！」</p>
-
-            <p class="kasumi">かすみ「ちょっと1年生！」</p>
-
-            <p class="shizuku rina">しずく&璃奈「ん？」</p>
-
-            <p class="kasumi">かすみ「こっちこっち」</p>
-
-            <p class="kasumi">かすみ「集合〜」</p>
-            <br><br>
-
-            <p class="ayumu">歩夢「あれ？　侑ちゃん　どこ行っちゃったのかなあ？」</p>
-            <br>
-
-            <p class="karin">果林「こっち試してみる？」</p>
-
-            <p class="emma">エマ「うん！」</p>
-            <br>
-
-            <p class="ayumu">歩夢「ん？」</p>
-
-            <p class="ayumu">歩夢「もう　置きっぱなし！」</p>
-
-            <p class="setsuna">せつ菜「かすみさんたちも　しばらく姿が見えないですねえ」</p>
-
-            <p class="setsuna">せつ菜「明日の練習に備えて　みんな休まなくてはいけないのに」</p>
-
-            <p class="ayumu">歩夢「私　ちょっと見てくるね」</p>
-
-            <p class="setsuna">せつ菜「私も　探してきます」</p>
-
-            <p class="ai">愛「ほ〜い」</p>
-            <br>
-
-            <p class="ai">愛「ん？」</p>
-            <br><br>
-
-            <p class="rina">璃奈「うわああ〜」</p>
-
-            <p class="kasumi">かすみ「うわああ！」</p>
-
-            <p class="shizuku">しずく「ああああっ！」</p>
-
-            <p class="rina">璃奈「ううっ」</p>
-
-            <p class="kasumi">かすみ「ぐへっ」</p>
-            <br>
-
-            <p class="rina">璃奈「いててて…」</p>
-
-            <p class="kasumi">かすみ「いててててっ！」</p>
-
-            <p class="shizuku">しずく「いたたた！」</p>
-
-            <p class="ai">愛「ぷっ！」</p>
-
-            <p class="ai">愛「何やってんの？　みんな〜！」</p>
-            <br>
-
-            <p class="ai">愛「へえ〜　面白いじゃ〜ん！」</p>
-
-            <p class="kasumi">かすみ「『面白い』じゃなくて　『怖い』ですよぉ！」</p>
-
-            <p class="ai">愛「アハハッ　ごめんごめん」</p>
-
-            <p class="ai">愛「でも　本気で脅かす気なら　もっと雰囲気つけたりとかさあ」</p>
-
-            <p class="shizuku">しずく「なるほど　演出が大事ですね！」</p>
-
-            <p class="ai">愛「っていうかしずくのメーク　めちゃくちゃ気合入ってるねえ！」</p>
-
-            <p class="shizuku">しずく「フフフッ　かすみさんにも言われたんです」</p>
-
-            <p class="shizuku">しずく「次の舞台　お化け役もいけるって」</p>
-
-            <p class="ai">愛「さすがかすかす　人を乗せるのうまいねえ」</p>
-
-            <p class="kasumi">かすみ「かすかすじゃなくてかすみんですぅ！」</p>
-
-            <p class="kasumi">かすみ「っていうか愛せんぱ〜い？」</p>
-
-            <p class="ai">愛「へ？」</p>
-
-            <p class="kasumi">かすみ「このまま帰すわけにはいきませんよ〜？」</p>
-            <br><br>
-
-            <p class="yu">侑「みんな　すごいなあ」</p>
-
-            <p class="yu">侑「自分のやりたいこと　しっかり分かってて」</p>
-
-            <p class="yu">侑「私も　何か…」</p>
-            <br>
-
-            <p class="yu">侑「スー…」</p>
-            <br><br>
-
-            <p class="setsuna">せつ菜「あ…」</p>
-            <br><br>
-
-            <p class="setsuna">せつ菜「音楽室の使用許可は取ったんですか？」</p>
-
-            <p class="yu">侑「ん？　うわあっ！」</p>
-
-            <p class="setsuna">せつ菜「フフフッ　冗談ですよ」</p>
-
-            <p class="yu">侑「もう　脅かさないでよ〜」</p>
-
-            <p class="setsuna">せつ菜「ピアノ　随分上手になりましたね」</p>
-
-            <p class="yu">侑「ううん　まだまだだよ」</p>
-
-            <p class="yu">侑「いっぱい練習したら　もっとうまくなるかなあ」</p>
-
-            <p class="setsuna">せつ菜「私も　歌やダンスを　何度も練習しました」</p>
-
-            <p class="yu">侑「何度も…　か」</p>
-
-            <p class="yu">侑「やっぱり　何事も練習あるのみだね」</p>
-
-            <p class="setsuna">せつ菜「ですね」</p>
-            <br>
-
-            <p class="setsuna">せつ菜「前にここで話したの　覚えてますか？」</p>
-
-            <p class="yu">侑「うん」</p>
-
-            <p class="setsuna">せつ菜「私が今　スクールアイドルをできているのは　あの時の侑さんのおかげです」</p>
-
-            <p class="yu">侑「え？」</p>
-
-            <p class="setsuna">せつ菜「侑さんの言葉がなかったら　きっと大好きを叫べないまま　自分を押し殺して生きていました」</p>
-
-            <p class="setsuna">せつ菜「だから…　私の大好きを受け止めてくれて　ありがとう」</p>
-
-            <p class="yu">侑「別にそんな…」</p>
-
-            <p class="yu">侑「ただ私は　せつ菜ちゃんの歌が聴きたくて」</p>
-
-            <p class="setsuna">せつ菜「フフッ」</p>
-
-            <p class="yu">侑「せつ菜ちゃんやみんなの歌を聴くと　元気がもらえるんだよね」</p>
-
-            <p class="yu">侑「DIVER FESの時も　すっごく感動しちゃって」</p>
-
-            <p class="yu">侑「周りで応援する人たちの熱意に包まれて　私　夢中でステージを見て…」</p>
-
-            <p class="yu">侑「で　気が付いたらあっという間に終わってた」</p>
-
-            <p class="setsuna">せつ菜「あ…」</p>
-
-            <p class="setsuna">せつ菜「侑さんからは　そんなふうに見えてるんですね」</p>
-
-            <p class="yu">侑「え？」</p>
-
-            <p class="setsuna">せつ菜「私たちに見えるのは　ステージからの景色だけですから」</p>
-
-            <p class="yu">侑「そっか…」</p>
-
-            <p class="setsuna">せつ菜「あの…」</p>
-
-            <p class="setsuna">せつ菜「いつか侑さんの大好きが見つかったら　今度は私に応援させて下さい」</p>
-
-            <p class="yu">侑「私の？」</p>
-
-            <p class="setsuna">せつ菜「はい」</p>
-
-            <p class="setsuna">せつ菜「侑さん自身の　大好きを」</p>
-            <br><br>
-
-            <p class="yu">侑「夜の学校って　何か不思議な感じ」</p>
-
-            <p class="setsuna">せつ菜「ほんとにそのとおりです…」</p>
-
-            <p class="setsuna">せつ菜「うわああっ！」</p>
-
-            <p class="yu">侑「ん？　ああっ！」</p>
-            <br>
-
-            <p class="ayumu">歩夢「もう　侑ちゃんどこに…」</p>
-
-            <p class="ayumu">歩夢「ん？」</p>
-            <br>
-
-            <p class="ayumu">歩夢「え…？」</p>
-            <br><br>
-
-            <p class="kanata">彼方「あっ　次これとかどう？」</p>
-
-            <p class="karin">果林「いいじゃない」</p>
-
-            <p class="emma">エマ「いいねえ！」</p>
-
-            <p class="karin">果林「こっちの色はどう？」</p>
-
-            <p class="emma">エマ「あっ　いいかも〜！」</p>
-            <br>
-
-            <p class="emma">エマ「えっ　なに！？」</p>
-
-            <p class="rina">璃奈「ワーハッハッハッハー！」</p>
-
-            <p class="kasumi shizuku">かすみ&しずく「イ〜ヒッヒッヒッヒ〜…」</p>
-
-            <p class="karin">果林「ん…？」</p>
-
-            <p class="kanata">彼方「ん？」</p>
-
-            <p class="emma">エマ「ん〜？」</p>
-
-            <p class="karin">果林「何か　用かしら？」</p>
-
-            <p class="kasumi shizuku">かすみ&しずく「きゃあああ！」</p>
-
-            <p class="rina">璃奈「うわあああ！」</p>
-
-            <p class="yu">侑「な…　何？」</p>
-            <br><br>
-
-            <p class="setsuna">せつ菜「一体何をしているんですか！」</p>
-
-            <p class="setsuna">せつ菜「おふざけにも程があります」</p>
-
-            <p class="kasumi">かすみ「ちょ〜っと楽しくしようと思っただけなのに…」</p>
-
-            <p class="emma">エマ「そうそう」</p>
-
-            <p class="karin">果林「そんなに目くじら立てなくても…」</p>
-
-            <p class="setsuna">せつ菜「何ですか！？」</p>
-
-            <p class="kasumi shizuku karin kanata emma rina">かすみ, しずく, 果林, 彼方, エマ, 璃奈「ひぃぃっ！」</p>
-
-            <p class="ai">愛「まあまあ　明日から練習だし　もう寝ようよ」</p>
-
-            <p class="yu">侑「だね」</p>
-
-            <p class="setsuna">せつ菜「ハァ…　そうですね」</p>
-
-            <p class="kasumi shizuku karin kanata emma rina">かすみ, しずく, 果林, 彼方, エマ, 璃奈「ハァ…」</p>
-            <br><br>
-
-            <p class="kasumi">かすみ「フッ」</p>
-
-            <p class="kasumi">かすみ「ヒーヒッヒッヒッヒッ　お前たちに…」</p>
-
-            <p class="setsuna">せつ菜「フンッ！」</p>
-
-            <p class="kasumi">かすみ「本当のきょう…！」</p>
-
-            <p class="kasumi">かすみ「ぐは…」</p>
-
-            <p class="shizuku rina">しずく&璃奈「ひぃぃぃ！」</p>
-
-            <p class="setsuna">せつ菜「せつ菜…　スカーレットストーム…」</p>
-
-            <p class="ai">愛「寝てるのにすごい」</p>
-
-            <p class="rina">璃奈「おとなしく…　寝るしかない…」</p>
-            <br>
-
-            <p class="ayumu">歩夢「ん…」</p>
-            <br><br>
-
-            <p class="yu">侑「あと3周いきま〜す！」</p>
-
-            <p class="kasumi">かすみ「このまま練習だけじゃ　せっかくの合宿つまらなすぎです〜！」</p>
-
-            <p class="ai">愛「だったらさ　愛さんのアイデア　乗ってみる？」</p>
-
-            <p class="ai">愛「アイだけにね！　えへっ」</p>
-
-            <p class="rina">璃奈「あ…」</p>
-
-            <p class="kanata">彼方「フフッ」</p>
-
-            <p class="karin">果林「フッ」</p>
-            <br>
-
-            <p class="setsuna">せつ菜「ハァッ　ハァッ　ハァッ…」</p>
-
-            <p class="kasumi">かすみ「はい　次の鬼　せつ菜先輩で〜す！」</p>
-
-            <p class="karin">果林「さあ　逃げるわよ〜！」</p>
-
-            <p class="setsuna">せつ菜「ちょっと！　ランニングは鬼ごっこじゃありませんよ！」</p>
-
-            <p class="ai">愛「よ〜し！　捕まえに行きますか！」</p>
-
-            <p class="setsuna">せつ菜「え！？」</p>
-
-            <p class="emma">エマ「うん！　手分けして捕まえよう！」</p>
-
-            <p class="kanata">彼方「だね」</p>
-
-            <p class="setsuna">せつ菜「いえ！　ちゃんとトレーニングを…！」</p>
-
-            <p class="ai">愛「まあまあいいじゃん　鬼ごっこも走るのは一緒だし」</p>
-
-            <p class="emma">エマ「そうだよそうだよ！」</p>
-
-            <p class="setsuna">せつ菜「ええ！？　ちょっと待って下さい！」</p>
-            <br>
-
-            <p class="karin">果林「ほら侑も！　逃げるわよ！」</p>
-
-            <p class="yu">侑「え？　あっ　うわああ！」</p>
-            <br>
-
-            <p class="kasumi">かすみ「よっと！」</p>
-
-            <p class="kasumi">かすみ「ふふ〜ん　簡単には捕まりませんよ〜だ」</p>
-            <br>
-
-            <p class="setsuna">せつ菜「逃しませんよ！」</p>
-            <br>
-
-            <p class="kasumi">かすみ「いひひひ…」</p>
-            <br><br>
-
-            <p class="ai">愛「待て待て〜！」</p>
-
-            <p class="yu">侑「フフフフッ！」</p>
-            <br>
-
-            <p class="setsuna">せつ菜「待ちなさ〜い！」</p>
-
-            <p class="shizuku">しずく「アハハハッ！」</p>
-            <br>
-
-            <p class="emma">エマ「待て〜！」</p>
-
-            <p class="karin">果林「うわあっ　アハハッ！」</p>
-            <br><br>
-
-            <p class="yu">侑「ええ！？」</p>
-
-            <p class="kanata">彼方「す〜…」</p>
-
-            <p class="yu">侑「寝てるの！？」</p>
-
-            <p class="kanata">彼方「すぅ…」</p>
-
-            <p class="yu">侑「もう　彼方さん？　またこんなところで寝ちゃって…」</p>
-
-            <p class="kanata">彼方「よっと！」</p>
-
-            <p class="yu">侑「え！？」</p>
-
-            <p class="kanata">彼方「ふふふ〜　捕まえたよ〜」</p>
-            <br><br>
-            <p class="kanata">彼方「うん　侑ちゃんはバッチリ部室に確保したよ〜」</p>
-
-            <p class="setsuna">せつ菜「ラジャー！」</p>
-
-            <p class="yu">侑「あ〜あ　あんな手に引っ掛かるなんて」</p>
-
-            <p class="yu">侑「せっかく面白かったのに…」</p>
-            <br><br>
-
-            <p class="yu">侑「東雲…」</p>
-            <br>
-
-            <p class="yu">侑「藤黄…」</p>
-            <br>
-
-            <p class="yu">侑「…あ」</p>
-            <br><br>
-
-            <div class="card p-0 song">
-                <div class="card-body">
-                    <br class="lyric">
-                    <p class="lyric">Find a way　キミとだったら</p>
-
-                    <p class="lyric">迷子だって　悪くはないね</p>
-
-                    <p class="lyric">正解も　輝きもひとつじゃないから</p>
-
-                    <p class="lyric">Just like a Rainbow Colors…</p>
-                </div>
-            </div>
-            <br class="lyric"><br class="lyric">
-
-            <p class="other">女性A《かっこいいじゃん！》</p>
-
-            <p class="other">女性B《うん！　初めて見たけど好きになっちゃった！》</p>
-            <br><br>
-
-            <p class="yu">侑（きっと果林さんを…）</p>
-
-            <p class="yu">侑（ううん　スクールアイドルすら知らなかった人たちなのに　あの場にいるほとんどの人が　声援を送ってくれてた）</p>
-
-            <p class="yu">侑（あんなライブがいい）</p>
-
-            <p class="yu">侑（歓声の中で　ステージも客席も　スクールアイドルを思うみんなの心が　一つになるような…）</p>
-            <br>
-
-            <p class="yu">侑「ん？」</p>
-
-            <p class="setsuna">せつ菜「ようやく全員確保です！」</p>
-
-            <p class="yu">侑「あ…　みんな　お疲れさま」</p>
-
-            <p class="shizuku">しずく「結局　トレーニングと変わらないくらい走りましたね」</p>
-
-            <p class="emma">エマ「汗もびっしょり」</p>
-
-            <p class="karin">果林「だったら…」</p>
-
-            <p class="karin">果林「もう次は決まりね」</p>
-
-            <p class="setsuna">せつ菜「え？」</p>
-            <br><br>
-
-            <p class="kanata">彼方「やっぱりみんな水着持ってきてたんだね〜」</p>
-
-            <p class="karin">果林「せつ菜もちゃ〜んとかわいい水着あるんじゃない」</p>
-
-            <p class="setsuna">せつ菜「え…　ええ　まあ…　一応その…　念のため…」</p>
-
-            <p class="emma">エマ「じゃあ　いっくよ〜！」</p>
-
-            <p class="karin">果林「フフッ」</p>
-            <br>
-
-            <p class="ayumu">歩夢「えへへ　侑ちゃんやっぱりその水着似合ってるね」</p>
-
-            <p class="yu">侑「ほんと？」</p>
-            <br>
-
-            <p class="emma">エマ「彼方ちゃん　すやぴかな〜？」</p>
-
-            <p class="karin">果林「ウフフッ」</p>
-
-            <p class="kanata">彼方「ぷかぷか〜」</p>
-            <br>
-
-            <p class="ai">愛「オラオラオラ〜！」</p>
-
-            <p class="kasumi">かすみ「ちょっとやめて下さい〜！」</p>
-
-            <p class="ai">愛「くらえ〜！」</p>
-            <br>
-
-            <p class="rina">璃奈「それっ」</p>
-
-            <p class="setsuna">せつ菜「あっ　わっ」</p>
-
-            <p class="shizuku">しずく「アハハッ！」</p>
-            <br><br>
-
-            <p class="karin">果林「ほら見て？」</p>
-
-            <p class="ayumu">歩夢「わあ…」</p>
-
-            <p class="rina">璃奈「璃奈ちゃんボード『じぃ〜』」</p>
-            <br>
-
-            <p class="shizuku">しずく「はいっ」</p>
-
-            <p class="kanata">彼方「お〜」</p>
-
-            <p class="emma">エマ「えいっ」</p>
-
-            <p class="kanata">彼方「おお〜！」</p>
-
-            <p class="shizuku">しずく「あああっ　あっ！」</p>
-            <br>
-
-            <p class="ayumu">歩夢「ねえ　侑ちゃん」</p>
-
-            <p class="yu">侑「ん？」</p>
-
-            <p class="ayumu">歩夢「ほんとは今頃　二人で予備校行ってたかもしれないんだよね」</p>
-
-            <p class="yu">侑「だよね」</p>
-
-            <p class="ayumu">歩夢「でも　やっぱりこうして一緒にいる」</p>
-
-            <p class="yu">侑「だね」</p>
-
-            <p class="ayumu">歩夢「同好会に入るって決めた日のこと　覚えてる？」</p>
-
-            <p class="yu">侑「うん　もちろん」</p>
-
-            <p class="ayumu">歩夢「侑ちゃんがあの時　私のスクールアイドルの夢を　一緒にみるって言ってくれたの　すごくうれしかったなあ」</p>
-
-            <p class="yu">侑「スクールアイドルの夢…」</p>
-
-            <p class="yu">侑「そっか　あの時　歩夢が勇気を出してくれたおかげなんだ」</p>
-
-            <p class="ayumu">歩夢「ん？」</p>
-
-            <p class="yu">侑「歩夢の夢を一緒に追いかけて　今の私がいる」</p>
-
-            <p class="ayumu">歩夢「うん」</p>
-
-            <p class="yu">侑「そして　みんなとも」</p>
-
-            <p class="ayumu">歩夢「え？」</p>
-
-            <p class="yu">侑「周りにどんどん輪が広がって　いつの間にか　スクールアイドルが好きな人たちで　すごく大きな力が生まれてた」</p>
-
-            <p class="yu">侑「ありがとう　歩夢」</p>
-
-            <p class="ayumu">歩夢「あっ…」</p>
-
-            <p class="yu">侑「私も勇気を出して　今の私にできること　やってみる」</p>
-
-            <p class="ayumu">歩夢「できる…　こと…？」</p>
-
-            <p class="yu ayumu">侑&歩夢「あ…」</p>
-            <br>
-
-            <p class="karin kanata emma">果林, 彼方, エマ「わあ…！」</p>
-
-            <p class="ai setsuna">愛&せつ菜「わあ！」</p>
-
-            <p class="kasumi shizuku rina">かすみ, しずく, 璃奈「うわ〜！」</p>
-            <br><br>
-
-            <p class="yu">侑「今度の私たちのライブ　虹ヶ咲だけじゃなくて　もっと大きなライブにしたい！」</p>
-
-            <p class="ayumu kasumi shizuku karin ai kanata setsuna emma rina">侑以外「え？」</p>
-
-            <p class="yu">侑「あのね　こないだのDIVER FES　ほんとすごくって」</p>
-
-            <p class="yu">侑「それってきっと　観客の応援とステージが一つになったから生まれた　トキメキがあって」</p>
-
-            <p class="yu">侑「それが会場にあふれてたからじゃないかって」</p>
-
-            <p class="yu">侑「そんなトキメキを生み出せるような　あの時以上のライブがしたい！」</p>
-
-            <p class="yu">侑「スクールアイドルもファンも　全部の垣根を越えちゃうような！」</p>
-
-            <p class="yu">侑「ニジガクとか東雲とか藤黄とか　そんな学校とかも関係なく」</p>
-
-            <p class="yu">侑「スクールアイドル好きみんなが楽しめる　お祭りみたいなライブ」</p>
-
-            <p class="yu">侑「知らなかったスクールアイドルに出会ったり　ファンの熱い声援に勇気をもらえたり」</p>
-
-            <p class="yu">侑「そこにいるみんなの心が強く響き合って　新しい大好きが生まれる！」</p>
-
-            <p class="setsuna">せつ菜「あっ…！」</p>
-
-            <p class="yu">侑「そういう場所で　みんなに思い切り歌ってほしい！」</p>
-
-            <p class="ayumu kasumi shizuku karin ai kanata setsuna emma rina">侑以外「あ…！」</p>
-
-            <p class="shizuku">しずく「何というか…　その…　ドキドキしました！」</p>
-
-            <p class="kanata">彼方「スクールアイドルとファンの垣根を越える」</p>
-
-            <p class="kasumi">かすみ「みんなが楽しめる　お祭りみたいなライブ！」</p>
-
-            <p class="ai">愛「お祭り…　愛さん大好き！」</p>
-
-            <p class="rina">璃奈「うん　すごく面白そう」</p>
-
-            <p class="emma">エマ「私　そのステージに立ってみたい！」</p>
-
-            <p class="yu">侑「みんな…！」</p>
-
-            <p class="karin">果林「フフッ」</p>
-
-            <p class="karin">果林「…にしても侑ってほんと　すごいこと考えるわね」</p>
-
-            <p class="setsuna">せつ菜「ですが　ファンを巻き込み　他校も巻き込むとなると　きっと大変ですよ？」</p>
-
-            <p class="yu">侑「うん　それでもやってみたい」</p>
-
-            <p class="yu">侑「アイドルじゃない私だからできることもあるって　そう思うから！」</p>
-            <br>
-
-            <p class="yu">侑「私もそこから何かを始めたい！」</p>
-
-            <p class="ai">愛「よ〜し！　じゃあみんなで　頑張ろう！」</p>
-
-            <p class="yu ayumu kasumi shizuku karin ai kanata setsuna emma rina">全員「オー！」</p>
-            <br><br>
-
-            <p class="ai emma rina">愛, エマ, 璃奈「わあ！」</p>
-
-            <p class="kasumi shizuku kanata">かすみ, しずく, 彼方「わあ…！」</p>
-
-            <p class="karin setsuna">果林, せつ菜「わあっ！」</p>
-
-            <p class="yu">侑「スクールアイドル…　フェスティバル…」</p>
-
-            <p class="yu">侑「あっ」</p>
-            <br>
-
-            <p class="yu">侑「スクールアイドルが好きな　みんなのためのお祭り！」</p>
-
-            <p class="yu">侑「スクールアイドルフェスティバル！」</p>
-            <br>
-
-            <p class="setsuna">せつ菜「やりましょう！　スクールアイドルフェスティバル！」</p>
-
-            <p class="setsuna">せつ菜「私たちならきっとできます！」</p>
-
-            <p class="kasumi shizuku karin ai kanata emma rina">かすみ, しずく, 果林, 愛, 彼方, エマ, 璃奈「うん！」</p>
-            <br>
-
-            <p class="yu setsuna">侑&せつ菜「フフッ」</p>
-
-            <p class="ayumu">歩夢「あ…」</p>
-            <br>
-
-            <p class="ai">愛「よっしゃ〜！　次は枕投げ大会だ！」</p>
-
-            <p class="setsuna">せつ菜「フフン　望むところですよ！」</p>
-
-            <p class="kasumi">かすみ「ひぃぃ〜　ハンデありでお願いしますぅ〜！」</p>
-            <br><br>
-
-            <div id="ed-accordion" class="accordion">
-                <div class="card p-0 song">
-                    <h5 class="card-header" id="ending" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        『NEO SKY, NEO MAP!』<span id="ed-expansion" class="plus">+</span>
-                    </h5>
-                    <div id="collapseTwo" class="collapse" aria-labelledby="ending" data-bs-parent="#ed-accordion">
-                        <div class="card-body">
-                            <br class="lyric">
-                            <p class="lyric">ゆっくりと走るこの道　何かが生まれかけてるんだ</p>
-
-                            <p class="lyric">それを伝えたいよ　君へと伝えたいんだ</p>
-                            <br class="lyric">
-
-                            <p class="lyric">毎日見上げる空の　青さも　季節ごと変わって</p>
-
-                            <p class="lyric">決まりはないね　自由に　描いてと　誘われてるよ</p>
-                            <br class="lyric">
-
-                            <p class="lyric">あせらないで　行こう！</p>
-
-                            <p class="lyric">ときめく　時間を楽しんで　もっと！</p>
-
-                            <p class="lyric">みんな　自分が好きなことを　追求しちゃおう</p>
-                            <br class="lyric">
-
-                            <p class="lyric">どこに向かうか　まだ分からないけど</p>
-
-                            <p class="lyric">面白そうな未来が待ってると</p>
-
-                            <p class="lyric">笑いあえる　君がいれば</p>
-
-                            <p class="lyric">嬉しい　今日も　ありがとう</p>
-                            <br class="lyric">
-
-                            <p class="lyric">さあ　これからはそれぞれの<ruby><rb>地図</rb><rp>《</rp><rt>マップ</rt><rp>》</rp></ruby></p>
-
-                            <p class="lyric">広げたら　気軽に飛び出そう</p>
-
-                            <p class="lyric">夢見て　憧れて　また夢が見たいんだ</p>
-
-                            <p class="lyric">見たい、見たいんだ！</p>
+                                <p class="lyric">夢と夢　繋いでいこう</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <br><br>
+                <br class="lyric" /><br class="lyric" />
 
-            <p class="ayumu">歩夢「次回 『みんなの夢、私の夢』」</p>
-        </div>
-        <div class="header-footer-color bg-gradient">
-            <br>
-            <div class="position-relative mt-3">
-                <a href="#" class="btn btn-primary position-absolute start-50 top-0 translate-middle-x">ページ先頭へ</a>
+                <p class="ai">愛「合宿所って…」</p>
+
+                <p class="ayumu kasumi shizuku karin ai kanata emma rina">
+                    歩夢, かすみ, しずく, 果林, 愛, 彼方, エマ, 璃奈「学校！？」
+                </p>
+
+                <p class="yu">侑「学校じゃ〜ん！」</p>
+                <br /><br />
+
+                <p class="kasumi">
+                    かすみ「んも〜　てっきり海辺の別荘とかに泊まるのかと…」
+                </p>
+
+                <p class="setsuna">せつ菜「そんな無駄遣いはできません！」</p>
+
+                <p class="setsuna">せつ菜「それに　合宿ならここで十分です」</p>
+
+                <p class="setsuna">
+                    せつ菜「研修施設ですから　一とおりの宿泊設備はそろってますし」
+                </p>
+
+                <p class="yu">侑「うん　布団もバッチリ！」</p>
+
+                <p class="ayumu">歩夢「だね」</p>
+
+                <p class="shizuku">
+                    しずく「ステキな合宿になりそうじゃないですか」
+                </p>
+
+                <p class="rina">璃奈「璃奈ちゃんボード 『ワクワク』」</p>
+
+                <p class="setsuna">
+                    せつ菜「では　練習は明日からにして　今から晩御飯にしましょう」
+                </p>
+
+                <p class="yu ayumu">侑&歩夢「フフッ」</p>
+                <br /><br />
+
+                <p class="kanata">彼方「う〜ん　いいにおい」</p>
+
+                <p class="yu">侑「うわ〜　すご〜い！」</p>
+
+                <p class="emma">エマ「チーズディップのサラダも出来たよ〜」</p>
+
+                <p class="kasumi">かすみ「デザートもいい感じです〜！」</p>
+                <br />
+
+                <p class="rina">璃奈「ん？　独創的な香り…」</p>
+
+                <p class="rina">璃奈「くんくん」</p>
+
+                <p class="setsuna">せつ菜「出来ました〜」</p>
+
+                <p class="setsuna">せつ菜「お味見いかがですか？」</p>
+
+                <p class="rina">璃奈「うっ…　うん…」</p>
+                <br />
+
+                <p class="setsuna">せつ菜「どうですか？」</p>
+
+                <p class="rina">璃奈「うっ！？」</p>
+
+                <p class="setsuna">
+                    せつ菜「え！？　驚くほどおいしいんですか？」
+                </p>
+
+                <p class="rina">璃奈「あわわわわわわ！」</p>
+                <br />
+
+                <p class="ai">愛「オッケー！　こっちも完成だよ！」</p>
+                <br /><br />
+
+                <p class="yu">侑「おいしそ〜！」</p>
+
+                <p
+                    class="yu ayumu kasumi shizuku karin ai kanata setsuna emma rina"
+                >
+                    全員「いっただっきま〜す！」
+                </p>
+                <br />
+
+                <p class="kanata">彼方「どうぞ〜」</p>
+
+                <p class="karin">果林「熱々〜」</p>
+
+                <p class="emma">エマ「うんうんうん…」</p>
+
+                <p class="emma">エマ「ん〜！　ピッツァボ〜ノ！」</p>
+
+                <p class="kanata">彼方「でしょでしょ〜？」</p>
+
+                <p class="kanata">
+                    彼方「彼方ちゃん特製ピザ　生地から作ったんだよ〜」
+                </p>
+
+                <p class="shizuku">しずく「こっちのディップも最高です〜！」</p>
+
+                <p class="emma">エマ「あっ　それクラッカーにつけても合うよ」</p>
+
+                <p class="ayumu">歩夢「は〜むっ」</p>
+
+                <p class="ayumu">歩夢「ほんとだ〜！」</p>
+                <br />
+
+                <p class="rina">璃奈「あっ　それは…！」</p>
+
+                <p class="yu">侑「はむっ」</p>
+
+                <p class="yu">
+                    侑「ん〜！　こっちも見た目よりもマイルドでおいしい！」
+                </p>
+
+                <p class="setsuna">せつ菜「それはよかったです！」</p>
+                <br />
+
+                <p class="rina">璃奈「え！？」</p>
+                <br />
+
+                <p class="yu">侑「せつ菜ちゃんが作ったの？」</p>
+
+                <p class="setsuna">
+                    せつ菜「そうなんです！　自信作ですよ〜！」
+                </p>
+                <br />
+
+                <p class="kanata">彼方「フフッ　ちょっと味を調整したんだ」</p>
+
+                <p class="rina">璃奈「ホッ」</p>
+                <br /><br />
+
+                <p class="kasumi">
+                    かすみ「さあ〜　パーティー感マシマシにしちゃいますよ〜！」
+                </p>
+
+                <p class="yu ayumu shizuku karin ai kanata setsuna emma">
+                    侑, 歩夢, しずく, 果林, 愛, 彼方, せつ菜, エマ「わあ〜…！」
+                </p>
+                <br />
+
+                <p class="shizuku">しずく「は〜むっ」</p>
+
+                <p class="kanata">
+                    彼方「フフッ　こんなに楽しいと　合宿だって忘れちゃいそ〜」
+                </p>
+
+                <p class="ai">
+                    愛「明日の朝御飯もパーティーみたいにしちゃおっか」
+                </p>
+
+                <p class="emma">エマ「あっ　みんなで卵かけ御飯とかどう？」</p>
+
+                <p class="rina">璃奈「卵かけ御飯　好き」</p>
+
+                <p class="shizuku">
+                    しずく「だったら　オムレツと目玉焼きとたまごサンド作って　卵パーティーにしませんか？」
+                </p>
+
+                <p class="yu">侑「それいいかも！」</p>
+
+                <p class="ayumu kasumi shizuku karin ai kanata emma rina">
+                    歩夢, かすみ, しずく, 果林, 愛, 彼方, エマ,
+                    璃奈「おいしそ〜！」
+                </p>
+
+                <p class="setsuna">
+                    せつ菜「何言ってるんですか　そんな時間ありませんよ」
+                </p>
+
+                <p class="setsuna">
+                    せつ菜「この合宿では　日頃足りていない練習と　私たちのライブの内容をまとめるんですから！」
+                </p>
+
+                <p class="yu">
+                    侑「ライブか〜　DIVER FES　ほんとすごかったなあ」
+                </p>
+
+                <p class="kasumi">
+                    かすみ「あ〜　かすみんも早くステージに立ちたいです！」
+                </p>
+
+                <p class="kasumi">
+                    かすみ「そのときはかすみんのめちゃかわパワーで　お客さんをめろめろにしちゃいます〜！」
+                </p>
+
+                <p class="shizuku">
+                    しずく「私は自信を持って自分を表現したいです！」
+                </p>
+
+                <p class="kanata">
+                    彼方「彼方ちゃんはベッドの上でリラックスしたいな〜」
+                </p>
+
+                <p class="ai">
+                    愛「愛さんは　ライブでダジャレぶちかましたい！」
+                </p>
+
+                <p class="emma">
+                    エマ「来てくれた人みんなと　手をつないで踊ったりしたいなあ」
+                </p>
+
+                <p class="rina">
+                    璃奈「オンライン中継で　離れた人ともつながりたい」
+                </p>
+
+                <p class="karin">
+                    果林「DIVER FES以上に　本気の私を見せるつもりよ」
+                </p>
+
+                <p class="setsuna">せつ菜「私も　私の大好きを叫びたいです」</p>
+
+                <p class="ayumu">
+                    歩夢「ステージに立つだけで　胸がいっぱいになっちゃいそうだよ〜」
+                </p>
+
+                <p class="yu">侑「フフッ　みんな　ほんとにバラバラだね」</p>
+
+                <p
+                    class="ayumu kasumi shizuku karin ai kanata setsuna emma rina"
+                >
+                    侑以外「あ…」
+                </p>
+
+                <p
+                    class="ayumu kasumi shizuku karin ai kanata setsuna emma rina"
+                >
+                    侑以外「アハハッ」
+                </p>
+
+                <p class="yu">侑「でも　すごいライブができそう！」</p>
+
+                <p class="yu">
+                    侑「個性がぶつかり合って　お互いを刺激し合えるような…」
+                </p>
+
+                <p class="setsuna">せつ菜「ですね」</p>
+
+                <p class="setsuna">
+                    せつ菜「バラバラな私たちだからこそできる　ソロステージの集合」
+                </p>
+
+                <p class="setsuna">
+                    せつ菜「そんな虹ヶ咲のライブをやりましょう！」
+                </p>
+
+                <p class="kasumi kanata">かすみ&彼方「うん！」</p>
+
+                <p class="shizuku">しずく「はい」</p>
+
+                <p class="yu">侑「早く見たいなあ　みんなのライブ…」</p>
+
+                <p class="ai">愛「ねえ　ゆうゆはどんなライブ見てみたい？」</p>
+
+                <p class="yu">侑「え？　う〜ん　私は…」</p>
+
+                <p class="yu">
+                    侑「みんなのステージが見られるだけで　トキめいちゃう！」
+                </p>
+                <br /><br />
+
+                <p class="yu">侑「はぁ〜　食べ過ぎちゃった〜」</p>
+
+                <p class="ayumu">
+                    歩夢「そういえば小学校の時の林間学校でも　二人でお皿洗ったよね〜」
+                </p>
+
+                <p class="yu">侑「ああ　カレー作った時だっけ？」</p>
+
+                <p class="ayumu">歩夢「違うよ〜　それは中学の時でしょ」</p>
+
+                <p class="yu">侑「あっ　そっか」</p>
+
+                <p class="yu">侑「…って　いっつも一緒にやってるね」</p>
+
+                <p class="ayumu">歩夢「フフッ　だね」</p>
+
+                <p class="ayumu">
+                    歩夢「これからも　ず〜っと一緒にいたりして」
+                </p>
+
+                <p class="yu">侑「そうだねえ」</p>
+
+                <p class="yu">侑「よろしく頼みますよ　歩夢おばあさん」</p>
+
+                <p class="ayumu">歩夢「もう〜　侑ちゃんたら〜！」</p>
+
+                <p class="ayumu">侑&歩夢「フフフッ」</p>
+                <br /><br />
+
+                <p class="shizuku">しずく「うっ　くっ…！」</p>
+                <br />
+
+                <p class="emma">エマ「うわ〜　いろんなメークがあるんだねえ」</p>
+
+                <p class="karin">果林「気分が変わって　楽しいわよ」</p>
+
+                <p class="kanata">彼方「へえ〜」</p>
+                <br />
+
+                <p class="rina">璃奈「今だよ　今」</p>
+
+                <p class="shizuku">しずく「ええ〜！」</p>
+
+                <p class="kasumi">かすみ「ちょっと1年生！」</p>
+
+                <p class="shizuku rina">しずく&璃奈「ん？」</p>
+
+                <p class="kasumi">かすみ「こっちこっち」</p>
+
+                <p class="kasumi">かすみ「集合〜」</p>
+                <br /><br />
+
+                <p class="ayumu">
+                    歩夢「あれ？　侑ちゃん　どこ行っちゃったのかなあ？」
+                </p>
+                <br />
+
+                <p class="karin">果林「こっち試してみる？」</p>
+
+                <p class="emma">エマ「うん！」</p>
+                <br />
+
+                <p class="ayumu">歩夢「ん？」</p>
+
+                <p class="ayumu">歩夢「もう　置きっぱなし！」</p>
+
+                <p class="setsuna">
+                    せつ菜「かすみさんたちも　しばらく姿が見えないですねえ」
+                </p>
+
+                <p class="setsuna">
+                    せつ菜「明日の練習に備えて　みんな休まなくてはいけないのに」
+                </p>
+
+                <p class="ayumu">歩夢「私　ちょっと見てくるね」</p>
+
+                <p class="setsuna">せつ菜「私も　探してきます」</p>
+
+                <p class="ai">愛「ほ〜い」</p>
+                <br />
+
+                <p class="ai">愛「ん？」</p>
+                <br /><br />
+
+                <p class="rina">璃奈「うわああ〜」</p>
+
+                <p class="kasumi">かすみ「うわああ！」</p>
+
+                <p class="shizuku">しずく「ああああっ！」</p>
+
+                <p class="rina">璃奈「ううっ」</p>
+
+                <p class="kasumi">かすみ「ぐへっ」</p>
+                <br />
+
+                <p class="rina">璃奈「いててて…」</p>
+
+                <p class="kasumi">かすみ「いててててっ！」</p>
+
+                <p class="shizuku">しずく「いたたた！」</p>
+
+                <p class="ai">愛「ぷっ！」</p>
+
+                <p class="ai">愛「何やってんの？　みんな〜！」</p>
+                <br />
+
+                <p class="ai">愛「へえ〜　面白いじゃ〜ん！」</p>
+
+                <p class="kasumi">
+                    かすみ「『面白い』じゃなくて　『怖い』ですよぉ！」
+                </p>
+
+                <p class="ai">愛「アハハッ　ごめんごめん」</p>
+
+                <p class="ai">
+                    愛「でも　本気で脅かす気なら　もっと雰囲気つけたりとかさあ」
+                </p>
+
+                <p class="shizuku">しずく「なるほど　演出が大事ですね！」</p>
+
+                <p class="ai">
+                    愛「っていうかしずくのメーク　めちゃくちゃ気合入ってるねえ！」
+                </p>
+
+                <p class="shizuku">
+                    しずく「フフフッ　かすみさんにも言われたんです」
+                </p>
+
+                <p class="shizuku">しずく「次の舞台　お化け役もいけるって」</p>
+
+                <p class="ai">愛「さすがかすかす　人を乗せるのうまいねえ」</p>
+
+                <p class="kasumi">
+                    かすみ「かすかすじゃなくてかすみんですぅ！」
+                </p>
+
+                <p class="kasumi">かすみ「っていうか愛せんぱ〜い？」</p>
+
+                <p class="ai">愛「へ？」</p>
+
+                <p class="kasumi">
+                    かすみ「このまま帰すわけにはいきませんよ〜？」
+                </p>
+                <br /><br />
+
+                <p class="yu">侑「みんな　すごいなあ」</p>
+
+                <p class="yu">侑「自分のやりたいこと　しっかり分かってて」</p>
+
+                <p class="yu">侑「私も　何か…」</p>
+                <br />
+
+                <p class="yu">侑「スー…」</p>
+                <br /><br />
+
+                <p class="setsuna">せつ菜「あ…」</p>
+                <br /><br />
+
+                <p class="setsuna">
+                    せつ菜「音楽室の使用許可は取ったんですか？」
+                </p>
+
+                <p class="yu">侑「ん？　うわあっ！」</p>
+
+                <p class="setsuna">せつ菜「フフフッ　冗談ですよ」</p>
+
+                <p class="yu">侑「もう　脅かさないでよ〜」</p>
+
+                <p class="setsuna">せつ菜「ピアノ　随分上手になりましたね」</p>
+
+                <p class="yu">侑「ううん　まだまだだよ」</p>
+
+                <p class="yu">
+                    侑「いっぱい練習したら　もっとうまくなるかなあ」
+                </p>
+
+                <p class="setsuna">
+                    せつ菜「私も　歌やダンスを　何度も練習しました」
+                </p>
+
+                <p class="yu">侑「何度も…　か」</p>
+
+                <p class="yu">侑「やっぱり　何事も練習あるのみだね」</p>
+
+                <p class="setsuna">せつ菜「ですね」</p>
+                <br />
+
+                <p class="setsuna">
+                    せつ菜「前にここで話したの　覚えてますか？」
+                </p>
+
+                <p class="yu">侑「うん」</p>
+
+                <p class="setsuna">
+                    せつ菜「私が今　スクールアイドルをできているのは　あの時の侑さんのおかげです」
+                </p>
+
+                <p class="yu">侑「え？」</p>
+
+                <p class="setsuna">
+                    せつ菜「侑さんの言葉がなかったら　きっと大好きを叫べないまま　自分を押し殺して生きていました」
+                </p>
+
+                <p class="setsuna">
+                    せつ菜「だから…　私の大好きを受け止めてくれて　ありがとう」
+                </p>
+
+                <p class="yu">侑「別にそんな…」</p>
+
+                <p class="yu">侑「ただ私は　せつ菜ちゃんの歌が聴きたくて」</p>
+
+                <p class="setsuna">せつ菜「フフッ」</p>
+
+                <p class="yu">
+                    侑「せつ菜ちゃんやみんなの歌を聴くと　元気がもらえるんだよね」
+                </p>
+
+                <p class="yu">侑「DIVER FESの時も　すっごく感動しちゃって」</p>
+
+                <p class="yu">
+                    侑「周りで応援する人たちの熱意に包まれて　私　夢中でステージを見て…」
+                </p>
+
+                <p class="yu">侑「で　気が付いたらあっという間に終わってた」</p>
+
+                <p class="setsuna">せつ菜「あ…」</p>
+
+                <p class="setsuna">
+                    せつ菜「侑さんからは　そんなふうに見えてるんですね」
+                </p>
+
+                <p class="yu">侑「え？」</p>
+
+                <p class="setsuna">
+                    せつ菜「私たちに見えるのは　ステージからの景色だけですから」
+                </p>
+
+                <p class="yu">侑「そっか…」</p>
+
+                <p class="setsuna">せつ菜「あの…」</p>
+
+                <p class="setsuna">
+                    せつ菜「いつか侑さんの大好きが見つかったら　今度は私に応援させて下さい」
+                </p>
+
+                <p class="yu">侑「私の？」</p>
+
+                <p class="setsuna">せつ菜「はい」</p>
+
+                <p class="setsuna">せつ菜「侑さん自身の　大好きを」</p>
+                <br /><br />
+
+                <p class="yu">侑「夜の学校って　何か不思議な感じ」</p>
+
+                <p class="setsuna">せつ菜「ほんとにそのとおりです…」</p>
+
+                <p class="setsuna">せつ菜「うわああっ！」</p>
+
+                <p class="yu">侑「ん？　ああっ！」</p>
+                <br />
+
+                <p class="ayumu">歩夢「もう　侑ちゃんどこに…」</p>
+
+                <p class="ayumu">歩夢「ん？」</p>
+                <br />
+
+                <p class="ayumu">歩夢「え…？」</p>
+                <br /><br />
+
+                <p class="kanata">彼方「あっ　次これとかどう？」</p>
+
+                <p class="karin">果林「いいじゃない」</p>
+
+                <p class="emma">エマ「いいねえ！」</p>
+
+                <p class="karin">果林「こっちの色はどう？」</p>
+
+                <p class="emma">エマ「あっ　いいかも〜！」</p>
+                <br />
+
+                <p class="emma">エマ「えっ　なに！？」</p>
+
+                <p class="rina">璃奈「ワーハッハッハッハー！」</p>
+
+                <p class="kasumi shizuku">
+                    かすみ&しずく「イ〜ヒッヒッヒッヒ〜…」
+                </p>
+
+                <p class="karin">果林「ん…？」</p>
+
+                <p class="kanata">彼方「ん？」</p>
+
+                <p class="emma">エマ「ん〜？」</p>
+
+                <p class="karin">果林「何か　用かしら？」</p>
+
+                <p class="kasumi shizuku">かすみ&しずく「きゃあああ！」</p>
+
+                <p class="rina">璃奈「うわあああ！」</p>
+
+                <p class="yu">侑「な…　何？」</p>
+                <br /><br />
+
+                <p class="setsuna">せつ菜「一体何をしているんですか！」</p>
+
+                <p class="setsuna">せつ菜「おふざけにも程があります」</p>
+
+                <p class="kasumi">
+                    かすみ「ちょ〜っと楽しくしようと思っただけなのに…」
+                </p>
+
+                <p class="emma">エマ「そうそう」</p>
+
+                <p class="karin">果林「そんなに目くじら立てなくても…」</p>
+
+                <p class="setsuna">せつ菜「何ですか！？」</p>
+
+                <p class="kasumi shizuku karin kanata emma rina">
+                    かすみ, しずく, 果林, 彼方, エマ, 璃奈「ひぃぃっ！」
+                </p>
+
+                <p class="ai">愛「まあまあ　明日から練習だし　もう寝ようよ」</p>
+
+                <p class="yu">侑「だね」</p>
+
+                <p class="setsuna">せつ菜「ハァ…　そうですね」</p>
+
+                <p class="kasumi shizuku karin kanata emma rina">
+                    かすみ, しずく, 果林, 彼方, エマ, 璃奈「ハァ…」
+                </p>
+                <br /><br />
+
+                <p class="kasumi">かすみ「フッ」</p>
+
+                <p class="kasumi">
+                    かすみ「ヒーヒッヒッヒッヒッ　お前たちに…」
+                </p>
+
+                <p class="setsuna">せつ菜「フンッ！」</p>
+
+                <p class="kasumi">かすみ「本当のきょう…！」</p>
+
+                <p class="kasumi">かすみ「ぐは…」</p>
+
+                <p class="shizuku rina">しずく&璃奈「ひぃぃぃ！」</p>
+
+                <p class="setsuna">せつ菜「せつ菜…　スカーレットストーム…」</p>
+
+                <p class="ai">愛「寝てるのにすごい」</p>
+
+                <p class="rina">璃奈「おとなしく…　寝るしかない…」</p>
+                <br />
+
+                <p class="ayumu">歩夢「ん…」</p>
+                <br /><br />
+
+                <p class="yu">侑「あと3周いきま〜す！」</p>
+
+                <p class="kasumi">
+                    かすみ「このまま練習だけじゃ　せっかくの合宿つまらなすぎです〜！」
+                </p>
+
+                <p class="ai">
+                    愛「だったらさ　愛さんのアイデア　乗ってみる？」
+                </p>
+
+                <p class="ai">愛「アイだけにね！　えへっ」</p>
+
+                <p class="rina">璃奈「あ…」</p>
+
+                <p class="kanata">彼方「フフッ」</p>
+
+                <p class="karin">果林「フッ」</p>
+                <br />
+
+                <p class="setsuna">せつ菜「ハァッ　ハァッ　ハァッ…」</p>
+
+                <p class="kasumi">かすみ「はい　次の鬼　せつ菜先輩で〜す！」</p>
+
+                <p class="karin">果林「さあ　逃げるわよ〜！」</p>
+
+                <p class="setsuna">
+                    せつ菜「ちょっと！　ランニングは鬼ごっこじゃありませんよ！」
+                </p>
+
+                <p class="ai">愛「よ〜し！　捕まえに行きますか！」</p>
+
+                <p class="setsuna">せつ菜「え！？」</p>
+
+                <p class="emma">エマ「うん！　手分けして捕まえよう！」</p>
+
+                <p class="kanata">彼方「だね」</p>
+
+                <p class="setsuna">
+                    せつ菜「いえ！　ちゃんとトレーニングを…！」
+                </p>
+
+                <p class="ai">
+                    愛「まあまあいいじゃん　鬼ごっこも走るのは一緒だし」
+                </p>
+
+                <p class="emma">エマ「そうだよそうだよ！」</p>
+
+                <p class="setsuna">
+                    せつ菜「ええ！？　ちょっと待って下さい！」
+                </p>
+                <br />
+
+                <p class="karin">果林「ほら侑も！　逃げるわよ！」</p>
+
+                <p class="yu">侑「え？　あっ　うわああ！」</p>
+                <br />
+
+                <p class="kasumi">かすみ「よっと！」</p>
+
+                <p class="kasumi">
+                    かすみ「ふふ〜ん　簡単には捕まりませんよ〜だ」
+                </p>
+                <br />
+
+                <p class="setsuna">せつ菜「逃しませんよ！」</p>
+                <br />
+
+                <p class="kasumi">かすみ「いひひひ…」</p>
+                <br /><br />
+
+                <p class="ai">愛「待て待て〜！」</p>
+
+                <p class="yu">侑「フフフフッ！」</p>
+                <br />
+
+                <p class="setsuna">せつ菜「待ちなさ〜い！」</p>
+
+                <p class="shizuku">しずく「アハハハッ！」</p>
+                <br />
+
+                <p class="emma">エマ「待て〜！」</p>
+
+                <p class="karin">果林「うわあっ　アハハッ！」</p>
+                <br /><br />
+
+                <p class="yu">侑「ええ！？」</p>
+
+                <p class="kanata">彼方「す〜…」</p>
+
+                <p class="yu">侑「寝てるの！？」</p>
+
+                <p class="kanata">彼方「すぅ…」</p>
+
+                <p class="yu">
+                    侑「もう　彼方さん？　またこんなところで寝ちゃって…」
+                </p>
+
+                <p class="kanata">彼方「よっと！」</p>
+
+                <p class="yu">侑「え！？」</p>
+
+                <p class="kanata">彼方「ふふふ〜　捕まえたよ〜」</p>
+                <br /><br />
+                <p class="kanata">
+                    彼方「うん　侑ちゃんはバッチリ部室に確保したよ〜」
+                </p>
+
+                <p class="setsuna">せつ菜「ラジャー！」</p>
+
+                <p class="yu">侑「あ〜あ　あんな手に引っ掛かるなんて」</p>
+
+                <p class="yu">侑「せっかく面白かったのに…」</p>
+                <br /><br />
+
+                <p class="yu">侑「東雲…」</p>
+                <br />
+
+                <p class="yu">侑「藤黄…」</p>
+                <br />
+
+                <p class="yu">侑「…あ」</p>
+                <br /><br />
+
+                <div class="card p-0 song">
+                    <div class="card-body">
+                        <br class="lyric" />
+                        <p class="lyric">Find a way　キミとだったら</p>
+
+                        <p class="lyric">迷子だって　悪くはないね</p>
+
+                        <p class="lyric">正解も　輝きもひとつじゃないから</p>
+
+                        <p class="lyric">Just like a Rainbow Colors…</p>
+                    </div>
+                </div>
+                <br class="lyric" /><br class="lyric" />
+
+                <p class="other">女性A《かっこいいじゃん！》</p>
+
+                <p class="other">
+                    女性B《うん！　初めて見たけど好きになっちゃった！》
+                </p>
+                <br /><br />
+
+                <p class="yu">侑（きっと果林さんを…）</p>
+
+                <p class="yu">
+                    侑（ううん　スクールアイドルすら知らなかった人たちなのに　あの場にいるほとんどの人が　声援を送ってくれてた）
+                </p>
+
+                <p class="yu">侑（あんなライブがいい）</p>
+
+                <p class="yu">
+                    侑（歓声の中で　ステージも客席も　スクールアイドルを思うみんなの心が　一つになるような…）
+                </p>
+                <br />
+
+                <p class="yu">侑「ん？」</p>
+
+                <p class="setsuna">せつ菜「ようやく全員確保です！」</p>
+
+                <p class="yu">侑「あ…　みんな　お疲れさま」</p>
+
+                <p class="shizuku">
+                    しずく「結局　トレーニングと変わらないくらい走りましたね」
+                </p>
+
+                <p class="emma">エマ「汗もびっしょり」</p>
+
+                <p class="karin">果林「だったら…」</p>
+
+                <p class="karin">果林「もう次は決まりね」</p>
+
+                <p class="setsuna">せつ菜「え？」</p>
+                <br /><br />
+
+                <p class="kanata">
+                    彼方「やっぱりみんな水着持ってきてたんだね〜」
+                </p>
+
+                <p class="karin">
+                    果林「せつ菜もちゃ〜んとかわいい水着あるんじゃない」
+                </p>
+
+                <p class="setsuna">
+                    せつ菜「え…　ええ　まあ…　一応その…　念のため…」
+                </p>
+
+                <p class="emma">エマ「じゃあ　いっくよ〜！」</p>
+
+                <p class="karin">果林「フフッ」</p>
+                <br />
+
+                <p class="ayumu">
+                    歩夢「えへへ　侑ちゃんやっぱりその水着似合ってるね」
+                </p>
+
+                <p class="yu">侑「ほんと？」</p>
+                <br />
+
+                <p class="emma">エマ「彼方ちゃん　すやぴかな〜？」</p>
+
+                <p class="karin">果林「ウフフッ」</p>
+
+                <p class="kanata">彼方「ぷかぷか〜」</p>
+                <br />
+
+                <p class="ai">愛「オラオラオラ〜！」</p>
+
+                <p class="kasumi">かすみ「ちょっとやめて下さい〜！」</p>
+
+                <p class="ai">愛「くらえ〜！」</p>
+                <br />
+
+                <p class="rina">璃奈「それっ」</p>
+
+                <p class="setsuna">せつ菜「あっ　わっ」</p>
+
+                <p class="shizuku">しずく「アハハッ！」</p>
+                <br /><br />
+
+                <p class="karin">果林「ほら見て？」</p>
+
+                <p class="ayumu">歩夢「わあ…」</p>
+
+                <p class="rina">璃奈「璃奈ちゃんボード『じぃ〜』」</p>
+                <br />
+
+                <p class="shizuku">しずく「はいっ」</p>
+
+                <p class="kanata">彼方「お〜」</p>
+
+                <p class="emma">エマ「えいっ」</p>
+
+                <p class="kanata">彼方「おお〜！」</p>
+
+                <p class="shizuku">しずく「あああっ　あっ！」</p>
+                <br />
+
+                <p class="ayumu">歩夢「ねえ　侑ちゃん」</p>
+
+                <p class="yu">侑「ん？」</p>
+
+                <p class="ayumu">
+                    歩夢「ほんとは今頃　二人で予備校行ってたかもしれないんだよね」
+                </p>
+
+                <p class="yu">侑「だよね」</p>
+
+                <p class="ayumu">歩夢「でも　やっぱりこうして一緒にいる」</p>
+
+                <p class="yu">侑「だね」</p>
+
+                <p class="ayumu">
+                    歩夢「同好会に入るって決めた日のこと　覚えてる？」
+                </p>
+
+                <p class="yu">侑「うん　もちろん」</p>
+
+                <p class="ayumu">
+                    歩夢「侑ちゃんがあの時　私のスクールアイドルの夢を　一緒にみるって言ってくれたの　すごくうれしかったなあ」
+                </p>
+
+                <p class="yu">侑「スクールアイドルの夢…」</p>
+
+                <p class="yu">
+                    侑「そっか　あの時　歩夢が勇気を出してくれたおかげなんだ」
+                </p>
+
+                <p class="ayumu">歩夢「ん？」</p>
+
+                <p class="yu">侑「歩夢の夢を一緒に追いかけて　今の私がいる」</p>
+
+                <p class="ayumu">歩夢「うん」</p>
+
+                <p class="yu">侑「そして　みんなとも」</p>
+
+                <p class="ayumu">歩夢「え？」</p>
+
+                <p class="yu">
+                    侑「周りにどんどん輪が広がって　いつの間にか　スクールアイドルが好きな人たちで　すごく大きな力が生まれてた」
+                </p>
+
+                <p class="yu">侑「ありがとう　歩夢」</p>
+
+                <p class="ayumu">歩夢「あっ…」</p>
+
+                <p class="yu">
+                    侑「私も勇気を出して　今の私にできること　やってみる」
+                </p>
+
+                <p class="ayumu">歩夢「できる…　こと…？」</p>
+
+                <p class="yu ayumu">侑&歩夢「あ…」</p>
+                <br />
+
+                <p class="karin kanata emma">果林, 彼方, エマ「わあ…！」</p>
+
+                <p class="ai setsuna">愛&せつ菜「わあ！」</p>
+
+                <p class="kasumi shizuku rina">
+                    かすみ, しずく, 璃奈「うわ〜！」
+                </p>
+                <br /><br />
+
+                <p class="yu">
+                    侑「今度の私たちのライブ　虹ヶ咲だけじゃなくて　もっと大きなライブにしたい！」
+                </p>
+
+                <p
+                    class="ayumu kasumi shizuku karin ai kanata setsuna emma rina"
+                >
+                    侑以外「え？」
+                </p>
+
+                <p class="yu">
+                    侑「あのね　こないだのDIVER FES　ほんとすごくって」
+                </p>
+
+                <p class="yu">
+                    侑「それってきっと　観客の応援とステージが一つになったから生まれた　トキメキがあって」
+                </p>
+
+                <p class="yu">侑「それが会場にあふれてたからじゃないかって」</p>
+
+                <p class="yu">
+                    侑「そんなトキメキを生み出せるような　あの時以上のライブがしたい！」
+                </p>
+
+                <p class="yu">
+                    侑「スクールアイドルもファンも　全部の垣根を越えちゃうような！」
+                </p>
+
+                <p class="yu">
+                    侑「ニジガクとか東雲とか藤黄とか　そんな学校とかも関係なく」
+                </p>
+
+                <p class="yu">
+                    侑「スクールアイドル好きみんなが楽しめる　お祭りみたいなライブ」
+                </p>
+
+                <p class="yu">
+                    侑「知らなかったスクールアイドルに出会ったり　ファンの熱い声援に勇気をもらえたり」
+                </p>
+
+                <p class="yu">
+                    侑「そこにいるみんなの心が強く響き合って　新しい大好きが生まれる！」
+                </p>
+
+                <p class="setsuna">せつ菜「あっ…！」</p>
+
+                <p class="yu">
+                    侑「そういう場所で　みんなに思い切り歌ってほしい！」
+                </p>
+
+                <p
+                    class="ayumu kasumi shizuku karin ai kanata setsuna emma rina"
+                >
+                    侑以外「あ…！」
+                </p>
+
+                <p class="shizuku">
+                    しずく「何というか…　その…　ドキドキしました！」
+                </p>
+
+                <p class="kanata">
+                    彼方「スクールアイドルとファンの垣根を越える」
+                </p>
+
+                <p class="kasumi">
+                    かすみ「みんなが楽しめる　お祭りみたいなライブ！」
+                </p>
+
+                <p class="ai">愛「お祭り…　愛さん大好き！」</p>
+
+                <p class="rina">璃奈「うん　すごく面白そう」</p>
+
+                <p class="emma">エマ「私　そのステージに立ってみたい！」</p>
+
+                <p class="yu">侑「みんな…！」</p>
+
+                <p class="karin">果林「フフッ」</p>
+
+                <p class="karin">
+                    果林「…にしても侑ってほんと　すごいこと考えるわね」
+                </p>
+
+                <p class="setsuna">
+                    せつ菜「ですが　ファンを巻き込み　他校も巻き込むとなると　きっと大変ですよ？」
+                </p>
+
+                <p class="yu">侑「うん　それでもやってみたい」</p>
+
+                <p class="yu">
+                    侑「アイドルじゃない私だからできることもあるって　そう思うから！」
+                </p>
+                <br />
+
+                <p class="yu">侑「私もそこから何かを始めたい！」</p>
+
+                <p class="ai">愛「よ〜し！　じゃあみんなで　頑張ろう！」</p>
+
+                <p
+                    class="yu ayumu kasumi shizuku karin ai kanata setsuna emma rina"
+                >
+                    全員「オー！」
+                </p>
+                <br /><br />
+
+                <p class="ai emma rina">愛, エマ, 璃奈「わあ！」</p>
+
+                <p class="kasumi shizuku kanata">
+                    かすみ, しずく, 彼方「わあ…！」
+                </p>
+
+                <p class="karin setsuna">果林, せつ菜「わあっ！」</p>
+
+                <p class="yu">侑「スクールアイドル…　フェスティバル…」</p>
+
+                <p class="yu">侑「あっ」</p>
+                <br />
+
+                <p class="yu">
+                    侑「スクールアイドルが好きな　みんなのためのお祭り！」
+                </p>
+
+                <p class="yu">侑「スクールアイドルフェスティバル！」</p>
+                <br />
+
+                <p class="setsuna">
+                    せつ菜「やりましょう！　スクールアイドルフェスティバル！」
+                </p>
+
+                <p class="setsuna">せつ菜「私たちならきっとできます！」</p>
+
+                <p class="kasumi shizuku karin ai kanata emma rina">
+                    かすみ, しずく, 果林, 愛, 彼方, エマ, 璃奈「うん！」
+                </p>
+                <br />
+
+                <p class="yu setsuna">侑&せつ菜「フフッ」</p>
+
+                <p class="ayumu">歩夢「あ…」</p>
+                <br />
+
+                <p class="ai">愛「よっしゃ〜！　次は枕投げ大会だ！」</p>
+
+                <p class="setsuna">せつ菜「フフン　望むところですよ！」</p>
+
+                <p class="kasumi">
+                    かすみ「ひぃぃ〜　ハンデありでお願いしますぅ〜！」
+                </p>
+                <br /><br />
+
+                <div id="ed-accordion" class="accordion">
+                    <div class="card p-0 song">
+                        <h5
+                            class="card-header"
+                            id="ending"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo"
+                            aria-expanded="false"
+                            aria-controls="collapseTwo"
+                        >
+                            『NEO SKY, NEO MAP!』<span
+                                id="ed-expansion"
+                                class="plus"
+                                >+</span
+                            >
+                        </h5>
+                        <div
+                            id="collapseTwo"
+                            class="collapse"
+                            aria-labelledby="ending"
+                            data-bs-parent="#ed-accordion"
+                        >
+                            <div class="card-body">
+                                <br class="lyric" />
+                                <p class="lyric">
+                                    ゆっくりと走るこの道　何かが生まれかけてるんだ
+                                </p>
+
+                                <p class="lyric">
+                                    それを伝えたいよ　君へと伝えたいんだ
+                                </p>
+                                <br class="lyric" />
+
+                                <p class="lyric">
+                                    毎日見上げる空の　青さも　季節ごと変わって
+                                </p>
+
+                                <p class="lyric">
+                                    決まりはないね　自由に　描いてと　誘われてるよ
+                                </p>
+                                <br class="lyric" />
+
+                                <p class="lyric">あせらないで　行こう！</p>
+
+                                <p class="lyric">
+                                    ときめく　時間を楽しんで　もっと！
+                                </p>
+
+                                <p class="lyric">
+                                    みんな　自分が好きなことを　追求しちゃおう
+                                </p>
+                                <br class="lyric" />
+
+                                <p class="lyric">
+                                    どこに向かうか　まだ分からないけど
+                                </p>
+
+                                <p class="lyric">面白そうな未来が待ってると</p>
+
+                                <p class="lyric">笑いあえる　君がいれば</p>
+
+                                <p class="lyric">嬉しい　今日も　ありがとう</p>
+                                <br class="lyric" />
+
+                                <p class="lyric">
+                                    さあ　これからはそれぞれの<ruby
+                                        ><rb>地図</rb><rp>《</rp><rt>マップ</rt
+                                        ><rp>》</rp></ruby
+                                    >
+                                </p>
+
+                                <p class="lyric">広げたら　気軽に飛び出そう</p>
+
+                                <p class="lyric">
+                                    夢見て　憧れて　また夢が見たいんだ
+                                </p>
+
+                                <p class="lyric">見たい、見たいんだ！</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br /><br />
+
+                <p class="ayumu">歩夢「次回 『みんなの夢、私の夢』」</p>
             </div>
-            <br>
-            <div id="bottom" class="position-relative m-5 pt-4">
-                <a href="09.html" class="page-transition btn btn-primary position-absolute start-0 top-0">第9話へ</a>
-                <a href="../" class="btn btn-return position-absolute start-50 top-0 translate-middle-x">もどる</a>
-                <a href="11.html" class="page-transition btn btn-primary position-absolute end-0 top-0">第11話へ</a>
+            <div class="header-footer-color bg-gradient">
+                <br />
+                <div class="position-relative mt-3">
+                    <a
+                        href="#"
+                        class="btn btn-primary position-absolute start-50 top-0 translate-middle-x"
+                        >ページ先頭へ</a
+                    >
+                </div>
+                <br />
+                <div id="bottom" class="position-relative m-5 pt-4">
+                    <a
+                        href="09.html"
+                        class="page-transition btn btn-primary position-absolute start-0 top-0"
+                        >第9話へ</a
+                    >
+                    <a
+                        href="../"
+                        class="btn btn-return position-absolute start-50 top-0 translate-middle-x"
+                        >もどる</a
+                    >
+                    <a
+                        href="11.html"
+                        class="page-transition btn btn-primary position-absolute end-0 top-0"
+                        >第11話へ</a
+                    >
+                </div>
             </div>
         </div>
-    </div>
-</body>
+    </body>
+</html>

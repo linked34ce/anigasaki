@@ -56,7 +56,7 @@ br {
     border-radius: 3px;
 }
 
-.bs-callout+.bs-callout {
+.bs-callout + .bs-callout {
     margin-top: -5px;
 }
 
@@ -119,10 +119,6 @@ br {
     width: 8.5rem;
 }
 
-.card-header {
-    -webkit-appearance: none;
-}
-
 .main {
     display: flex;
     flex-direction: column;
@@ -135,22 +131,22 @@ br {
 
 .btn-return {
     background-color: var(--bs-gray-dark);
-    color: var(--bs-white)
+    color: var(--bs-white);
 }
 
 .btn-return:hover {
     background-color: var(--bs-dark);
-    color: var(--bs-white)
+    color: var(--bs-white);
 }
 
 .btn-songs {
     background-color: #783dee;
-    color: var(--bs-white)
+    color: var(--bs-white);
 }
 
 .btn-songs:hover {
     background-color: var(--bs-purple);
-    color: var(--bs-white)
+    color: var(--bs-white);
 }
 
 .page-transition {
