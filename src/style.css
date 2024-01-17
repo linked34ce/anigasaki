@@ -61,11 +61,37 @@ br {
 }
 
 .bs-callout-info {
-    border-left-color: #5bc0de;
+    border-left-color: var(--bs-info);
 }
 
 .bs-callout-info h4 {
-    color: #5bc0de;
+    color: var(--bs-info);
+}
+
+.display-6 {
+    background: linear-gradient(transparent 60%, var(--bs-gray) 30%);
+    width: fit-content;
+}
+
+.nav-item .nav-link.active {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity));
+    border: var(--bs-border-color-translucent) 1px solid;
+    border-bottom: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) 1px solid;
+    font-weight: bold;
+}
+
+.nav-item .nav-link.active:hover {
+    color: var(--bs-nav-tabs-link-active-color);
+}
+
+.nav-item .nav-link {
+    color: var(--bs-nav-link-color);
+    width: 10rem;
+}
+
+.nav-item .nav-link:hover {
+    color: var(--bs-nav-link-hover-color);
 }
 
 .nav-link-hover:hover {

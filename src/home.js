@@ -15,7 +15,7 @@ window.addEventListener("DOMContentLoaded", () => {
         );
         let episodes = document.getElementById("episodes");
         let episodeTable = document.getElementById("episode-table");
-        const numOfEpisodes = 13;
+        const numOfEpisodes = 26;
         const lastestEpisode = 13;
 
         if (window.innerWidth < window.innerHeight * 0.74) {
