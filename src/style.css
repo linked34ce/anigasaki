@@ -20,6 +20,7 @@
 }
 
 body {
+    font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
     animation: 0.8s ease 0s 1 normal none running appear;
 }
 
@@ -111,22 +112,15 @@ br {
     cursor: default;
 }
 
-.plus {
-    float: right;
-    padding: 1px 8px 4px 8px;
-    background-color: #212529;
-    font-size: large;
-    color: #f8f9fa;
-    user-select: none;
-}
-
+.plus,
 .minus {
     float: right;
-    padding: 1px 9.5px 4px 9.5px;
     background-color: #212529;
     font-size: large;
     color: #f8f9fa;
     user-select: none;
+    width: 30px;
+    height: 28px;
 }
 
 .card.m-3.p-0.col {
@@ -165,6 +159,12 @@ br {
     color: var(--bs-white);
 }
 
+.btn-return:focus {
+    background-color: var(--bs-dark);
+    color: var(--bs-white);
+    box-shadow: 0 0 0 0.25rem rgba(33, 37, 41, 0.5);
+}
+
 .btn-songs {
     background-color: #783dee;
     color: var(--bs-white);
@@ -173,6 +173,12 @@ br {
 .btn-songs:hover {
     background-color: var(--bs-purple);
     color: var(--bs-white);
+}
+
+.btn-songs:focus {
+    background-color: var(--bs-purple);
+    color: var(--bs-white);
+    box-shadow: 0 0 0 0.25rem rgba(111, 66, 193, 0.5);
 }
 
 .page-transition {

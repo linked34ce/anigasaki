@@ -27,6 +27,12 @@
             integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
             crossorigin="anonymous"
         />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href="../src/style.css" />
         <link rel="icon" href="../images/favicon.ico" id="favicon" />
         <link
@@ -59,7 +65,19 @@
                     aria-expanded="false"
                     aria-label="Toggle navigation"
                 >
-                    <span class="fs-1 text-light">≡</span>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="38"
+                        height="38"
+                        fill="#FFFFFF"
+                        class="bi bi-list"
+                        viewBox="0 0 16 15"
+                    >
+                        <path
+                            fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                        />
+                    </svg>
                 </button>
                 <div
                     class="collapse navbar-collapse bg-dark rounded mt-3"
@@ -96,7 +114,7 @@
                     >
                     <a
                         href="../"
-                        class="btn btn-return position-absolute start-50 top-50 translate-middle-x"
+                        class="btn btn-secondary btn-return position-absolute start-50 top-50 translate-middle-x"
                         >もどる</a
                     >
                     <a
@@ -235,9 +253,9 @@
                             <button
                                 type="button"
                                 id="songs"
-                                class="btn btn-songs m-1 col mx-auto text-nowrap"
+                                class="btn btn-secondary btn-songs m-1 col mx-auto text-nowrap"
                             >
-                                OP / ED / 挿入歌
+                                OP, ED, 挿入歌
                             </button>
                             <button
                                 type="button"
@@ -1369,11 +1387,21 @@
                             aria-expanded="false"
                             aria-controls="collapseOne"
                         >
-                            『NEO SKY, NEO MAP!』<span
-                                id="ed-expansion"
-                                class="plus"
-                                >+</span
-                            >
+                            『NEO SKY, NEO MAP!』
+                            <div id="ed-expansion" class="plus">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    fill="currentColor"
+                                    class="bi bi-plus"
+                                    viewBox="0 0 12 15"
+                                >
+                                    <path
+                                        d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"
+                                    />
+                                </svg>
+                            </div>
                         </h5>
                         <div
                             id="collapseOne"
@@ -1480,7 +1508,7 @@
                     >
                     <a
                         href="../"
-                        class="btn btn-return position-absolute start-50 top-0 translate-middle-x"
+                        class="btn btn-secondary btn-return position-absolute start-50 top-0 translate-middle-x"
                         >もどる</a
                     >
                     <a
