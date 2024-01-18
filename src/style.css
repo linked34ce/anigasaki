@@ -32,6 +32,10 @@ br {
     background-color: #d3d3d3;
 }
 
+.footer-note {
+    font-style: italic;
+}
+
 .navbar-collapse.bg-dark {
     opacity: 95%;
 }
@@ -143,6 +147,10 @@ br {
     display: flex;
     flex-direction: column;
     min-height: 80vh;
+}
+
+.episode-list {
+    white-space: nowrap;
 }
 
 .link-disabled {
