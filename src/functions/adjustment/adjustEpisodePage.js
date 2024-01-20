@@ -33,7 +33,7 @@ export const adjustEpisodePage = () => {
         episodeTable.classList.remove("table-sm");
     }
 
-    createNavigation();
+    createNavigation(false);
 
     for (let i = 0; i < episodeLinks.length; i++) {
         const fontSize = window.innerWidth < NAV_WIDTH.SMALL ? "fs-6" : "fs-5";
@@ -41,6 +41,7 @@ export const adjustEpisodePage = () => {
         if (episodeLinks.item(i).href === location.href) {
             episodeLinks.item(i).parentElement.id = "in-this-page";
             episodeLinks.item(i).classList.add(fontSize);
+            episodeLinks.item(i).removeAttribute("href");
             episodeLinks.item(i).innerText = `第${i + 1}話`;
             break;
         }

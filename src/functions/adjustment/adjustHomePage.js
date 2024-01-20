@@ -32,5 +32,5 @@ export const adjustHomePage = () => {
         }
     }
 
-    createNavigation();
+    createNavigation(true);
 };

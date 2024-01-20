@@ -2,7 +2,7 @@ import { NAV_WIDTH } from "./const/window.js";
 import { NUM_OF_EPISODES_PER_SEASON } from "./const/episode.js";
 import { NUM_OF_ITEMS_PER_ROW } from "./const/navigation.js";
 
-export const createNavigation = () => {
+export const createNavigation = (isHomePage) => {
     const episodeTableContents = [];
 
     for (let i = 1; i <= NUM_OF_EPISODES_PER_SEASON; i++) {
@@ -10,7 +10,9 @@ export const createNavigation = () => {
         const link = document.createElement("a");
         const content = document.createElement("td");
 
-        link.href = `/episode/${i.toString().padStart(2, "0")}.html`;
+        const dirName = isHomePage ? "." : "..";
+
+        link.href = `${dirName}/episode/${i.toString().padStart(2, "0")}.html`;
         link.classList.add("nav-link", fontSize);
         link.innerText = `第${i}話`;
 
