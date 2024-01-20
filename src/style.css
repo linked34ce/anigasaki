@@ -125,6 +125,11 @@ br {
     color: var(--bs-gray-400);
 }
 
+.to-top-page:hover {
+    border-bottom: var(--bs-gray-200) 1px solid;
+    color: var(--bs-gray-200);
+}
+
 .plus,
 .minus {
     float: right;
