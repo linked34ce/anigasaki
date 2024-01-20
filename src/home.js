@@ -1,4 +1,4 @@
-import { adjustHomePage } from "./functions/adjustment";
+import { adjustHomePage } from "./functions/adjustment/adjustHomePage.js";
 
 window.addEventListener("DOMContentLoaded", () => {
     adjustHomePage();
