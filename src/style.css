@@ -48,6 +48,14 @@ br {
     color: var(--bs-info);
 }
 
+.news {
+    list-style-type: none;
+}
+
+.news ul li {
+    margin: 0.5rem;
+}
+
 .navbar-toggler:focus {
     box-shadow: none;
 }
