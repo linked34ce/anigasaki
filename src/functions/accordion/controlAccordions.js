@@ -1,34 +1,28 @@
 import { openAccordion } from "./openAccordion.js";
+import { SONG_TYPES } from "./const/songTypes.js";
 
 export const controllAccordions = () => {
-    const accordionOpenedStates = [false, false];
-    const accordionClickedStates = [false, false];
+    const accordionOpenedStates = {
+        opening: false,
+        ending: false,
+    };
 
-    if (document.getElementById("opening")) {
-        document
-            .getElementById("opening")
-            .addEventListener("click", async () => {
-                if (!accordionClickedStates[0]) {
+    const accordionClickedStates = {
+        opening: false,
+        ending: false,
+    };
+
+    for (let songType of SONG_TYPES) {
+        if (document.getElementById(songType)) {
+            document.getElementById(songType).addEventListener("click", () => {
+                if (!accordionClickedStates[songType]) {
                     openAccordion(
-                        true,
+                        songType,
                         accordionOpenedStates,
                         accordionClickedStates
                     );
                 }
             });
-    }
-
-    if (document.getElementById("ending")) {
-        document
-            .getElementById("ending")
-            .addEventListener("click", async () => {
-                if (!accordionClickedStates[1]) {
-                    openAccordion(
-                        false,
-                        accordionOpenedStates,
-                        accordionClickedStates
-                    );
-                }
-            });
+        }
     }
 };

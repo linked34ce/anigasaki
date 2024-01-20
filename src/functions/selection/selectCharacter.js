@@ -4,7 +4,7 @@ export const selectCharacter = () => {
     for (let character of characters) {
         if (document.getElementById(character)) {
             document.getElementById(character).addEventListener("click", () => {
-                let elements =
+                const elements =
                     document.getElementById("main-contents").children;
 
                 for (let element of elements) {
