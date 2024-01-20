@@ -69,6 +69,7 @@ window.addEventListener("DOMContentLoaded", () => {
                 element.style.display = "none";
             }
         }
+
         for (let lyric of lyrics) {
             lyric.style.display = "block";
         }
@@ -81,23 +82,41 @@ window.addEventListener("DOMContentLoaded", () => {
         for (let element of elements) {
             element.style.display = "block";
         }
+
         for (let lyric of lyrics) {
             lyric.style.display = "block";
         }
     });
 
-    const accordionStates = [false, false];
+    const accordionOpenedStates = [false, false];
+    const accordionClickedStates = [false, false];
 
     if (document.getElementById("opening")) {
-        document.getElementById("opening").addEventListener("click", () => {
-            openAccordion(accordionStates, true);
-        });
+        document
+            .getElementById("opening")
+            .addEventListener("click", async () => {
+                if (!accordionClickedStates[0]) {
+                    openAccordion(
+                        true,
+                        accordionOpenedStates,
+                        accordionClickedStates
+                    );
+                }
+            });
     }
 
     if (document.getElementById("ending")) {
-        document.getElementById("ending").addEventListener("click", () => {
-            openAccordion(accordionStates, false);
-        });
+        document
+            .getElementById("ending")
+            .addEventListener("click", async () => {
+                if (!accordionClickedStates[1]) {
+                    openAccordion(
+                        false,
+                        accordionOpenedStates,
+                        accordionClickedStates
+                    );
+                }
+            });
     }
 });
 
@@ -154,11 +173,13 @@ const adjustEpisodePage = () => {
     }
 };
 
-const openAccordion = (accordionStates, isOp) => {
+const openAccordion = (isOp, accordionOpenedStates, accordionClickedStates) => {
     const index = isOp ? 0 : 1;
     const id = (isOp ? "op" : "ed") + "-expansion";
 
-    if (!accordionStates[index]) {
+    accordionClickedStates[index] = true;
+
+    if (!accordionOpenedStates[index]) {
         document.getElementById(id).style.animation =
             "350ms ease-in 0s 1 normal none running expand";
         setTimeout(() => {
@@ -166,7 +187,7 @@ const openAccordion = (accordionStates, isOp) => {
                 "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='currentColor' class='bi bi-dash' viewBox='0 0 12 15'><path d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/></svg>";
             document.getElementById(id).className = "minus";
         }, 175);
-        accordionStates[index] = true;
+        accordionOpenedStates[index] = true;
     } else {
         document.getElementById(id).style.animation =
             "350ms ease-out 0s 1 normal none running collapse";
@@ -175,9 +196,11 @@ const openAccordion = (accordionStates, isOp) => {
                 "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='currentColor' class='bi bi-plus' viewBox='0 0 12 15'><path d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/></svg>";
             document.getElementById(id).className = "plus";
         }, 175);
-        accordionStates[index] = false;
+        accordionOpenedStates[index] = false;
     }
+
     setTimeout(() => {
         document.getElementById(id).style.animation = "";
-    }, 300);
+        accordionClickedStates[index] = false;
+    }, 350);
 };
