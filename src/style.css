@@ -160,32 +160,38 @@ br {
 .btn-return {
     background-color: var(--bs-gray-dark);
     color: var(--bs-white);
+    border-color: var(--bs-gray-dark);
 }
 
 .btn-return:hover {
     background-color: var(--bs-dark);
     color: var(--bs-white);
+    border-color: var(--bs-dark);
 }
 
 .btn-return:focus {
     background-color: var(--bs-dark);
     color: var(--bs-white);
+    border-color: var(--bs-dark);
     box-shadow: 0 0 0 0.25rem rgba(33, 37, 41, 0.5);
 }
 
 .btn-songs {
     background-color: #783dee;
     color: var(--bs-white);
+    border-color: #783dee;
 }
 
 .btn-songs:hover {
     background-color: var(--bs-purple);
     color: var(--bs-white);
+    border-color: var(--bs-purple);
 }
 
 .btn-songs:focus {
     background-color: var(--bs-purple);
     color: var(--bs-white);
+    border-color: var(--bs-purple);
     box-shadow: 0 0 0 0.25rem rgba(111, 66, 193, 0.5);
 }
 
