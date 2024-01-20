@@ -99,12 +99,12 @@ br {
     cursor: default;
 }
 
-.to-top-page {
+.to-home-page {
     border-bottom: var(--bs-gray-400) 1px solid;
     color: var(--bs-gray-400);
 }
 
-.to-top-page:hover {
+.to-home-page:hover {
     border-bottom: var(--bs-gray-200) 1px solid;
     color: var(--bs-gray-200);
 }
