@@ -1,0 +1,83 @@
+@keyframes appear {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+body {
+    font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    animation: 0.8s ease 0s 1 normal none running appear;
+}
+
+br {
+    user-select: none;
+}
+
+.header-footer-color {
+    background-color: #d3d3d3;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.display-6 {
+    background: linear-gradient(transparent 60%, var(--bs-gray) 30%);
+    width: fit-content;
+}
+
+.navbar-collapse.bg-dark {
+    opacity: 95%;
+}
+
+.nav-link-hover:hover {
+    background-color: var(--bs-gray);
+}
+
+.nav-link {
+    color: var(--bs-light);
+}
+
+.nav-link:hover {
+    color: var(--bs-light);
+}
+
+.card-small {
+    width: 75%;
+}
+
+.card-large {
+    width: 18em;
+}
+
+.thumbnail-small {
+    width: 80%;
+}
+
+.thumbnail-large {
+    width: 30rem;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+}
+
+.plus,
+.minus {
+    float: right;
+    background-color: #212529;
+    font-size: large;
+    color: #f8f9fa;
+    user-select: none;
+    width: 30px;
+    height: 28px;
+}
+
+.to-top-of-the-page {
+    font-size: 0.9rem;
+}

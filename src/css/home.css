@@ -1,0 +1,117 @@
+@import url("./common.css");
+
+.footer-note {
+    font-style: italic;
+}
+
+.bs-callout {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid var(--bs-secondary);
+    border-left-width: 4px;
+    border-radius: 5px;
+}
+
+.bs-callout h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.bs-callout p:last-child {
+    margin-bottom: 0;
+}
+
+.bs-callout code {
+    border-radius: 3px;
+}
+
+.bs-callout + .bs-callout {
+    margin-top: -5px;
+}
+
+.bs-callout-info {
+    border-left-color: var(--bs-info);
+}
+
+.bs-callout-info h4 {
+    color: var(--bs-info);
+}
+
+.news {
+    list-style-type: none;
+}
+
+.news ul li {
+    margin: 0.5rem;
+}
+
+.nav-item .nav-link.active {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity));
+    border: var(--bs-border-color-translucent) 1px solid;
+    border-bottom: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) 1px solid;
+    font-weight: bold;
+}
+
+.nav-item .nav-link.active:hover {
+    color: var(--bs-nav-tabs-link-active-color);
+}
+
+.nav-item .nav-link {
+    color: var(--bs-nav-link-color);
+    width: 10rem;
+}
+
+.nav-item .nav-link:hover {
+    color: var(--bs-nav-link-hover-color);
+}
+
+.to-home-page {
+    border-bottom: var(--bs-gray-400) 1px solid;
+    color: var(--bs-gray-400);
+}
+
+.to-home-page:hover {
+    border-bottom: var(--bs-gray-200) 1px solid;
+    color: var(--bs-gray-200);
+}
+
+.card-small {
+    width: 75%;
+}
+
+.card-large {
+    width: 18em;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .last-episode {
+        margin-left: 36px !important;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .last-episode {
+        margin-left: 16px !important;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+    .last-episode {
+        margin-left: 46px !important;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .last-episode {
+        margin-left: 21px !important;
+    }
+}
+
+.episode-list {
+    white-space: nowrap;
+}
+
+.link-disabled {
+    opacity: 50%;
+}

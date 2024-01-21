@@ -1,59 +1,15 @@
-body {
-    font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-    animation: 0.8s ease 0s 1 normal none running appear;
+@import url("./common.css");
+
+@keyframes expand {
+    to {
+        transform: rotate(180deg);
+    }
 }
 
-br {
-    user-select: none;
-}
-
-.header-footer-color {
-    background-color: #d3d3d3;
-}
-
-.footer-note {
-    font-style: italic;
-}
-
-.bs-callout {
-    padding: 20px;
-    margin: 20px 0;
-    border: 1px solid var(--bs-secondary);
-    border-left-width: 4px;
-    border-radius: 5px;
-}
-
-.bs-callout h4 {
-    margin-top: 0;
-    margin-bottom: 5px;
-}
-
-.bs-callout p:last-child {
-    margin-bottom: 0;
-}
-
-.bs-callout code {
-    border-radius: 3px;
-}
-
-.bs-callout + .bs-callout {
-    margin-top: -5px;
-}
-
-.bs-callout-info {
-    border-left-color: var(--bs-info);
-}
-
-.bs-callout-info h4 {
-    color: var(--bs-info);
-}
-
-.news {
-    list-style-type: none;
-}
-
-.news ul li {
-    margin: 0.5rem;
+@keyframes collapse {
+    to {
+        transform: rotate(-180deg);
+    }
 }
 
 .navbar-toggler:focus {
@@ -67,27 +23,6 @@ br {
 
 .navbar-collapse.bg-dark {
     opacity: 95%;
-}
-
-.nav-item .nav-link.active {
-    --bs-bg-opacity: 1;
-    background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity));
-    border: var(--bs-border-color-translucent) 1px solid;
-    border-bottom: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) 1px solid;
-    font-weight: bold;
-}
-
-.nav-item .nav-link.active:hover {
-    color: var(--bs-nav-tabs-link-active-color);
-}
-
-.nav-item .nav-link {
-    color: var(--bs-nav-link-color);
-    width: 10rem;
-}
-
-.nav-item .nav-link:hover {
-    color: var(--bs-nav-link-hover-color);
 }
 
 .nav-link-hover:hover {
@@ -117,14 +52,6 @@ br {
     color: var(--bs-gray-200);
 }
 
-.card-small {
-    width: 75%;
-}
-
-.card-large {
-    width: 18em;
-}
-
 .thumbnail-small {
     width: 80%;
 }
@@ -146,56 +73,27 @@ br {
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-    .last-episode {
-        margin-left: 36px !important;
-    }
-
     .btn-selection {
         width: calc((100% - 32px) / 4);
     }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-    .last-episode {
-        margin-left: 16px !important;
-    }
-
     .btn-selection {
         width: calc((100% - 48px) / 6);
     }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
-    .last-episode {
-        margin-left: 46px !important;
-    }
     .btn-selection {
         width: calc((100% - 56px) / 7);
     }
 }
 
 @media screen and (min-width: 1400px) {
-    .last-episode {
-        margin-left: 21px !important;
-    }
-
     .btn-selection {
         width: calc((100% - 64px) / 8);
     }
-}
-
-.main {
-    display: flex;
-    flex-direction: column;
-    min-height: 80vh;
-}
-
-.episode-list {
-    white-space: nowrap;
-}
-
-.link-disabled {
-    opacity: 50%;
 }
 
 .btn-primary:hover {
@@ -271,25 +169,4 @@ br {
 
 .to-top-of-the-page {
     font-size: 0.9rem;
-}
-
-@keyframes appear {
-    from {
-        opacity: 0%;
-    }
-    to {
-        opacity: 100%;
-    }
-}
-
-@keyframes expand {
-    to {
-        transform: rotate(180deg);
-    }
-}
-
-@keyframes collapse {
-    to {
-        transform: rotate(-180deg);
-    }
 }
