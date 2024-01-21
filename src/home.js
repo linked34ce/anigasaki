@@ -1,7 +1,5 @@
-import {
-    adjustHomePage,
-    controlPageAdjustment,
-} from "./functions/adjustment/index.js";
+import { controlPageAdjustment } from "./functions/adjustment/controlPageAdjustment.js";
+import { adjustHomePage } from "./functions/adjustment/adjustHomePage.js";
 
 window.addEventListener("DOMContentLoaded", () => {
     controlPageAdjustment(adjustHomePage);

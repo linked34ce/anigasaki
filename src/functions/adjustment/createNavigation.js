@@ -1,6 +1,5 @@
-import { NAV_WIDTH } from "./const/window.js";
 import { NUM_OF_EPISODES_PER_SEASON } from "./const/episode.js";
-import { NUM_OF_ITEMS_PER_ROW } from "./const/navigation.js";
+import { NAV_WIDTH, NUM_OF_ITEMS_PER_ROW } from "./const/navigation.js";
 
 export const createNavigation = (isHomePage) => {
     const episodeTableContents = [];
