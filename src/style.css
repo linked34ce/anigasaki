@@ -129,8 +129,40 @@ br {
     width: 26rem;
 }
 
-.btn.m-1.col.text-nowrap {
-    width: 8.5rem;
+@media screen and (max-width: 497px) {
+    .btn-selection {
+        width: calc((100% - 16px) / 2);
+    }
+}
+
+@media screen and (min-width: 498px) and (max-width: 767px) {
+    .btn-selection {
+        width: calc((100% - 29px) / 3);
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .btn-selection {
+        width: calc((100% - 32px) / 4);
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .btn-selection {
+        width: calc((100% - 48px) / 6);
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+    .btn-selection {
+        width: calc((100% - 56px) / 7);
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .btn-selection {
+        width: calc((100% - 64px) / 8);
+    }
 }
 
 .main {

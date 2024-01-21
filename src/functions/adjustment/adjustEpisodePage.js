@@ -13,13 +13,13 @@ export const adjustEpisodePage = () => {
     if (window.innerWidth < window.innerHeight * WINDOW_RATIO) {
         title.classList.add("fs-6");
         thumbnail.style.width = "80%";
-        buttons.classList.remove("d-block");
+        //buttons.classList.remove("d-block");
         mainContent.classList.replace("m-5", "mx-3");
         mainContent.classList.add("my-5");
     } else {
         title.classList.remove("fs-6");
         thumbnail.style.width = "26rem";
-        buttons.classList.add("d-block");
+        //buttons.classList.add("d-block");
         mainContent.classList.replace("mx-3", "m-5");
         mainContent.classList.remove("my-5");
     }
