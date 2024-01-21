@@ -1,97 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
-  <!--  created with free sitemap generation system www.sitemapxml.jp  -->
-  <url>
-    <loc>https://linked34ce.github.io/anigasaki/</loc>
-    <priority>1.0</priority>
-    <lastmod>2021-12-17T01:11:30+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://linked34ce.github.io/anigasaki/episode/01.html</loc>
-    <priority>0.8</priority>
-    <lastmod>2021-12-17T01:11:30+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://linked34ce.github.io/anigasaki/episode/02.html</loc>
-    <priority>0.8</priority>
-    <lastmod>2021-12-17T01:11:30+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://linked34ce.github.io/anigasaki/episode/03.html</loc>
-    <priority>0.8</priority>
-    <lastmod>2021-12-17T01:11:30+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://linked34ce.github.io/anigasaki/episode/04.html</loc>
-    <priority>0.8</priority>
-    <lastmod>2021-12-17T01:11:30+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://linked34ce.github.io/anigasaki/episode/05.html</loc>
-    <priority>0.8</priority>
-    <lastmod>2021-12-17T01:11:30+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://linked34ce.github.io/anigasaki/episode/06.html</loc>
-    <priority>0.8</priority>
-    <lastmod>2021-12-17T01:11:30+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://linked34ce.github.io/anigasaki/episode/07.html</loc>
-    <priority>0.8</priority>
-    <lastmod>2021-12-17T01:11:30+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://linked34ce.github.io/anigasaki/episode/08.html</loc>
-    <priority>0.8</priority>
-    <lastmod>2021-12-17T01:11:30+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://linked34ce.github.io/anigasaki/episode/09.html</loc>
-    <priority>0.8</priority>
-    <lastmod>2021-12-17T01:11:30+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://linked34ce.github.io/anigasaki/episode/10.html</loc>
-    <priority>0.8</priority>
-    <lastmod>2021-12-17T01:11:30+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://linked34ce.github.io/anigasaki/episode/11.html</loc>
-    <priority>0.8</priority>
-    <lastmod>2021-12-17T01:11:30+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://linked34ce.github.io/anigasaki/episode/12.html</loc>
-    <priority>0.8</priority>
-    <lastmod>2021-12-17T01:11:30+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://linked34ce.github.io/anigasaki/episode/13.html</loc>
-    <priority>0.8</priority>
-    <lastmod>2021-12-17T01:11:30+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://linked34ce.github.io/anigasaki/README.html</loc>
-    <priority>0.8</priority>
-    <lastmod>2021-12-17T01:11:30+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
+<!--  created with free sitemap generation system www.sitemapxml.jp  --> 
+<url>
+  <loc>https://linked34ce.github.io/anigasaki/</loc>
+  <priority>1.0</priority>
+  <lastmod>2024-01-21T19:19:54+09:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://linked34ce.github.io/anigasaki/episodes/s1/01.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2024-01-21T19:19:54+09:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://linked34ce.github.io/anigasaki/episodes/s1/02.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2024-01-21T19:19:54+09:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://linked34ce.github.io/anigasaki/episodes/s1/03.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2024-01-21T19:19:54+09:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://linked34ce.github.io/anigasaki/episodes/s1/04.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2024-01-21T19:19:54+09:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://linked34ce.github.io/anigasaki/episodes/s1/05.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2024-01-21T19:19:54+09:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://linked34ce.github.io/anigasaki/episodes/s1/06.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2024-01-21T19:19:54+09:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://linked34ce.github.io/anigasaki/episodes/s1/07.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2024-01-21T19:19:54+09:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://linked34ce.github.io/anigasaki/episodes/s1/08.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2024-01-21T19:19:54+09:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://linked34ce.github.io/anigasaki/episodes/s1/09.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2024-01-21T19:19:54+09:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://linked34ce.github.io/anigasaki/episodes/s1/10.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2024-01-21T19:19:54+09:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://linked34ce.github.io/anigasaki/episodes/s1/11.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2024-01-21T19:19:54+09:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://linked34ce.github.io/anigasaki/episodes/s1/12.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2024-01-21T19:19:54+09:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://linked34ce.github.io/anigasaki/episodes/s1/13.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2024-01-21T19:19:54+09:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://linked34ce.github.io/anigasaki/README.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2024-01-21T19:19:54+09:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
 
 </urlset>
