@@ -9,9 +9,11 @@ export const createNavigation = (isHomePage) => {
         const link = document.createElement("a");
         const content = document.createElement("td");
 
-        const dirName = isHomePage ? "." : "..";
+        const dirName = isHomePage ? "." : "../..";
 
-        link.href = `${dirName}/episode/${i.toString().padStart(2, "0")}.html`;
+        link.href = `${dirName}/episodes/s1/${i
+            .toString()
+            .padStart(2, "0")}.html`;
         link.classList.add("nav-link", fontSize);
         link.innerText = `第${i}話`;
 
