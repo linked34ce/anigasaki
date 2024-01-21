@@ -15,7 +15,7 @@ export const createNavigation = (isHomePage) => {
         link.classList.add("nav-link", fontSize);
         link.innerText = `第${i}話`;
 
-        content.className = "nav-link-hover";
+        content.className = "episode-table-link";
         content.appendChild(link);
         episodeTableContents.push(content);
     }

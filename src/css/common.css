@@ -16,7 +16,8 @@ br {
     user-select: none;
 }
 
-.header-footer-color {
+.header-color,
+.footer-color {
     background-color: #d3d3d3;
 }
 
@@ -24,17 +25,13 @@ br {
     box-shadow: none;
 }
 
-.display-6 {
+.nav-title {
     background: linear-gradient(transparent 60%, var(--bs-gray) 30%);
     width: fit-content;
 }
 
-.navbar-collapse.bg-dark {
+.navbar-collapse {
     opacity: 95%;
-}
-
-.nav-link-hover:hover {
-    background-color: var(--bs-gray);
 }
 
 .nav-link {
@@ -45,39 +42,12 @@ br {
     color: var(--bs-light);
 }
 
-.card-small {
-    width: 75%;
-}
-
-.card-large {
-    width: 18em;
-}
-
-.thumbnail-small {
-    width: 80%;
-}
-
-.thumbnail-large {
-    width: 30rem;
+.episode-table-link:hover {
+    background-color: var(--bs-gray);
 }
 
 .main {
     display: flex;
     flex-direction: column;
     min-height: 80vh;
-}
-
-.plus,
-.minus {
-    float: right;
-    background-color: #212529;
-    font-size: large;
-    color: #f8f9fa;
-    user-select: none;
-    width: 30px;
-    height: 28px;
-}
-
-.to-top-of-the-page {
-    font-size: 0.9rem;
 }
