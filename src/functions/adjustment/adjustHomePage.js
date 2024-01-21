@@ -1,12 +1,12 @@
 import { createNavigation } from "./createNavigation.js";
 import { NUM_OF_EPISODES, LATEST_EPISODE } from "./const/episode.js";
-import { WINDOW_RATIO } from "./const/window.js";
+import { WINDOW_WIDTH } from "./const/window.js";
 
 export const adjustHomePage = () => {
     const title = document.getElementById("title");
     const cards = document.getElementsByClassName("card");
 
-    if (window.innerWidth < window.innerHeight * WINDOW_RATIO) {
+    if (window.innerWidth < WINDOW_WIDTH.SMALL) {
         title.classList.replace("mt-2", "mt-5");
 
         for (let i = 0; i < NUM_OF_EPISODES; i++) {
@@ -16,7 +16,7 @@ export const adjustHomePage = () => {
                 cards.item(i).classList.remove("col");
                 cards.item(i).classList.add("link-disabled");
             }
-            cards.item(i).style.width = "75%";
+            cards.item(i).classList.replace("card-large", "card-small");
         }
     } else {
         title.classList.replace("mt-5", "mt-2");
@@ -28,7 +28,7 @@ export const adjustHomePage = () => {
             } else {
                 cards.item(i).classList.add("link-disabled", "col");
             }
-            cards.item(i).style.width = "18rem";
+            cards.item(i).classList.replace("card-small", "card-large");
         }
     }
 

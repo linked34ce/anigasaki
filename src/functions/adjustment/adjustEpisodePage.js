@@ -1,25 +1,22 @@
 import { createNavigation } from "./createNavigation.js";
-import { NAV_HEIGHT, NAV_WIDTH, WINDOW_RATIO } from "./const/window.js";
+import { NAV_HEIGHT, NAV_WIDTH, WINDOW_WIDTH } from "./const/window.js";
 
 export const adjustEpisodePage = () => {
     const title = document.getElementById("title");
     const thumbnail = document.getElementById("thumbnail");
-    const buttons = document.getElementById("buttons");
     const episodes = document.getElementById("episodes");
     const episodeTable = document.getElementById("episode-table");
     const mainContent = document.getElementById("main-contents");
     const episodeLinks = episodes.getElementsByTagName("a");
 
-    if (window.innerWidth < window.innerHeight * WINDOW_RATIO) {
+    if (window.innerWidth < WINDOW_WIDTH.SMALL) {
         title.classList.add("fs-6");
-        thumbnail.style.width = "80%";
-        //buttons.classList.remove("d-block");
+        thumbnail.classList.replace("thumbnail-large", "thumbnail-small");
         mainContent.classList.replace("m-5", "mx-3");
         mainContent.classList.add("my-5");
     } else {
         title.classList.remove("fs-6");
-        thumbnail.style.width = "26rem";
-        //buttons.classList.add("d-block");
+        thumbnail.classList.replace("thumbnail-small", "thumbnail-large");
         mainContent.classList.replace("mx-3", "m-5");
         mainContent.classList.remove("my-5");
     }

@@ -7,4 +7,6 @@ export const NAV_WIDTH = {
     MIDDLE: 570,
 };
 
-export const WINDOW_RATIO = 0.74;
+export const WINDOW_WIDTH = {
+    SMALL: 650,
+};
