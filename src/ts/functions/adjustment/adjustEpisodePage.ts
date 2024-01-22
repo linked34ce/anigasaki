@@ -1,7 +1,7 @@
-import { createNavigation } from "./createNavigation";
-import { WINDOW_WIDTH } from "./const/window";
-import { NAV_HEIGHT, NAV_WIDTH } from "./const/navigation";
-import type { AdjustPage } from "../types";
+import { createNavigation } from "./createNavigation.js";
+import { WINDOW_WIDTH } from "./const/window.js";
+import { NAV_HEIGHT, NAV_WIDTH } from "./const/navigation.js";
+import type { AdjustPage } from "../types.js";
 
 export const adjustEpisodePage: AdjustPage = () => {
     const title = document.getElementById("title") as HTMLHeadingElement;

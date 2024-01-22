@@ -1,4 +1,4 @@
-import type { AccordionTimeout } from "../../types";
+import type { AccordionTimeout } from "../../types.js";
 
 export const TIMEOUT: AccordionTimeout = {
     DELAY: 175,

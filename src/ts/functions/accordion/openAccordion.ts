@@ -1,5 +1,5 @@
-import { TIMEOUT } from "./const/timeout";
-import type { AccordionStates, HTMLSvgElement, SongType } from "../types";
+import { TIMEOUT } from "./const/timeout.js";
+import type { AccordionStates, HTMLSvgElement, SongType } from "../types.js";
 
 export const openAccordion = (
     songType: SongType,

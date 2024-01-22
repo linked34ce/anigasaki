@@ -2,7 +2,7 @@ import type {
     ScreenWidthOnlySmall,
     ScreenWidthWithoutLarge,
     ScreenWidth,
-} from "../../types";
+} from "../../types.js";
 
 export const NAV_HEIGHT: ScreenWidthOnlySmall = {
     SMALL: 605,

@@ -1,5 +1,5 @@
-import { TIMEOUT } from "./const/timeout";
-import type { AdjustPage, Queue } from "../types";
+import { TIMEOUT } from "./const/timeout.js";
+import type { AdjustPage, Queue } from "../types.js";
 
 export const controlPageAdjustment = (adjustPage: AdjustPage) => {
     adjustPage();

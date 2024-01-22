@@ -1,4 +1,4 @@
-import type { Character } from "../../types";
+import type { Character } from "../../types.js";
 
 export const characters: Array<Character> = [
     "yu",

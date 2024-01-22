@@ -1,6 +1,6 @@
-import { openAccordion } from "./openAccordion";
-import { SONG_TYPES } from "./const/songTypes";
-import type { AccordionStates } from "../types";
+import { openAccordion } from "./openAccordion.js";
+import { SONG_TYPES } from "./const/songTypes.js";
+import type { AccordionStates } from "../types.js";
 
 export const controllAccordions = () => {
     const accordionOpenedStates: AccordionStates = {

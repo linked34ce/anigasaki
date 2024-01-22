@@ -1,4 +1,4 @@
-import type { HTMLSpeechElement } from "../types";
+import type { HTMLSpeechElement } from "../types.js";
 
 export const selectAll = () => {
     const allButton = document.getElementById("all") as HTMLButtonElement;

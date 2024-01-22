@@ -1,5 +1,5 @@
-import { characters } from "./const/characters";
-import type { HTMLSpeechElement } from "../types";
+import { characters } from "./const/characters.js";
+import type { HTMLSpeechElement } from "../types.js";
 
 export const selectCharacter = () => {
     for (let character of characters) {

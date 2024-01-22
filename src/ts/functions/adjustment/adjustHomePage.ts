@@ -1,7 +1,7 @@
-import { createNavigation } from "./createNavigation";
-import { NUM_OF_EPISODES, LATEST_EPISODE } from "./const/episode";
-import { WINDOW_WIDTH } from "./const/window";
-import type { AdjustPage } from "../types";
+import { createNavigation } from "./createNavigation.js";
+import { NUM_OF_EPISODES, LATEST_EPISODE } from "./const/episode.js";
+import { WINDOW_WIDTH } from "./const/window.js";
+import type { AdjustPage } from "../types.js";
 
 export const adjustHomePage: AdjustPage = () => {
     const title = document.getElementById("title") as HTMLHeadingElement;
