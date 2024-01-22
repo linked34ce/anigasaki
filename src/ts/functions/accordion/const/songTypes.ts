@@ -1,3 +1,3 @@
-import { SongType } from "../../types";
+import type { SongType } from "../../types";
 
-export const SONG_TYPES: SongType[] = ["opening", "ending"];
+export const SONG_TYPES: Array<SongType> = ["opening", "ending"];
