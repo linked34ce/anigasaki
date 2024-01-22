@@ -5,6 +5,7 @@ import type { AdjustPage } from "../types";
 
 export const adjustHomePage: AdjustPage = () => {
     const title = document.getElementById("title") as HTMLHeadingElement;
+
     const cards = document.getElementsByClassName(
         "card",
     ) as HTMLCollectionOf<HTMLDivElement>;

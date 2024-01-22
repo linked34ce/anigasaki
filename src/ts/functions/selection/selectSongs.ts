@@ -1,30 +1,24 @@
-import type { HTMLLyricElement, HTMLSpeechElement } from "../types";
+import type { HTMLSpeechElement } from "../types";
 
 export const selectSongs = () => {
-    const songButton = document.getElementById("songs") as HTMLDivElement;
-    songButton.addEventListener("click", () => {
+    const songsButton = document.getElementById("songs") as HTMLButtonElement;
+    songsButton.addEventListener("click", () => {
         const mainContents = document.getElementById(
             "main-contents",
         ) as HTMLDivElement;
+
         const elements =
             mainContents.children as HTMLCollectionOf<HTMLSpeechElement>;
-        const lyrics = document.getElementsByClassName(
-            "lyric",
-        ) as HTMLCollectionOf<HTMLLyricElement>;
 
         for (let element of elements) {
             if (
-                element.className === "card p-0 song" ||
-                element.className === "accordion"
+                element.classList.contains("song") ||
+                element.classList.contains("lyric")
             ) {
-                element.style.display = "block";
+                element.classList.replace("hidden", "shown");
             } else {
-                element.style.display = "none";
+                element.classList.replace("shown", "hidden");
             }
-        }
-
-        for (let lyric of lyrics) {
-            lyric.style.display = "block";
         }
     });
 };

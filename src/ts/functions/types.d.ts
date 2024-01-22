@@ -40,8 +40,6 @@ export type Character =
     | "secretary"
     | "other";
 
-export type HTMLLyricElement = HTMLParagraphElement | HTMLBRElement;
-
 export type HTMLSpeechElement =
     | HTMLParagraphElement
     | HTMLDivElement

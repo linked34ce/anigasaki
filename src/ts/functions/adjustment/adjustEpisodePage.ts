@@ -7,12 +7,15 @@ export const adjustEpisodePage: AdjustPage = () => {
     const title = document.getElementById("title") as HTMLHeadingElement;
     const thumbnail = document.getElementById("thumbnail") as HTMLDivElement;
     const episodes = document.getElementById("episodes") as HTMLElement;
+
     const episodeTable = document.getElementById(
         "episode-table",
     ) as HTMLTableElement;
+
     const mainContent = document.getElementById(
         "main-contents",
     ) as HTMLDivElement;
+
     const episodeLinks = episodes.getElementsByTagName(
         "a",
     ) as HTMLCollectionOf<HTMLAnchorElement>;

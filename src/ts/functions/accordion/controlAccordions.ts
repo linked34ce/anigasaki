@@ -14,8 +14,12 @@ export const controllAccordions = () => {
     };
 
     for (let songType of SONG_TYPES) {
-        if (document.getElementById(songType)) {
-            document.getElementById(songType)?.addEventListener("click", () => {
+        const accrodion = document.getElementById(
+            songType,
+        ) as HTMLButtonElement;
+
+        if (accrodion) {
+            accrodion.addEventListener("click", () => {
                 if (!accordionClickedStates[songType]) {
                     openAccordion(
                         songType,

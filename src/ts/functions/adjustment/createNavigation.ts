@@ -19,6 +19,7 @@ export const createNavigation = (isHomePage: boolean) => {
 
         content.className = "episode-table-link";
         content.appendChild(link);
+
         episodeTableContents.push(content);
     }
 
@@ -33,7 +34,7 @@ export const createNavigation = (isHomePage: boolean) => {
                 .forEach((content) => {
                     row.appendChild(content);
                 });
-        } else if (window.innerWidth < NAV_WIDTH?.MIDDLE) {
+        } else if (window.innerWidth < NAV_WIDTH.MIDDLE) {
             episodeTableContents
                 .splice(0, NUM_OF_ITEMS_PER_ROW.MIDDLE)
                 .forEach((content) => {
@@ -48,4 +49,14 @@ export const createNavigation = (isHomePage: boolean) => {
         }
         episodeTableRows.push(row);
     }
+
+    const episodes = document.getElementById("episodes") as HTMLElement;
+
+    while (episodes.firstChild) {
+        episodes.removeChild(episodes.firstChild);
+    }
+
+    episodeTableRows.forEach((row) => {
+        episodes.appendChild(row);
+    });
 };
