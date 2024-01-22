@@ -48,4 +48,14 @@ export const createNavigation = (isHomePage) => {
         }
         episodeTableRows.push(row);
     }
+
+    const episodes = document.getElementById("episodes");
+
+    while (episodes.firstChild) {
+        episodes.removeChild(episodes.firstChild);
+    }
+
+    episodeTableRows.forEach((row) => {
+        episodes.appendChild(row);
+    });
 };
