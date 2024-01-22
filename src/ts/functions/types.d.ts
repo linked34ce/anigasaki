@@ -10,6 +10,43 @@ export type AccordionTimeout = {
 
 export type AdjustPage = () => void;
 
+export type Character =
+    | "yu"
+    | "ayumu"
+    | "kasumi"
+    | "shizuku"
+    | "karin"
+    | "ai"
+    | "kanata"
+    | "setsuna"
+    | "emma"
+    | "rina"
+    | "shioriko"
+    | "mia"
+    | "lanzhu"
+    | "nana"
+    | "dark-shizuku"
+    | "club-president"
+    | "hanpen"
+    | "iroha"
+    | "kyoko"
+    | "asagi"
+    | "haruka"
+    | "christina"
+    | "kasane"
+    | "himeno"
+    | "misaki"
+    | "vice-president"
+    | "secretary"
+    | "other";
+
+export type HTMLLyricElement = HTMLParagraphElement | HTMLBRElement;
+
+export type HTMLSpeechElement =
+    | HTMLParagraphElement
+    | HTMLDivElement
+    | HTMLBRElement;
+
 export type HTMLSvgElement = HTMLElement & SVGElement;
 
 export type Queue = number | undefined;
