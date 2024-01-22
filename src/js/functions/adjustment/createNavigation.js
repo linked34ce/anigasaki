@@ -48,12 +48,4 @@ export const createNavigation = (isHomePage) => {
         }
         episodeTableRows.push(row);
     }
-
-    while (episodes.firstChild) {
-        episodes.removeChild(episodes.firstChild);
-    }
-
-    episodeTableRows.forEach((row) => {
-        episodes.appendChild(row);
-    });
 };
