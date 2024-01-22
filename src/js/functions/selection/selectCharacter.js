@@ -7,11 +7,11 @@ export const selectCharacter = () => {
                 const mainContents = document.getElementById("main-contents");
                 const elements = mainContents.children;
                 for (let element of elements) {
-                    if (element.className === character) {
-                        element.style.display = "block";
+                    if (element.classList.contains(character)) {
+                        element.classList.replace("hidden", "shown");
                     }
                     else {
-                        element.style.display = "none";
+                        element.classList.replace("shown", "hidden");
                     }
                 }
             });

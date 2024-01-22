@@ -17,10 +17,10 @@ export const selectCharacter = () => {
                     mainContents.children as HTMLCollectionOf<HTMLSpeechElement>;
 
                 for (let element of elements) {
-                    if (element.className === character) {
-                        element.style.display = "block";
+                    if (element.classList.contains(character)) {
+                        element.classList.replace("hidden", "shown");
                     } else {
-                        element.style.display = "none";
+                        element.classList.replace("shown", "hidden");
                     }
                 }
             });
