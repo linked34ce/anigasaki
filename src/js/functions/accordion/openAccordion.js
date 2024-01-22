@@ -9,11 +9,16 @@ export const openAccordion = (
 
     accordionClickedStates[songType] = true;
     const accordion = document.getElementById(id);
+    const parentHeader = accordion.parentElement;
     const svg = accordion.children[0];
 
     if (!accordionOpenedStates[songType]) {
         accordion.style.animation =
             "350ms ease-in 0s 1 normal none running expand";
+        parentHeader.classList.remove("accordion-collapsed");
+
+        accordionOpenedStates[songType] = true;
+
         setTimeout(() => {
             svg.classList.replace("bi-plus", "bi-dash");
             svg.children[0].setAttribute(
@@ -22,10 +27,12 @@ export const openAccordion = (
             );
             accordion.classList.replace("plus", "minus");
         }, TIMEOUT.DELAY);
-        accordionOpenedStates[songType] = true;
     } else {
         accordion.style.animation =
             "350ms ease-out 0s 1 normal none running collapse";
+
+        accordionOpenedStates[songType] = false;
+
         setTimeout(() => {
             svg.classList.replace("bi-dash", "bi-plus");
             svg.children[0].setAttribute(
@@ -34,7 +41,10 @@ export const openAccordion = (
             );
             accordion.classList.replace("minus", "plus");
         }, TIMEOUT.DELAY);
-        accordionOpenedStates[songType] = false;
+
+        setTimeout(() => {
+            parentHeader.classList.add("accordion-collapsed");
+        }, TIMEOUT.DURATION);
     }
 
     setTimeout(() => {
