@@ -10,6 +10,7 @@
 body {
     font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
     animation: 0.8s ease 0s 1 normal none running appear;
+    background-color: #d3d3d3;
 }
 
 br {
@@ -39,11 +40,6 @@ ruby[data-ruby][data-rb-length][data-rt-length]::before {
 
 rt {
     display: none;
-}
-
-.header-color,
-.footer-color {
-    background-color: #d3d3d3;
 }
 
 .navbar {
