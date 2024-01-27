@@ -127,6 +127,61 @@
     box-shadow: 0 0 0 0.25rem rgba(111, 66, 193, 0.5);
 }
 
+ruby[data-rb-length="1"][data-rt-length="2"] {
+    --rb-length: 1;
+    --rt-length: 2;
+    --additional-space: 3px;
+}
+
+ruby[data-rb-length="2"][data-rt-length="2"] {
+    --rb-length: 2;
+    --rt-length: 2;
+    --additional-space: 0px;
+}
+
+ruby[data-rb-length="2"][data-rt-length="3"] {
+    --rb-length: 2;
+    --rt-length: 3;
+    --additional-space: 0px;
+}
+
+ruby[data-rb-length="11"][data-rt-length="15"] {
+    --rb-length: 11;
+    --rt-length: 15;
+    --additional-space: 0px;
+}
+
+.card-title ruby[data-rb-length="11"][data-rt-length="15"] {
+    --rb-length: 11;
+    --rt-length: 15;
+    --additional-space: 5px;
+}
+
+.card-title ruby[data-rb-length="11"][data-rt-length="15"]::before {
+    left: 0.25rem;
+    color: var(--bs-gray-500);
+    -webkit-text-stroke: 0;
+}
+
+.card-title.fs-6 ruby[data-rb-length="11"][data-rt-length="15"]::before {
+    --additional-space: 0px;
+    left: 0.2rem;
+    color: var(--bs-gray-500);
+    -webkit-text-stroke: 0;
+}
+
+.text-stroke {
+    position: relative;
+    -webkit-text-stroke: 1px var(--bs-white);
+}
+
+.text-stroke[data-text]::before {
+    content: attr(data-text);
+    position: absolute;
+    -webkit-text-stroke: 0;
+    color: var(--bs-black);
+}
+
 .buttons-description {
     list-style-type: none;
     margin-left: -0.8rem;

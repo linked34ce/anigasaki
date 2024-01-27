@@ -16,6 +16,31 @@ br {
     user-select: none;
 }
 
+ruby[data-ruby][data-rb-length][data-rt-length] {
+    position: relative;
+}
+
+ruby[data-ruby][data-rb-length][data-rt-length]::before {
+    --width: calc(1rem * var(--rb-length) + var(--additional-space));
+    width: var(--width);
+    content: attr(data-ruby);
+    position: absolute;
+    left: calc(
+        (var(--width) - 0.6rem * var(--rt-length)) / var(--rt-length) / 2 -
+            var(--additional-space) / 2
+    );
+    top: -0.8em;
+    text-align: center;
+    font-size: 0.6em;
+    letter-spacing: calc(
+        (var(--width) - 0.6rem * var(--rt-length)) / var(--rt-length)
+    );
+}
+
+rt {
+    display: none;
+}
+
 .header-color,
 .footer-color {
     background-color: #d3d3d3;

@@ -77,7 +77,7 @@
 }
 
 .card-body {
-    height: 5.2rem;
+    height: 5.4rem;
 }
 
 .card-small {
@@ -86,6 +86,16 @@
 
 .card-large {
     width: 19em;
+}
+
+ruby[data-rb-length="11"][data-rt-length="15"] {
+    --rb-length: 11;
+    --rt-length: 15;
+    --additional-space: 0px;
+}
+
+ruby[data-rb-length="11"][data-rt-length="15"]::before {
+    top: -0.6em !important;
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
