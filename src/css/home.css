@@ -76,35 +76,39 @@
     color: var(--bs-gray-200);
 }
 
+.card-body {
+    height: 5.2rem;
+}
+
 .card-small {
-    width: 75%;
+    width: 80%;
 }
 
 .card-large {
-    width: 18em;
+    width: 19em;
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
     .last-episode {
-        margin-left: 36px !important;
+        margin-left: 28px !important;
     }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
     .last-episode {
-        margin-left: 16px !important;
+        margin-left: 8px !important;
     }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
     .last-episode {
-        margin-left: 46px !important;
+        margin-left: 38px !important;
     }
 }
 
 @media screen and (min-width: 1400px) {
     .last-episode {
-        margin-left: 21px !important;
+        margin-left: 13px !important;
     }
 }
 

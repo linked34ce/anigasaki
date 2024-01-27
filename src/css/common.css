@@ -21,6 +21,15 @@ br {
     background-color: #d3d3d3;
 }
 
+.navbar {
+    pointer-events: none;
+}
+
+.navbar-toggler,
+.twitter-share-button {
+    pointer-events: all;
+}
+
 .navbar-toggler:focus {
     box-shadow: none;
 }
