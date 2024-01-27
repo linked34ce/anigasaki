@@ -1,9 +1,11 @@
 @keyframes appear {
     from {
         opacity: 0%;
+        background-color: var(--bs-light);
     }
     to {
         opacity: 100%;
+        background-color: #d3d3d3;
     }
 }
 
