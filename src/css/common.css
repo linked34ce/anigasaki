@@ -41,6 +41,7 @@ br {
 
 .navbar-collapse {
     opacity: 95%;
+    pointer-events: all;
 }
 
 .nav-link {
