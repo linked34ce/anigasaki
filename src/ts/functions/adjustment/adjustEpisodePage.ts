@@ -12,9 +12,9 @@ export const adjustEpisodePage: AdjustPage = () => {
         `episodes-${season}`,
     ) as HTMLElement;
 
-    const episodeTable = document.getElementById(
+    const episodeTables = document.getElementsByClassName(
         "episode-table",
-    ) as HTMLTableElement;
+    ) as HTMLCollectionOf<HTMLTableElement>;
 
     const mainContent = document.getElementById(
         "main-contents",
@@ -36,13 +36,15 @@ export const adjustEpisodePage: AdjustPage = () => {
         mainContent.classList.remove("my-5");
     }
 
-    if (
-        window.innerWidth < NAV_WIDTH.SMALL &&
-        window.innerHeight < NAV_HEIGHT.SMALL
-    ) {
-        episodeTable.classList.add("table-sm");
-    } else {
-        episodeTable.classList.remove("table-sm");
+    for (let episodeTable of episodeTables) {
+        if (
+            window.innerWidth < NAV_WIDTH.SMALL &&
+            window.innerHeight < NAV_HEIGHT.SMALL
+        ) {
+            episodeTable.classList.add("table-sm");
+        } else {
+            episodeTable.classList.remove("table-sm");
+        }
     }
 
     createNavigation();

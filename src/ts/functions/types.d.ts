@@ -49,16 +49,10 @@ export type HTMLSvgElement = HTMLElement & SVGElement;
 
 export type Queue = number | undefined;
 
-export type ScreenWidthOnlySmall = {
+export type ScreenWidth = {
     SMALL: number;
-};
-
-export type ScreenWidthWithoutLarge = ScreenWidthOnlySmall & {
-    MIDDLE: number;
-};
-
-export type ScreenWidth = ScreenWidthWithoutLarge & {
-    LARGE: number;
+    MIDDLE?: number;
+    LARGE?: number;
 };
 
 export type Season = "s1" | "s2";

@@ -6,7 +6,7 @@ export const adjustEpisodePage = () => {
     const title = document.getElementById("title");
     const thumbnail = document.getElementById("thumbnail");
     const episodes = document.getElementById(`episodes-${season}`);
-    const episodeTable = document.getElementById("episode-table");
+    const episodeTables = document.getElementsByClassName("episode-table");
     const mainContent = document.getElementById("main-contents");
     const episodeLinks = episodes.getElementsByTagName("a");
     if (window.innerWidth < WINDOW_WIDTH.SMALL) {
@@ -21,12 +21,14 @@ export const adjustEpisodePage = () => {
         mainContent.classList.replace("mx-3", "m-5");
         mainContent.classList.remove("my-5");
     }
-    if (window.innerWidth < NAV_WIDTH.SMALL &&
-        window.innerHeight < NAV_HEIGHT.SMALL) {
-        episodeTable.classList.add("table-sm");
-    }
-    else {
-        episodeTable.classList.remove("table-sm");
+    for (let episodeTable of episodeTables) {
+        if (window.innerWidth < NAV_WIDTH.SMALL &&
+            window.innerHeight < NAV_HEIGHT.SMALL) {
+            episodeTable.classList.add("table-sm");
+        }
+        else {
+            episodeTable.classList.remove("table-sm");
+        }
     }
     createNavigation();
     for (let i = 0; i < episodeLinks.length; i++) {

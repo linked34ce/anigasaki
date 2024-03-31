@@ -3,7 +3,11 @@ import {
     NUM_OF_EPISODES_PER_SEASON,
     SEASONS,
 } from "./const/episode.js";
-import { NAV_WIDTH, NUM_OF_ITEMS_PER_ROW } from "./const/navigation.js";
+import {
+    NAV_HEIGHT,
+    NAV_WIDTH,
+    NUM_OF_ITEMS_PER_ROW,
+} from "./const/navigation.js";
 import { Season } from "../types.js";
 
 export const createNavigation = () => {
@@ -16,7 +20,11 @@ export const createEpisodeTable = (season: Season) => {
     const episodeTableContents = Array<HTMLTableCellElement>();
 
     for (let i = 1; i <= NUM_OF_EPISODES_PER_SEASON; i++) {
-        const fontSize = window.innerWidth < NAV_WIDTH.SMALL ? "fs-6" : "fs-5";
+        const fontSize =
+            window.innerWidth < NAV_WIDTH.SMALL ||
+            window.innerHeight < NAV_HEIGHT.MIDDLE
+                ? "fs-6"
+                : "fs-5";
         const link = document.createElement("a");
         const content = document.createElement("td");
 

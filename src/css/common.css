@@ -67,6 +67,16 @@ rt {
     pointer-events: all;
 }
 
+@media screen and (max-height: 790px) {
+    .nav-title {
+        font-size: 1.6rem;
+    }
+
+    .nav-season {
+        font-size: 1.2rem !important;
+    }
+}
+
 .nav-link {
     color: var(--bs-light);
 }

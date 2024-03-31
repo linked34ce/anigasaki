@@ -1,5 +1,6 @@
 export const NAV_HEIGHT = {
     SMALL: 605,
+    MIDDLE: 790,
 };
 export const NAV_WIDTH = {
     SMALL: 370,
