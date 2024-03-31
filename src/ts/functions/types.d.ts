@@ -61,4 +61,6 @@ export type ScreenWidth = ScreenWidthWithoutLarge & {
     LARGE: number;
 };
 
+export type Season = "s1" | "s2";
+
 export type SongType = keyof AccordionStates;

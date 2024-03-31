@@ -75,6 +75,16 @@ rt {
     color: var(--bs-light);
 }
 
+.nav-link-disabled {
+    color: var(--bs-gray);
+    text-decoration: none;
+    cursor: default;
+}
+
+.nav-link-disabled:hover {
+    color: var(--bs-gray);
+}
+
 .episode-table-link:hover {
     background-color: var(--bs-gray);
 }

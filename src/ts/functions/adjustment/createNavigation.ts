@@ -1,7 +1,18 @@
-import { NUM_OF_EPISODES_PER_SEASON } from "./const/episode.js";
+import {
+    LATEST_EPISODE,
+    NUM_OF_EPISODES_PER_SEASON,
+    SEASONS,
+} from "./const/episode.js";
 import { NAV_WIDTH, NUM_OF_ITEMS_PER_ROW } from "./const/navigation.js";
+import { Season } from "../types.js";
 
-export const createNavigation = (isHomePage: boolean) => {
+export const createNavigation = () => {
+    SEASONS.forEach((season) => {
+        createEpisodeTable(season);
+    });
+};
+
+export const createEpisodeTable = (season: Season) => {
     const episodeTableContents = Array<HTMLTableCellElement>();
 
     for (let i = 1; i <= NUM_OF_EPISODES_PER_SEASON; i++) {
@@ -9,15 +20,24 @@ export const createNavigation = (isHomePage: boolean) => {
         const link = document.createElement("a");
         const content = document.createElement("td");
 
-        const dirName = isHomePage ? "." : "../..";
+        const isEpisodePage = location.pathname.includes("episodes");
 
-        link.href = `${dirName}/episodes/s1/${i
-            .toString()
-            .padStart(2, "0")}.html`;
-        link.classList.add("nav-link", fontSize);
+        const dirName = isEpisodePage ? "../.." : ".";
+
+        if (season === "s2" && i > LATEST_EPISODE % 13) {
+            link.className = "nav-link-disabled";
+            content.className = "episode-table-link-disabled";
+        } else {
+            link.href = `${dirName}/episodes/${season}/${i
+                .toString()
+                .padStart(2, "0")}.html`;
+            link.className = "nav-link";
+            content.className = "episode-table-link";
+        }
+
+        link.classList.add(fontSize);
         link.innerText = `第${i}話`;
 
-        content.className = "episode-table-link";
         content.appendChild(link);
 
         episodeTableContents.push(content);
@@ -50,7 +70,9 @@ export const createNavigation = (isHomePage: boolean) => {
         episodeTableRows.push(row);
     }
 
-    const episodes = document.getElementById("episodes") as HTMLElement;
+    const episodes = document.getElementById(
+        `episodes-${season}`,
+    ) as HTMLElement;
 
     while (episodes.firstChild) {
         episodes.removeChild(episodes.firstChild);

@@ -4,9 +4,13 @@ import { NAV_HEIGHT, NAV_WIDTH } from "./const/navigation.js";
 import type { AdjustPage } from "../types.js";
 
 export const adjustEpisodePage: AdjustPage = () => {
+    const season = location.pathname.substring(10, 12);
+
     const title = document.getElementById("title") as HTMLHeadingElement;
     const thumbnail = document.getElementById("thumbnail") as HTMLDivElement;
-    const episodes = document.getElementById("episodes") as HTMLElement;
+    const episodes = document.getElementById(
+        `episodes-${season}`,
+    ) as HTMLElement;
 
     const episodeTable = document.getElementById(
         "episode-table",
@@ -41,7 +45,7 @@ export const adjustEpisodePage: AdjustPage = () => {
         episodeTable.classList.remove("table-sm");
     }
 
-    createNavigation(false);
+    createNavigation();
 
     for (let i = 0; i < episodeLinks.length; i++) {
         const fontSize = window.innerWidth < NAV_WIDTH.SMALL ? "fs-6" : "fs-5";

@@ -30,5 +30,5 @@ export const adjustHomePage = () => {
             cards[i].classList.replace("card-small", "card-large");
         }
     }
-    createNavigation(true);
+    createNavigation();
 };
