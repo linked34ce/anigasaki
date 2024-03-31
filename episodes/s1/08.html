@@ -72,7 +72,7 @@
         <nav class="navbar fixed-top navbar-light">
             <div class="container-fluid">
                 <button
-                    class="navbar-toggler bg-dark pb-2 px-3"
+                    class="navbar-toggler bg-dark pb-0 px-2"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent"
@@ -82,11 +82,11 @@
                 >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        width="38"
-                        height="38"
+                        width="34"
+                        height="34"
                         fill="#FFFFFF"
                         class="bi bi-list"
-                        viewBox="0 0 16 15"
+                        viewBox="0 0 15 17"
                     >
                         <path
                             fill-rule="evenodd"
@@ -109,29 +109,31 @@
                     charset="utf-8"
                 ></script>
                 <div
-                    class="collapse navbar-collapse bg-dark rounded mt-3"
+                    class="collapse navbar-collapse bg-dark rounded mt-2"
                     id="navbarSupportedContent"
                 >
-                    <div class="text-light text-nowrap m-3">
+                    <div class="text-light text-nowrap mx-3 mt-2 mb-3">
                         <div class="display-6 nav-title">Episodes</div>
                         <table
-                            id="episode-table"
-                            class="table table-dark border-white"
+                            class="episode-table table table-dark border-white mb-1"
                         >
                             <thead>
                                 <tr>
-                                    <td colspan="5" class="fs-2">第1期</td>
+                                    <td colspan="5" class="fs-2 nav-season">
+                                        第1期
+                                    </td>
                                 </tr>
                             </thead>
                             <tbody id="episodes-s1" class="text-center"></tbody>
                         </table>
                         <table
-                            id="episode-table"
-                            class="table table-dark border-white"
+                            class="episode-table table table-dark border-white"
                         >
                             <thead>
                                 <tr>
-                                    <td colspan="5" class="fs-2">第2期</td>
+                                    <td colspan="5" class="fs-2 nav-season">
+                                        第2期
+                                    </td>
                                 </tr>
                             </thead>
                             <tbody id="episodes-s2" class="text-center"></tbody>
