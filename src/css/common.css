@@ -63,6 +63,11 @@ rt {
     width: fit-content;
 }
 
+.nav-season p {
+    background: linear-gradient(transparent 75%, var(--bs-gray-700) 30%);
+    width: fit-content;
+}
+
 .navbar-collapse {
     opacity: 95%;
     pointer-events: all;
