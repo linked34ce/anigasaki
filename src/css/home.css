@@ -91,6 +91,7 @@
 ruby[data-rb-length="11"][data-rt-length="15"] {
     --rb-length: 11;
     --rt-length: 15;
+    --rt-font-size: 0.6rem;
     --additional-space: 0px;
 }
 

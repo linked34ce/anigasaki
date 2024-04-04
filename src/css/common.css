@@ -29,14 +29,15 @@ ruby[data-ruby][data-rb-length][data-rt-length]::before {
     content: attr(data-ruby);
     position: absolute;
     left: calc(
-        (var(--width) - 0.6rem * var(--rt-length)) / var(--rt-length) / 2 -
-            var(--additional-space) / 2
+        (var(--width) - var(--rt-font-size) * var(--rt-length)) /
+            var(--rt-length) / 2 - var(--additional-space) / 2
     );
     top: -0.8em;
     text-align: center;
-    font-size: 0.6em;
+    font-size: var(--rt-font-size);
     letter-spacing: calc(
-        (var(--width) - 0.6rem * var(--rt-length)) / var(--rt-length)
+        (var(--width) - var(--rt-font-size) * var(--rt-length)) /
+            var(--rt-length)
     );
 }
 

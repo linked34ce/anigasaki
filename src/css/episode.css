@@ -136,31 +136,57 @@
 ruby[data-rb-length="1"][data-rt-length="2"] {
     --rb-length: 1;
     --rt-length: 2;
+    --rt-font-size: 0.5rem;
     --additional-space: 3px;
 }
 
 ruby[data-rb-length="2"][data-rt-length="2"] {
     --rb-length: 2;
     --rt-length: 2;
+    --rt-font-size: 0.5rem;
     --additional-space: 0px;
 }
 
 ruby[data-rb-length="2"][data-rt-length="3"] {
     --rb-length: 2;
     --rt-length: 3;
+    --rt-font-size: 0.5rem;
+    --additional-space: 0px;
+}
+
+ruby[data-rb-length="2"][data-rt-length="4"] {
+    --rb-length: 2;
+    --rt-length: 4;
+    --rt-font-size: 0.5rem;
+    --additional-space: 0px;
+}
+
+ruby[data-rb-length="3"][data-rt-length="6"] {
+    --rb-length: 3;
+    --rt-length: 6;
+    --rt-font-size: 0.5rem;
+    --additional-space: 0px;
+}
+
+ruby[data-rb-length="3"][data-rt-length="8"] {
+    --rb-length: 3;
+    --rt-length: 8;
+    --rt-font-size: 0.4rem;
     --additional-space: 0px;
 }
 
 ruby[data-rb-length="11"][data-rt-length="15"] {
     --rb-length: 11;
     --rt-length: 15;
+    --rt-font-size: 0.5rem;
     --additional-space: 0px;
 }
 
 .card-title ruby[data-rb-length="11"][data-rt-length="15"] {
     --rb-length: 11;
     --rt-length: 15;
-    --additional-space: 5px;
+    --rt-font-size: 0.7rem;
+    --additional-space: 45px;
 }
 
 .card-title ruby[data-rb-length="11"][data-rt-length="15"]::before {
