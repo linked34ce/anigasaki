@@ -28,9 +28,9 @@ export const createEpisodeTable = (season: Season) => {
         const link = document.createElement("a");
         const content = document.createElement("td");
 
-        const isEpisodePage = location.pathname.includes("episodes");
-
-        const dirName = isEpisodePage ? "../.." : ".";
+        const dirName = location.pathname.includes("/episodes/")
+            ? "../.."
+            : ".";
 
         if (season === "s2" && i > LATEST_EPISODE % 13) {
             link.className = "nav-link-disabled";

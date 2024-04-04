@@ -2,7 +2,7 @@ import { createNavigation } from "./createNavigation.js";
 import { WINDOW_WIDTH } from "./const/window.js";
 import { NAV_HEIGHT, NAV_WIDTH } from "./const/navigation.js";
 export const adjustEpisodePage = () => {
-    const season = location.pathname.substring(10, 12);
+    const season = location.pathname.includes("/s1/") ? "s1" : "s2";
     const title = document.getElementById("title");
     const thumbnail = document.getElementById("thumbnail");
     const episodes = document.getElementById(`episodes-${season}`);

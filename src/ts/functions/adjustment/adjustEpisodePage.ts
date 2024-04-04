@@ -4,7 +4,7 @@ import { NAV_HEIGHT, NAV_WIDTH } from "./const/navigation.js";
 import type { AdjustPage } from "../types.js";
 
 export const adjustEpisodePage: AdjustPage = () => {
-    const season = location.pathname.substring(10, 12);
+    const season = location.pathname.includes("/s1/") ? "s1" : "s2";
 
     const title = document.getElementById("title") as HTMLHeadingElement;
     const thumbnail = document.getElementById("thumbnail") as HTMLDivElement;
