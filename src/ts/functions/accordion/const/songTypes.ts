@@ -1,3 +1,1 @@
-import type { SongType } from "../../types.js";
-
-export const SONG_TYPES: Array<SongType> = ["opening", "ending"];
+export const SONG_TYPES = ["opening", "ending"] as const;

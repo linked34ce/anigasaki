@@ -3,15 +3,15 @@ import { SONG_TYPES } from "./const/songTypes.js";
 import type { AccordionStates } from "../types.js";
 
 export const controllAccordions = () => {
-    const accordionOpenedStates: AccordionStates = {
+    const accordionOpenedStates = {
         opening: false,
         ending: false,
-    };
+    } satisfies AccordionStates;
 
-    const accordionClickedStates: AccordionStates = {
+    const accordionClickedStates = {
         opening: false,
         ending: false,
-    };
+    } satisfies AccordionStates;
 
     for (let songType of SONG_TYPES) {
         const accrodion = document.getElementById(

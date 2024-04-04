@@ -1,4 +1,4 @@
-export const characters = [
+export const CHARACTERS = [
     "yu",
     "ayumu",
     "kasumi",
@@ -24,6 +24,8 @@ export const characters = [
     "kasane",
     "himeno",
     "misaki",
+    "jennifer",
+    "rakshata",
     "vice-president",
     "secretary",
     "other",

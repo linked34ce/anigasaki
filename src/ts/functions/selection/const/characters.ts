@@ -1,6 +1,4 @@
-import type { Character } from "../../types.js";
-
-export const characters: Array<Character> = [
+export const CHARACTERS = [
     "yu",
     "ayumu",
     "kasumi",
@@ -26,7 +24,9 @@ export const characters: Array<Character> = [
     "kasane",
     "himeno",
     "misaki",
+    "jennifer",
+    "rakshata",
     "vice-president",
     "secretary",
     "other",
-];
+] as const;

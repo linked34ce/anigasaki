@@ -1,6 +1,6 @@
-import { characters } from "./const/characters.js";
+import { CHARACTERS } from "./const/characters.js";
 export const selectCharacter = () => {
-    for (let character of characters) {
+    for (let character of CHARACTERS) {
         const characterButton = document.getElementById(character);
         if (characterButton) {
             characterButton.addEventListener("click", () => {

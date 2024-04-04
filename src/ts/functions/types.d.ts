@@ -1,3 +1,7 @@
+import { SONG_TYPES } from "./accordion/const/songTypes.js";
+import { SEASONS } from "./adjustment/const/episode.js";
+import { CHARACTERS } from "./selection/const/characters.js";
+
 export type AccordionStates = {
     opening: boolean;
     ending: boolean;
@@ -10,35 +14,7 @@ export type AccordionTimeout = {
 
 export type AdjustPage = () => void;
 
-export type Character =
-    | "yu"
-    | "ayumu"
-    | "kasumi"
-    | "shizuku"
-    | "karin"
-    | "ai"
-    | "kanata"
-    | "setsuna"
-    | "emma"
-    | "rina"
-    | "shioriko"
-    | "mia"
-    | "lanzhu"
-    | "nana"
-    | "dark-shizuku"
-    | "club-president"
-    | "hanpen"
-    | "iroha"
-    | "kyoko"
-    | "asagi"
-    | "haruka"
-    | "christina"
-    | "kasane"
-    | "himeno"
-    | "misaki"
-    | "vice-president"
-    | "secretary"
-    | "other";
+export type Character = (typeof CHARACTERS)[number];
 
 export type HTMLSpeechElement =
     | HTMLParagraphElement
@@ -55,6 +31,6 @@ export type ScreenWidth = {
     LARGE?: number;
 };
 
-export type Season = "s1" | "s2";
+export type Season = (typeof SEASONS)[number];
 
-export type SongType = keyof AccordionStates;
+export type SongType = (typeof SONG_TYPES)[number];

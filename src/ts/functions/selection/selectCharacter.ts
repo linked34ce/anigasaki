@@ -1,8 +1,8 @@
-import { characters } from "./const/characters.js";
+import { CHARACTERS } from "./const/characters.js";
 import type { HTMLSpeechElement } from "../types.js";
 
 export const selectCharacter = () => {
-    for (let character of characters) {
+    for (let character of CHARACTERS) {
         const characterButton = document.getElementById(
             character,
         ) as HTMLButtonElement;
