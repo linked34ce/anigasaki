@@ -1,11 +1,10 @@
-import type { ScreenWidth } from "../../types.js";
+import type { ScreenWidth, ScreenHeight } from "../../types.js";
 
-export const NAV_HEIGHT = {
+export const WINDOW_HEIGHT_FOR_NAV = {
     SMALL: 605,
-    MIDDLE: 790,
-} as const satisfies ScreenWidth;
+} as const satisfies ScreenHeight;
 
-export const NAV_WIDTH = {
+export const WINDOW_WIDTH_FOR_NAV = {
     SMALL: 370,
     MIDDLE: 570,
 } as const satisfies ScreenWidth;

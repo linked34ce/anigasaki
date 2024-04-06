@@ -25,6 +25,10 @@ export type HTMLSvgElement = HTMLElement & SVGElement;
 
 export type Queue = number | undefined;
 
+export type ScreenHeight = {
+    SMALL: number;
+};
+
 export type ScreenWidth = {
     SMALL: number;
     MIDDLE?: number;

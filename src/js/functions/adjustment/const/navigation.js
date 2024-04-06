@@ -1,8 +1,7 @@
-export const NAV_HEIGHT = {
+export const WINDOW_HEIGHT_FOR_NAV = {
     SMALL: 605,
-    MIDDLE: 790,
 };
-export const NAV_WIDTH = {
+export const WINDOW_WIDTH_FOR_NAV = {
     SMALL: 370,
     MIDDLE: 570,
 };

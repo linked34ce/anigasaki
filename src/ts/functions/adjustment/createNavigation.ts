@@ -4,27 +4,20 @@ import {
     SEASONS,
 } from "./const/episode.js";
 import {
-    NAV_HEIGHT,
-    NAV_WIDTH,
+    WINDOW_WIDTH_FOR_NAV,
     NUM_OF_ITEMS_PER_ROW,
 } from "./const/navigation.js";
 import { Season } from "../types.js";
 
-export const createNavigation = () => {
-    SEASONS.forEach((season) => {
-        createEpisodeTable(season);
-    });
-};
+const createTableContents = (
+    season: Season,
+    numOfContents: number,
+): Array<HTMLTableCellElement> => {
+    const episodeTableContents = new Array<HTMLTableCellElement>(numOfContents);
 
-export const createEpisodeTable = (season: Season) => {
-    const episodeTableContents = Array<HTMLTableCellElement>();
-
-    for (let i = 1; i <= NUM_OF_EPISODES_PER_SEASON; i++) {
+    for (let i = 1; i <= numOfContents; i++) {
         const fontSize =
-            window.innerWidth < NAV_WIDTH.SMALL ||
-            window.innerHeight < NAV_HEIGHT.MIDDLE
-                ? "fs-6"
-                : "fs-5";
+            window.innerWidth < WINDOW_WIDTH_FOR_NAV.SMALL ? "fs-6" : "fs-5";
         const link = document.createElement("a");
         const content = document.createElement("td");
 
@@ -48,33 +41,38 @@ export const createEpisodeTable = (season: Season) => {
 
         content.appendChild(link);
 
-        episodeTableContents.push(content);
+        episodeTableContents[i - 1] = content;
     }
+
+    return episodeTableContents;
+};
+
+const createRow = (
+    cells: Array<HTMLTableCellElement>,
+    numOfCellsPerRow: number,
+): HTMLTableRowElement => {
+    const row = document.createElement("tr");
+    cells.splice(0, numOfCellsPerRow).forEach((content) => {
+        row.appendChild(content);
+    });
+    return row;
+};
+
+const createEpisodeTable = (season: Season) => {
+    const episodeTableContents = createTableContents(
+        season,
+        NUM_OF_EPISODES_PER_SEASON,
+    );
 
     const episodeTableRows = Array<HTMLTableRowElement>();
 
     while (episodeTableContents.length > 0) {
-        const row = document.createElement("tr");
-
-        if (window.innerWidth < NAV_WIDTH.SMALL) {
-            episodeTableContents
-                .splice(0, NUM_OF_ITEMS_PER_ROW.SMALL)
-                .forEach((content) => {
-                    row.appendChild(content);
-                });
-        } else if (window.innerWidth < NAV_WIDTH.MIDDLE) {
-            episodeTableContents
-                .splice(0, NUM_OF_ITEMS_PER_ROW.MIDDLE)
-                .forEach((content) => {
-                    row.appendChild(content);
-                });
-        } else {
-            episodeTableContents
-                .splice(0, NUM_OF_ITEMS_PER_ROW.LARGE)
-                .forEach((content) => {
-                    row.appendChild(content);
-                });
-        }
+        const row =
+            window.innerWidth < WINDOW_WIDTH_FOR_NAV.SMALL
+                ? createRow(episodeTableContents, NUM_OF_ITEMS_PER_ROW.SMALL)
+                : window.innerWidth < WINDOW_WIDTH_FOR_NAV.MIDDLE
+                ? createRow(episodeTableContents, NUM_OF_ITEMS_PER_ROW.MIDDLE)
+                : createRow(episodeTableContents, NUM_OF_ITEMS_PER_ROW.LARGE);
         episodeTableRows.push(row);
     }
 
@@ -88,5 +86,11 @@ export const createEpisodeTable = (season: Season) => {
 
     episodeTableRows.forEach((row) => {
         episodes.appendChild(row);
+    });
+};
+
+export const createNavigation = () => {
+    SEASONS.forEach((season) => {
+        createEpisodeTable(season);
     });
 };

@@ -1,6 +1,6 @@
 import { createNavigation } from "./createNavigation.js";
 import { WINDOW_WIDTH } from "./const/window.js";
-import { NAV_HEIGHT, NAV_WIDTH } from "./const/navigation.js";
+import { WINDOW_HEIGHT_FOR_NAV, WINDOW_WIDTH_FOR_NAV, } from "./const/navigation.js";
 export const adjustEpisodePage = () => {
     const season = location.pathname.includes("/s1/") ? "s1" : "s2";
     const title = document.getElementById("title");
@@ -22,8 +22,8 @@ export const adjustEpisodePage = () => {
         mainContent.classList.remove("my-5");
     }
     for (let episodeTable of episodeTables) {
-        if (window.innerWidth < NAV_WIDTH.SMALL &&
-            window.innerHeight < NAV_HEIGHT.SMALL) {
+        if (window.innerWidth < WINDOW_WIDTH_FOR_NAV.SMALL &&
+            window.innerHeight < WINDOW_HEIGHT_FOR_NAV.SMALL) {
             episodeTable.classList.add("table-sm");
         }
         else {
@@ -32,7 +32,7 @@ export const adjustEpisodePage = () => {
     }
     createNavigation();
     for (let i = 0; i < episodeLinks.length; i++) {
-        const fontSize = window.innerWidth < NAV_WIDTH.SMALL ? "fs-6" : "fs-5";
+        const fontSize = window.innerWidth < WINDOW_WIDTH_FOR_NAV.SMALL ? "fs-6" : "fs-5";
         if (episodeLinks[i].href === location.href) {
             const parentCell = episodeLinks[i]
                 .parentElement;
