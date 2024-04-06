@@ -1,7 +1,7 @@
 export const controlScroll = () => {
     let navOpen = false;
     let clientY;
-    const navContent = document.getElementById("nav-content");
+    const navContent = document.getElementById('nav-content');
     const handleScrollPage = (e) => {
         e.preventDefault();
     };
@@ -39,29 +39,29 @@ export const controlScroll = () => {
             e.stopPropagation();
         }
     };
-    const navButton = document.getElementById("nav-button");
-    navButton.addEventListener("click", () => {
+    const navButton = document.getElementById('nav-button');
+    navButton.addEventListener('click', () => {
         navOpen = !navOpen;
-        navContent.addEventListener("touchstart", (e) => {
+        navContent.addEventListener('touchstart', (e) => {
             clientY = e.touches[0].clientY;
         });
-        navContent.addEventListener("wheel", handleScrollNavigation, {
+        navContent.addEventListener('wheel', handleScrollNavigation, {
             passive: false,
         });
-        navContent.addEventListener("touchmove", handleTouchMoveNavigation, {
+        navContent.addEventListener('touchmove', handleTouchMoveNavigation, {
             passive: false,
         });
         if (navOpen) {
-            document.addEventListener("wheel", handleScrollPage, {
+            document.addEventListener('wheel', handleScrollPage, {
                 passive: false,
             });
-            document.addEventListener("touchmove", handleTouchMovePage, {
+            document.addEventListener('touchmove', handleTouchMovePage, {
                 passive: false,
             });
         }
         else {
-            document.removeEventListener("wheel", handleScrollPage);
-            document.removeEventListener("touchmove", handleTouchMovePage);
+            document.removeEventListener('wheel', handleScrollPage);
+            document.removeEventListener('touchmove', handleTouchMovePage);
         }
     });
 };

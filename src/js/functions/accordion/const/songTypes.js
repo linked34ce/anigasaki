@@ -1,1 +1,1 @@
-export const SONG_TYPES = ["opening", "ending"];
+export const SONG_TYPES = ['opening', 'ending'];

@@ -1,17 +1,17 @@
-import { CHARACTERS } from "./const/characters.js";
+import { CHARACTERS } from './const/characters.js';
 export const selectCharacter = () => {
     CHARACTERS.forEach((character) => {
         const characterButton = document.getElementById(character);
         if (characterButton) {
-            characterButton.addEventListener("click", () => {
-                const mainContents = document.getElementById("main-contents");
+            characterButton.addEventListener('click', () => {
+                const mainContents = document.getElementById('main-contents');
                 const elements = mainContents.children;
                 for (let element of elements) {
                     if (element.classList.contains(character)) {
-                        element.classList.replace("hidden", "shown");
+                        element.classList.replace('hidden', 'shown');
                     }
                     else {
-                        element.classList.replace("shown", "hidden");
+                        element.classList.replace('shown', 'hidden');
                     }
                 }
             });

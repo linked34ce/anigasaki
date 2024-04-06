@@ -1,803 +1,689 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-H0PM61FGET"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-H0PM61FGET");
+    </script>
+    <meta
+      charset="UTF-8"
+      description="TVアニメ『ラブライブ！虹ヶ咲学園スクールアイドル同好会』各話の台詞をまとめていくサイトです。キャラクターごとの台詞を表示する機能も実装しています。"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="twitter:site" content="@kuna975" />
+    <meta name="twitter:title" content="アニガサキ台詞集" />
+    <meta
+      name="twitter:description"
+      content="TVアニメ『ラブライブ！虹ヶ咲学園スクールアイドル同好会』の台詞まとめです。"
+    />
+    <meta
+      name="twitter:image"
+      content="https://linked34ce.github.io/anigasaki/images/twitter/s1/13.jpg"
+    />
+    <meta name="twitter:card" content="summary" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/css/home.css" />
+    <link rel="icon" href="./images/favicon.ico" id="favicon" />
+    <link rel="apple-touch-icon" href="./images/favicon.png" sizes="180x180" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="./src/js/home.js"></script>
+    <title>アニガサキ台詞集 - アニメ『ラブライブ！虹ヶ咲』の台詞まとめ</title>
+  </head>
+
+  <body>
+    <nav class="navbar fixed-top navbar-light">
+      <div class="container-fluid">
+        <button
+          id="nav-button"
+          class="navbar-toggler bg-dark pb-0 px-2"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="34"
+            height="34"
+            fill="#FFFFFF"
+            class="bi bi-list"
+            viewBox="0 0 15 17"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+            />
+          </svg>
+        </button>
+        <a
+          href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+          class="twitter-share-button"
+          data-size="large"
+          data-hashtags="虹ヶ咲"
+          data-lang="ja"
+          data-show-count="false"
+          >ポスト</a
+        >
         <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-H0PM61FGET"
+          async
+          src="https://platform.twitter.com/widgets.js"
+          charset="utf-8"
         ></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag("js", new Date());
-
-            gtag("config", "G-H0PM61FGET");
-        </script>
-        <meta
-            charset="UTF-8"
-            description="TVアニメ『ラブライブ！虹ヶ咲学園スクールアイドル同好会』各話の台詞をまとめていくサイトです。キャラクターごとの台詞を表示する機能も実装しています。"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="twitter:site" content="@kuna975" />
-        <meta name="twitter:title" content="アニガサキ台詞集" />
-        <meta
-            name="twitter:description"
-            content="TVアニメ『ラブライブ！虹ヶ咲学園スクールアイドル同好会』の台詞まとめです。"
-        />
-        <meta
-            name="twitter:image"
-            content="https://linked34ce.github.io/anigasaki/images/twitter/s1/13.jpg"
-        />
-        <meta name="twitter:card" content="summary" />
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-            crossorigin="anonymous"
-        />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap"
-            rel="stylesheet"
-        />
-        <link rel="stylesheet" href="./src/css/home.css" />
-        <link rel="icon" href="./images/favicon.ico" id="favicon" />
-        <link
-            rel="apple-touch-icon"
-            href="./images/favicon.png"
-            sizes="180x180"
-        />
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-            crossorigin="anonymous"
-        ></script>
-        <script type="module" src="./src/js/home.js"></script>
-        <title>
-            アニガサキ台詞集 - アニメ『ラブライブ！虹ヶ咲』の台詞まとめ
-        </title>
-    </head>
-
-    <body>
-        <nav class="navbar fixed-top navbar-light">
-            <div class="container-fluid">
-                <button
-                    id="nav-button"
-                    class="navbar-toggler bg-dark pb-0 px-2"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="34"
-                        height="34"
-                        fill="#FFFFFF"
-                        class="bi bi-list"
-                        viewBox="0 0 15 17"
-                    >
-                        <path
-                            fill-rule="evenodd"
-                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
-                        />
-                    </svg>
-                </button>
-                <a
-                    href="https://twitter.com/share?ref_src=twsrc%5Etfw"
-                    class="twitter-share-button"
-                    data-size="large"
-                    data-hashtags="虹ヶ咲"
-                    data-lang="ja"
-                    data-show-count="false"
-                    >ポスト</a
-                >
-                <script
-                    async
-                    src="https://platform.twitter.com/widgets.js"
-                    charset="utf-8"
-                ></script>
-                <div
-                    class="collapse navbar-collapse bg-dark rounded mt-2"
-                    id="navbarSupportedContent"
-                >
-                    <div
-                        id="nav-content"
-                        class="text-light text-nowrap ms-3 me-2 mt-2 mb-3"
-                    >
-                        <div class="me-1">
-                            <div class="display-6 nav-title">Episodes</div>
-                            <table
-                                class="episode-table table table-dark border-white mb-1"
-                            >
-                                <thead>
-                                    <tr>
-                                        <td colspan="5" class="fs-2 nav-season">
-                                            <p>第1期</p>
-                                        </td>
-                                    </tr>
-                                </thead>
-                                <tbody
-                                    id="episodes-s1"
-                                    class="text-center"
-                                ></tbody>
-                            </table>
-                            <table
-                                class="episode-table table table-dark border-white"
-                            >
-                                <thead>
-                                    <tr>
-                                        <td colspan="5" class="fs-2 nav-season">
-                                            <p>第2期</p>
-                                        </td>
-                                    </tr>
-                                </thead>
-                                <tbody
-                                    id="episodes-s2"
-                                    class="text-center"
-                                ></tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
+        <div
+          class="collapse navbar-collapse bg-dark rounded mt-2"
+          id="navbarSupportedContent"
+        >
+          <div
+            id="nav-content"
+            class="text-light text-nowrap ms-3 me-2 mt-2 mb-3"
+          >
+            <div class="me-1">
+              <div class="display-6 nav-title">Episodes</div>
+              <table class="episode-table table table-dark border-white mb-1">
+                <thead>
+                  <tr>
+                    <td colspan="5" class="fs-2 nav-season">
+                      <p>第1期</p>
+                    </td>
+                  </tr>
+                </thead>
+                <tbody id="episodes-s1" class="text-center"></tbody>
+              </table>
+              <table class="episode-table table table-dark border-white">
+                <thead>
+                  <tr>
+                    <td colspan="5" class="fs-2 nav-season">
+                      <p>第2期</p>
+                    </td>
+                  </tr>
+                </thead>
+                <tbody id="episodes-s2" class="text-center"></tbody>
+              </table>
             </div>
-        </nav>
+          </div>
+        </div>
+      </div>
+    </nav>
 
-        <header class="text-end p-3">
-            <h1 id="title" class="text-center display-4 mt-5">
-                <span data-nosnippet>アニガサキ台詞集</span>
-            </h1>
-        </header>
+    <header class="text-end p-3">
+      <h1 id="title" class="text-center display-4 mt-5">
+        <span data-nosnippet>アニガサキ台詞集</span>
+      </h1>
+    </header>
 
-        <div class="main bg-light">
-            <div class="container my-4">
-                <h3 class="my-4">About</h3>
+    <div class="main bg-light">
+      <div class="container my-4">
+        <h3 class="my-4">About</h3>
 
-                <div class="my-4">
-                    TVアニメ『ラブライブ！虹ヶ咲学園スクールアイドル同好会』の台詞をまとめています。
-                    <br />台詞をキャラクターごとに表示する機能も実装しています。
-                    <br />あなたの&quot;大好き&quot;が、きっと見つかるはずです。
-                </div>
-                <div
-                    class="alert alert-warning d-flex align-items-center"
-                    role="alert"
-                >
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="18"
-                        height="18"
-                        fill="currentColor"
-                        class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2"
-                        viewBox="0 0 16 16"
-                        role="img"
-                        aria-label="Warning:"
-                    >
-                        <path
-                            d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
-                        />
-                    </svg>
-                    <div>
-                        大変お待たせいたしました。<br />再放送に合わせて、第2期分を順次公開していきます。
-                    </div>
-                </div>
-
-                <h3 class="my-4">What's New</h3>
-
-                <div class="bs-callout bs-callout-info bg-white my-4">
-                    <ul class="news ps-1 m-0">
-                        <li>
-                            【2024/04/07】
-                            <ul>
-                                <li>左上メニューの挙動を修正しました。</li>
-                                <li>内部処理を改善しました。</li>
-                            </ul>
-                        </li>
-                        <li>
-                            【2024/04/05】
-                            <ul>
-                                <li>2期1話を公開しました。</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-
-                <h3 class="mt-4 mb-3">Episodes</h3>
-
-                <ul
-                    class="nav nav-tabs justify-content-center"
-                    id="season-tab"
-                    role="tablist"
-                >
-                    <li class="nav-item" role="season">
-                        <button
-                            class="nav-link active"
-                            id="first-season-tab"
-                            data-bs-toggle="tab"
-                            data-bs-target="#first-season"
-                            type="button"
-                            role="tab"
-                        >
-                            第1期
-                        </button>
-                    </li>
-                    <li class="nav-item" role="season">
-                        <button
-                            class="nav-link"
-                            id="second-season-tab"
-                            data-bs-toggle="tab"
-                            data-bs-target="#second-season"
-                            type="button"
-                            role="tab"
-                            aria-controls="second-season"
-                            aria-selected="false"
-                        >
-                            第2期
-                        </button>
-                    </li>
-                </ul>
-
-                <div class="tab-content" id="episode-list">
-                    <div
-                        class="tab-pane fade show active"
-                        id="first-season"
-                        role="tabpanel"
-                        aria-labelledby="first-season-tab"
-                    >
-                        <div class="row row-cols-auto episode-list">
-                            <div
-                                class="card card-small border-secondary m-3 p-0 col mx-auto"
-                            >
-                                <a
-                                    href="./episodes/s1/01.html"
-                                    class="stretched-link"
-                                >
-                                    <img
-                                        src="./images/episodes/s1/01.jpg"
-                                        class="card-img-top"
-                                        alt="1期1話"
-                                    />
-                                </a>
-                                <div class="card-body">
-                                    <div class="card-title text-center">
-                                        <h5>第1話</h5>
-                                        <h6>「はじまりのトキメキ」</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                class="card card-small border-secondary m-3 p-0 col mx-auto"
-                            >
-                                <a
-                                    href="./episodes/s1/02.html"
-                                    class="stretched-link"
-                                >
-                                    <img
-                                        src="./images/episodes/s1/02.jpg"
-                                        class="card-img-top"
-                                        alt="1期2話"
-                                    />
-                                </a>
-                                <div class="card-body">
-                                    <div class="card-title text-center">
-                                        <h5>第2話</h5>
-                                        <h6>「Cutest♡ガール」</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                class="card card-small border-secondary m-3 p-0 col mx-auto"
-                            >
-                                <a
-                                    href="./episodes/s1/03.html"
-                                    class="stretched-link"
-                                >
-                                    <img
-                                        src="./images/episodes/s1/03.jpg"
-                                        class="card-img-top"
-                                        alt="1期3話"
-                                    />
-                                </a>
-                                <div class="card-body">
-                                    <div class="card-title text-center">
-                                        <h5>第3話</h5>
-                                        <h6>「大好きを叫ぶ」</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                class="card card-small border-secondary m-3 p-0 col mx-auto"
-                            >
-                                <a
-                                    href="./episodes/s1/04.html"
-                                    class="stretched-link"
-                                >
-                                    <img
-                                        src="./images/episodes/s1/04.jpg"
-                                        class="card-img-top"
-                                        alt="1期4話"
-                                    />
-                                </a>
-                                <div class="card-body">
-                                    <div class="card-title text-center">
-                                        <h5>第4話</h5>
-                                        <h6>「未知なるミチ」</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                class="card card-small border-secondary m-3 p-0 col mx-auto"
-                            >
-                                <a
-                                    href="./episodes/s1/05.html"
-                                    class="stretched-link"
-                                >
-                                    <img
-                                        src="./images/episodes/s1/05.jpg"
-                                        class="card-img-top"
-                                        alt="1期5話"
-                                    />
-                                </a>
-                                <div class="card-body">
-                                    <div class="card-title text-center">
-                                        <h5>第5話</h5>
-                                        <h6>「今しかできないことを」</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                class="card card-small border-secondary m-3 p-0 col mx-auto"
-                            >
-                                <a
-                                    href="./episodes/s1/06.html"
-                                    class="stretched-link"
-                                >
-                                    <img
-                                        src="./images/episodes/s1/06.jpg"
-                                        class="card-img-top"
-                                        alt="1期6話"
-                                    />
-                                </a>
-                                <div class="card-body">
-                                    <div class="card-title text-center">
-                                        <h5>第6話</h5>
-                                        <h6>
-                                            「笑顔のカタチ（⸝⸝&gt;▿&lt;⸝⸝）」
-                                        </h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                class="card card-small border-secondary m-3 p-0 col mx-auto"
-                            >
-                                <a
-                                    href="./episodes/s1/07.html"
-                                    class="stretched-link"
-                                >
-                                    <img
-                                        src="./images/episodes/s1/07.jpg"
-                                        class="card-img-top"
-                                        alt="1期7話"
-                                    />
-                                </a>
-                                <div class="card-body">
-                                    <div class="card-title text-center">
-                                        <h5>第7話</h5>
-                                        <h6>「ハルカカナタ」</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                class="card card-small border-secondary m-3 p-0 col mx-auto"
-                            >
-                                <a
-                                    href="./episodes/s1/08.html"
-                                    class="stretched-link"
-                                >
-                                    <img
-                                        src="./images/episodes/s1/08.jpg"
-                                        class="card-img-top"
-                                        alt="1期8話"
-                                    />
-                                </a>
-                                <div class="card-body">
-                                    <div class="card-title text-center">
-                                        <h5>第8話</h5>
-                                        <h6>「しずく、モノクローム」</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                class="card card-small border-secondary m-3 p-0 col mx-auto"
-                            >
-                                <a
-                                    href="./episodes/s1/09.html"
-                                    class="stretched-link"
-                                >
-                                    <img
-                                        src="./images/episodes/s1/09.jpg"
-                                        class="card-img-top"
-                                        alt="1期9話"
-                                    />
-                                </a>
-                                <div class="card-body">
-                                    <div class="card-title text-center">
-                                        <h5>第9話</h5>
-                                        <h6>「仲間でライバル」</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                class="card card-small border-secondary m-3 p-0 col mx-auto"
-                            >
-                                <a
-                                    href="./episodes/s1/10.html"
-                                    class="stretched-link"
-                                >
-                                    <img
-                                        src="./images/episodes/s1/10.jpg"
-                                        class="card-img-top"
-                                        alt="1期10話"
-                                    />
-                                </a>
-                                <div class="card-body">
-                                    <div class="card-title text-center">
-                                        <h5>第10話</h5>
-                                        <h6>「夏、はじまる。」</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                class="card card-small border-secondary m-3 p-0 col mx-auto"
-                            >
-                                <a
-                                    href="./episodes/s1/11.html"
-                                    class="stretched-link"
-                                >
-                                    <img
-                                        src="./images/episodes/s1/11.jpg"
-                                        class="card-img-top"
-                                        alt="1期11話"
-                                    />
-                                </a>
-                                <div class="card-body">
-                                    <div class="card-title text-center">
-                                        <h5>第11話</h5>
-                                        <h6>「みんなの夢、私の夢」</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                class="card card-small border-secondary m-3 p-0 col mx-auto"
-                            >
-                                <a
-                                    href="./episodes/s1/12.html"
-                                    class="stretched-link"
-                                >
-                                    <img
-                                        src="./images/episodes/s1/12.jpg"
-                                        class="card-img-top"
-                                        alt="1期12話"
-                                    />
-                                </a>
-                                <div class="card-body">
-                                    <div class="card-title text-center">
-                                        <h5>第12話</h5>
-                                        <h6>「花ひらく想い」</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                class="card card-small border-secondary m-3 p-0 col mx-auto last-episode"
-                            >
-                                <a
-                                    href="./episodes/s1/13.html"
-                                    class="stretched-link"
-                                >
-                                    <img
-                                        src="./images/episodes/s1/13.jpg"
-                                        class="card-img-top"
-                                        alt="1期13話"
-                                    />
-                                </a>
-                                <div class="card-body">
-                                    <div class="card-title text-center">
-                                        <h5>第13話</h5>
-                                        <h6 class="card-title text-center">
-                                            「⁠<ruby
-                                                data-ruby="スクールアイドルフェスティバル"
-                                                data-rb-length="11"
-                                                data-rt-length="15"
-                                            >
-                                                <rb>みんなの夢を叶える場所</rb>
-                                                <rp>
-                                                    <br />
-                                                    （
-                                                </rp>
-                                                <rt
-                                                    >スクールアイドルフェスティバル</rt
-                                                >
-                                                <rp>）</rp> </ruby
-                                            >」
-                                        </h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div
-                        class="tab-pane fade"
-                        id="second-season"
-                        role="tabpanel"
-                        aria-labelledby="second-season-tab"
-                    >
-                        <div class="row row-cols-auto episode-list">
-                            <div
-                                class="card card-small border-secondary m-3 p-0 col mx-auto"
-                            >
-                                <a
-                                    href="episodes/s2/01.html"
-                                    class="stretched-link"
-                                >
-                                    <img
-                                        src="./images/episodes/s2/01.jpg"
-                                        class="card-img-top"
-                                        alt="2期1話"
-                                    />
-                                </a>
-                                <div class="card-body">
-                                    <div class="card-title text-center">
-                                        <h5>第1話</h5>
-                                        <h6>「新しいトキメキ」</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                class="card card-small border-secondary m-3 p-0 col mx-auto"
-                            >
-                                <a class="stretched-link">
-                                    <img
-                                        src="./images/episodes/s2/02.jpg"
-                                        class="card-img-top"
-                                        alt="2期2話"
-                                    />
-                                </a>
-                                <div class="card-body">
-                                    <div class="card-title text-center">
-                                        <h5>第2話</h5>
-                                        <h6>「重なる色」</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                class="card card-small border-secondary m-3 p-0 col mx-auto"
-                            >
-                                <a class="stretched-link">
-                                    <img
-                                        src="./images/episodes/s2/03.jpg"
-                                        class="card-img-top"
-                                        alt="2期3話"
-                                    />
-                                </a>
-                                <div class="card-body">
-                                    <div class="card-title text-center">
-                                        <h5>第3話</h5>
-                                        <h6>「sing! song! smile!」</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                class="card card-small border-secondary m-3 p-0 col mx-auto"
-                            >
-                                <a class="stretched-link">
-                                    <img
-                                        src="./images/episodes/s2/04.jpg"
-                                        class="card-img-top"
-                                        alt="2期4話"
-                                    />
-                                </a>
-                                <div class="card-body">
-                                    <div class="card-title text-center">
-                                        <h5>第4話</h5>
-                                        <h6>「アイ Love Triangle」</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                class="card card-small border-secondary m-3 p-0 col mx-auto"
-                            >
-                                <a class="stretched-link">
-                                    <img
-                                        src="./images/episodes/s2/05.jpg"
-                                        class="card-img-top"
-                                        alt="2期5話"
-                                    />
-                                </a>
-                                <div class="card-body">
-                                    <div class="card-title text-center">
-                                        <h5>第5話</h5>
-                                        <h6 class="card-title text-center s2-5">
-                                            「開幕！ドリームランド↑↑(*'▽')」
-                                        </h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                class="card card-small border-secondary m-3 p-0 col mx-auto"
-                            >
-                                <a class="stretched-link">
-                                    <img
-                                        src="./images/episodes/s2/06.jpg"
-                                        class="card-img-top"
-                                        alt="2期6話"
-                                    />
-                                </a>
-                                <div class="card-body">
-                                    <div class="card-title text-center">
-                                        <h5>第6話</h5>
-                                        <h6>「“大好き”の選択を」</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                class="card card-small border-secondary m-3 p-0 col mx-auto"
-                            >
-                                <a class="stretched-link">
-                                    <img
-                                        src="./images/episodes/s2/07.jpg"
-                                        class="card-img-top"
-                                        alt="2期7話"
-                                    />
-                                </a>
-                                <div class="card-body">
-                                    <div class="card-title text-center">
-                                        <h5>第7話</h5>
-                                        <h6>「夢の記憶」</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                class="card card-small border-secondary m-3 p-0 col mx-auto"
-                            >
-                                <a class="stretched-link">
-                                    <img
-                                        src="./images/episodes/s2/08.jpg"
-                                        class="card-img-top"
-                                        alt="2期8話"
-                                    />
-                                </a>
-                                <div class="card-body">
-                                    <div class="card-title text-center">
-                                        <h5>第8話</h5>
-                                        <h6>「虹が始まる場所」</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                class="card card-small border-secondary m-3 p-0 col mx-auto"
-                            >
-                                <a class="stretched-link">
-                                    <img
-                                        src="./images/episodes/s2/09.jpg"
-                                        class="card-img-top"
-                                        alt="2期9話"
-                                    />
-                                </a>
-                                <div class="card-body">
-                                    <div class="card-title text-center">
-                                        <h5>第9話</h5>
-                                        <h6>「Sky I Can't Reach」</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                class="card card-small border-secondary m-3 p-0 col mx-auto"
-                            >
-                                <a class="stretched-link">
-                                    <img
-                                        src="./images/episodes/s2/10.jpg"
-                                        class="card-img-top"
-                                        alt="2期10話"
-                                    />
-                                </a>
-                                <div class="card-body">
-                                    <div class="card-title text-center">
-                                        <h5>第10話</h5>
-                                        <h6>「かすみん☆ワンダーツアー」</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                class="card card-small border-secondary m-3 p-0 col mx-auto"
-                            >
-                                <a class="stretched-link">
-                                    <img
-                                        src="./images/episodes/s2/11.jpg"
-                                        class="card-img-top"
-                                        alt="2期11話"
-                                    />
-                                </a>
-                                <div class="card-body">
-                                    <div class="card-title text-center">
-                                        <h5>第11話</h5>
-                                        <h6>「過去・未来・イマ」</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                class="card card-small border-secondary m-3 p-0 col mx-auto"
-                            >
-                                <a class="stretched-link">
-                                    <img
-                                        src="./images/episodes/s2/12.jpg"
-                                        class="card-img-top"
-                                        alt="2期12話"
-                                    />
-                                </a>
-                                <div class="card-body">
-                                    <div class="card-title text-center">
-                                        <h5>第12話</h5>
-                                        <h6>「エール！」</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                class="card card-small border-secondary m-3 p-0 col mx-auto last-episode"
-                            >
-                                <a class="stretched-link">
-                                    <img
-                                        src="./images/episodes/s2/13.jpg"
-                                        class="card-img-top"
-                                        alt="2期13話"
-                                    />
-                                </a>
-                                <div class="card-body">
-                                    <div class="card-title text-center">
-                                        <h5>第13話</h5>
-                                        <h6>「⁠響け！ときめき――。」</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <br />
-            </div>
+        <div class="my-4">
+          TVアニメ『ラブライブ！虹ヶ咲学園スクールアイドル同好会』の台詞をまとめています。
+          <br />台詞をキャラクターごとに表示する機能も実装しています。
+          <br />あなたの&quot;大好き&quot;が、きっと見つかるはずです。
+        </div>
+        <div class="alert alert-warning d-flex align-items-center" role="alert">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            fill="currentColor"
+            class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2"
+            viewBox="0 0 16 16"
+            role="img"
+            aria-label="Warning:"
+          >
+            <path
+              d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+            />
+          </svg>
+          <div>
+            大変お待たせいたしました。<br />再放送に合わせて、第2期分を順次公開していきます。
+          </div>
         </div>
 
-        <footer>
-            <div class="text-center text-muted p-4">
-                <p>
-                    This website is run by Hosoyan,
-                    <a
-                        href="https://twitter.com/kuna975"
-                        class="text-muted"
-                        target="_blank"
-                        rel="noopener"
-                        >@kuna975</a
-                    >.
-                </p>
-                <p>
-                    To know more about the website, visit
-                    <a
-                        href="./README.html"
-                        class="text-muted"
-                        target="_blank"
-                        rel="noopener"
-                        >here</a
-                    >.
-                </p>
-                <p class="footer-note">
-                    The administrator does not assert any right about this
-                    webpage.
-                </p>
+        <h3 class="my-4">What's New</h3>
+
+        <div class="bs-callout bs-callout-info bg-white my-4">
+          <ul class="news ps-1 m-0">
+            <li>
+              【2024/04/07】
+              <ul>
+                <li>左上メニューの挙動を修正しました。</li>
+                <li>内部処理を改善しました。</li>
+              </ul>
+            </li>
+            <li>
+              【2024/04/05】
+              <ul>
+                <li>2期1話を公開しました。</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <h3 class="mt-4 mb-3">Episodes</h3>
+
+        <ul
+          class="nav nav-tabs justify-content-center"
+          id="season-tab"
+          role="tablist"
+        >
+          <li class="nav-item" role="season">
+            <button
+              class="nav-link active"
+              id="first-season-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#first-season"
+              type="button"
+              role="tab"
+            >
+              第1期
+            </button>
+          </li>
+          <li class="nav-item" role="season">
+            <button
+              class="nav-link"
+              id="second-season-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#second-season"
+              type="button"
+              role="tab"
+              aria-controls="second-season"
+              aria-selected="false"
+            >
+              第2期
+            </button>
+          </li>
+        </ul>
+
+        <div class="tab-content" id="episode-list">
+          <div
+            class="tab-pane fade show active"
+            id="first-season"
+            role="tabpanel"
+            aria-labelledby="first-season-tab"
+          >
+            <div class="row row-cols-auto episode-list">
+              <div class="card card-small border-secondary m-3 p-0 col mx-auto">
+                <a href="./episodes/s1/01.html" class="stretched-link">
+                  <img
+                    src="./images/episodes/s1/01.jpg"
+                    class="card-img-top"
+                    alt="1期1話"
+                  />
+                </a>
+                <div class="card-body">
+                  <div class="card-title text-center">
+                    <h5>第1話</h5>
+                    <h6>「はじまりのトキメキ」</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="card card-small border-secondary m-3 p-0 col mx-auto">
+                <a href="./episodes/s1/02.html" class="stretched-link">
+                  <img
+                    src="./images/episodes/s1/02.jpg"
+                    class="card-img-top"
+                    alt="1期2話"
+                  />
+                </a>
+                <div class="card-body">
+                  <div class="card-title text-center">
+                    <h5>第2話</h5>
+                    <h6>「Cutest♡ガール」</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="card card-small border-secondary m-3 p-0 col mx-auto">
+                <a href="./episodes/s1/03.html" class="stretched-link">
+                  <img
+                    src="./images/episodes/s1/03.jpg"
+                    class="card-img-top"
+                    alt="1期3話"
+                  />
+                </a>
+                <div class="card-body">
+                  <div class="card-title text-center">
+                    <h5>第3話</h5>
+                    <h6>「大好きを叫ぶ」</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="card card-small border-secondary m-3 p-0 col mx-auto">
+                <a href="./episodes/s1/04.html" class="stretched-link">
+                  <img
+                    src="./images/episodes/s1/04.jpg"
+                    class="card-img-top"
+                    alt="1期4話"
+                  />
+                </a>
+                <div class="card-body">
+                  <div class="card-title text-center">
+                    <h5>第4話</h5>
+                    <h6>「未知なるミチ」</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="card card-small border-secondary m-3 p-0 col mx-auto">
+                <a href="./episodes/s1/05.html" class="stretched-link">
+                  <img
+                    src="./images/episodes/s1/05.jpg"
+                    class="card-img-top"
+                    alt="1期5話"
+                  />
+                </a>
+                <div class="card-body">
+                  <div class="card-title text-center">
+                    <h5>第5話</h5>
+                    <h6>「今しかできないことを」</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="card card-small border-secondary m-3 p-0 col mx-auto">
+                <a href="./episodes/s1/06.html" class="stretched-link">
+                  <img
+                    src="./images/episodes/s1/06.jpg"
+                    class="card-img-top"
+                    alt="1期6話"
+                  />
+                </a>
+                <div class="card-body">
+                  <div class="card-title text-center">
+                    <h5>第6話</h5>
+                    <h6>「笑顔のカタチ（⸝⸝&gt;▿&lt;⸝⸝）」</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="card card-small border-secondary m-3 p-0 col mx-auto">
+                <a href="./episodes/s1/07.html" class="stretched-link">
+                  <img
+                    src="./images/episodes/s1/07.jpg"
+                    class="card-img-top"
+                    alt="1期7話"
+                  />
+                </a>
+                <div class="card-body">
+                  <div class="card-title text-center">
+                    <h5>第7話</h5>
+                    <h6>「ハルカカナタ」</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="card card-small border-secondary m-3 p-0 col mx-auto">
+                <a href="./episodes/s1/08.html" class="stretched-link">
+                  <img
+                    src="./images/episodes/s1/08.jpg"
+                    class="card-img-top"
+                    alt="1期8話"
+                  />
+                </a>
+                <div class="card-body">
+                  <div class="card-title text-center">
+                    <h5>第8話</h5>
+                    <h6>「しずく、モノクローム」</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="card card-small border-secondary m-3 p-0 col mx-auto">
+                <a href="./episodes/s1/09.html" class="stretched-link">
+                  <img
+                    src="./images/episodes/s1/09.jpg"
+                    class="card-img-top"
+                    alt="1期9話"
+                  />
+                </a>
+                <div class="card-body">
+                  <div class="card-title text-center">
+                    <h5>第9話</h5>
+                    <h6>「仲間でライバル」</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="card card-small border-secondary m-3 p-0 col mx-auto">
+                <a href="./episodes/s1/10.html" class="stretched-link">
+                  <img
+                    src="./images/episodes/s1/10.jpg"
+                    class="card-img-top"
+                    alt="1期10話"
+                  />
+                </a>
+                <div class="card-body">
+                  <div class="card-title text-center">
+                    <h5>第10話</h5>
+                    <h6>「夏、はじまる。」</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="card card-small border-secondary m-3 p-0 col mx-auto">
+                <a href="./episodes/s1/11.html" class="stretched-link">
+                  <img
+                    src="./images/episodes/s1/11.jpg"
+                    class="card-img-top"
+                    alt="1期11話"
+                  />
+                </a>
+                <div class="card-body">
+                  <div class="card-title text-center">
+                    <h5>第11話</h5>
+                    <h6>「みんなの夢、私の夢」</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="card card-small border-secondary m-3 p-0 col mx-auto">
+                <a href="./episodes/s1/12.html" class="stretched-link">
+                  <img
+                    src="./images/episodes/s1/12.jpg"
+                    class="card-img-top"
+                    alt="1期12話"
+                  />
+                </a>
+                <div class="card-body">
+                  <div class="card-title text-center">
+                    <h5>第12話</h5>
+                    <h6>「花ひらく想い」</h6>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="card card-small border-secondary m-3 p-0 col mx-auto last-episode"
+              >
+                <a href="./episodes/s1/13.html" class="stretched-link">
+                  <img
+                    src="./images/episodes/s1/13.jpg"
+                    class="card-img-top"
+                    alt="1期13話"
+                  />
+                </a>
+                <div class="card-body">
+                  <div class="card-title text-center">
+                    <h5>第13話</h5>
+                    <h6 class="card-title text-center">
+                      「⁠<ruby
+                        data-ruby="スクールアイドルフェスティバル"
+                        data-rb-length="11"
+                        data-rt-length="15"
+                      >
+                        <rb>みんなの夢を叶える場所</rb>
+                        <rp>
+                          <br />
+                          （
+                        </rp>
+                        <rt>スクールアイドルフェスティバル</rt>
+                        <rp>）</rp> </ruby
+                      >」
+                    </h6>
+                  </div>
+                </div>
+              </div>
             </div>
-        </footer>
-    </body>
+          </div>
+
+          <div
+            class="tab-pane fade"
+            id="second-season"
+            role="tabpanel"
+            aria-labelledby="second-season-tab"
+          >
+            <div class="row row-cols-auto episode-list">
+              <div class="card card-small border-secondary m-3 p-0 col mx-auto">
+                <a href="episodes/s2/01.html" class="stretched-link">
+                  <img
+                    src="./images/episodes/s2/01.jpg"
+                    class="card-img-top"
+                    alt="2期1話"
+                  />
+                </a>
+                <div class="card-body">
+                  <div class="card-title text-center">
+                    <h5>第1話</h5>
+                    <h6>「新しいトキメキ」</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="card card-small border-secondary m-3 p-0 col mx-auto">
+                <a class="stretched-link">
+                  <img
+                    src="./images/episodes/s2/02.jpg"
+                    class="card-img-top"
+                    alt="2期2話"
+                  />
+                </a>
+                <div class="card-body">
+                  <div class="card-title text-center">
+                    <h5>第2話</h5>
+                    <h6>「重なる色」</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="card card-small border-secondary m-3 p-0 col mx-auto">
+                <a class="stretched-link">
+                  <img
+                    src="./images/episodes/s2/03.jpg"
+                    class="card-img-top"
+                    alt="2期3話"
+                  />
+                </a>
+                <div class="card-body">
+                  <div class="card-title text-center">
+                    <h5>第3話</h5>
+                    <h6>「sing! song! smile!」</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="card card-small border-secondary m-3 p-0 col mx-auto">
+                <a class="stretched-link">
+                  <img
+                    src="./images/episodes/s2/04.jpg"
+                    class="card-img-top"
+                    alt="2期4話"
+                  />
+                </a>
+                <div class="card-body">
+                  <div class="card-title text-center">
+                    <h5>第4話</h5>
+                    <h6>「アイ Love Triangle」</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="card card-small border-secondary m-3 p-0 col mx-auto">
+                <a class="stretched-link">
+                  <img
+                    src="./images/episodes/s2/05.jpg"
+                    class="card-img-top"
+                    alt="2期5話"
+                  />
+                </a>
+                <div class="card-body">
+                  <div class="card-title text-center">
+                    <h5>第5話</h5>
+                    <h6 class="card-title text-center s2-5">
+                      「開幕！ドリームランド↑↑(*'▽')」
+                    </h6>
+                  </div>
+                </div>
+              </div>
+              <div class="card card-small border-secondary m-3 p-0 col mx-auto">
+                <a class="stretched-link">
+                  <img
+                    src="./images/episodes/s2/06.jpg"
+                    class="card-img-top"
+                    alt="2期6話"
+                  />
+                </a>
+                <div class="card-body">
+                  <div class="card-title text-center">
+                    <h5>第6話</h5>
+                    <h6>「“大好き”の選択を」</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="card card-small border-secondary m-3 p-0 col mx-auto">
+                <a class="stretched-link">
+                  <img
+                    src="./images/episodes/s2/07.jpg"
+                    class="card-img-top"
+                    alt="2期7話"
+                  />
+                </a>
+                <div class="card-body">
+                  <div class="card-title text-center">
+                    <h5>第7話</h5>
+                    <h6>「夢の記憶」</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="card card-small border-secondary m-3 p-0 col mx-auto">
+                <a class="stretched-link">
+                  <img
+                    src="./images/episodes/s2/08.jpg"
+                    class="card-img-top"
+                    alt="2期8話"
+                  />
+                </a>
+                <div class="card-body">
+                  <div class="card-title text-center">
+                    <h5>第8話</h5>
+                    <h6>「虹が始まる場所」</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="card card-small border-secondary m-3 p-0 col mx-auto">
+                <a class="stretched-link">
+                  <img
+                    src="./images/episodes/s2/09.jpg"
+                    class="card-img-top"
+                    alt="2期9話"
+                  />
+                </a>
+                <div class="card-body">
+                  <div class="card-title text-center">
+                    <h5>第9話</h5>
+                    <h6>「Sky I Can't Reach」</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="card card-small border-secondary m-3 p-0 col mx-auto">
+                <a class="stretched-link">
+                  <img
+                    src="./images/episodes/s2/10.jpg"
+                    class="card-img-top"
+                    alt="2期10話"
+                  />
+                </a>
+                <div class="card-body">
+                  <div class="card-title text-center">
+                    <h5>第10話</h5>
+                    <h6>「かすみん☆ワンダーツアー」</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="card card-small border-secondary m-3 p-0 col mx-auto">
+                <a class="stretched-link">
+                  <img
+                    src="./images/episodes/s2/11.jpg"
+                    class="card-img-top"
+                    alt="2期11話"
+                  />
+                </a>
+                <div class="card-body">
+                  <div class="card-title text-center">
+                    <h5>第11話</h5>
+                    <h6>「過去・未来・イマ」</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="card card-small border-secondary m-3 p-0 col mx-auto">
+                <a class="stretched-link">
+                  <img
+                    src="./images/episodes/s2/12.jpg"
+                    class="card-img-top"
+                    alt="2期12話"
+                  />
+                </a>
+                <div class="card-body">
+                  <div class="card-title text-center">
+                    <h5>第12話</h5>
+                    <h6>「エール！」</h6>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="card card-small border-secondary m-3 p-0 col mx-auto last-episode"
+              >
+                <a class="stretched-link">
+                  <img
+                    src="./images/episodes/s2/13.jpg"
+                    class="card-img-top"
+                    alt="2期13話"
+                  />
+                </a>
+                <div class="card-body">
+                  <div class="card-title text-center">
+                    <h5>第13話</h5>
+                    <h6>「⁠響け！ときめき――。」</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+      </div>
+    </div>
+
+    <footer>
+      <div class="text-center text-muted p-4">
+        <p>
+          This website is run by Hosoyan,
+          <a
+            href="https://twitter.com/kuna975"
+            class="text-muted"
+            target="_blank"
+            rel="noopener"
+            >@kuna975</a
+          >.
+        </p>
+        <p>
+          To know more about the website, visit
+          <a
+            href="./README.html"
+            class="text-muted"
+            target="_blank"
+            rel="noopener"
+            >here</a
+          >.
+        </p>
+        <p class="footer-note">
+          The administrator does not assert any right about this webpage.
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>

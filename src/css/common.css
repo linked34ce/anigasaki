@@ -1,118 +1,117 @@
 @keyframes appear {
-    from {
-        opacity: 0%;
-        background-color: var(--bs-light);
-    }
-    to {
-        opacity: 100%;
-        background-color: #d3d3d3;
-    }
+  from {
+    opacity: 0%;
+    background-color: var(--bs-light);
+  }
+  to {
+    opacity: 100%;
+    background-color: #d3d3d3;
+  }
 }
 
 body {
-    font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-    animation: 0.8s ease 0s 1 normal none running appear;
-    background-color: #d3d3d3;
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  animation: 0.8s ease 0s 1 normal none running appear;
+  background-color: #d3d3d3;
 }
 
 br {
-    user-select: none;
+  user-select: none;
 }
 
 ruby[data-ruby][data-rb-length][data-rt-length] {
-    position: relative;
+  position: relative;
 }
 
 ruby[data-ruby][data-rb-length][data-rt-length]::before {
-    --width: calc(1rem * var(--rb-length) + var(--additional-space));
-    width: var(--width);
-    content: attr(data-ruby);
-    position: absolute;
-    left: calc(
-        (var(--width) - var(--rt-font-size) * var(--rt-length)) /
-            var(--rt-length) / 2 - var(--additional-space) / 2
-    );
-    top: -0.8em;
-    text-align: center;
-    font-size: var(--rt-font-size);
-    letter-spacing: calc(
-        (var(--width) - var(--rt-font-size) * var(--rt-length)) /
-            var(--rt-length)
-    );
+  --width: calc(1rem * var(--rb-length) + var(--additional-space));
+  width: var(--width);
+  content: attr(data-ruby);
+  position: absolute;
+  left: calc(
+    (var(--width) - var(--rt-font-size) * var(--rt-length)) / var(--rt-length) /
+      2 - var(--additional-space) / 2
+  );
+  top: -0.8em;
+  text-align: center;
+  font-size: var(--rt-font-size);
+  letter-spacing: calc(
+    (var(--width) - var(--rt-font-size) * var(--rt-length)) / var(--rt-length)
+  );
 }
 
 rt {
-    display: none;
+  display: none;
 }
 
 .navbar {
-    pointer-events: none;
+  pointer-events: none;
 }
 
 .navbar-toggler,
 .twitter-share-button {
-    pointer-events: all;
+  pointer-events: all;
 }
 
 .navbar-toggler:focus {
-    box-shadow: none;
+  box-shadow: none;
 }
 
 .nav-title {
-    background: linear-gradient(transparent 60%, var(--bs-gray) 30%);
-    width: fit-content;
+  background: linear-gradient(transparent 60%, var(--bs-gray) 30%);
+  width: fit-content;
 }
 
 .nav-season p {
-    background: linear-gradient(transparent 75%, var(--bs-gray-700) 30%);
-    width: fit-content;
+  background: linear-gradient(transparent 75%, var(--bs-gray-700) 30%);
+  width: fit-content;
 }
 
 .navbar-collapse {
-    opacity: 95%;
-    pointer-events: all;
+  opacity: 95%;
+  pointer-events: all;
 }
 
 #nav-content {
-    height: auto;
-    max-height: calc(100dvh - 90px);
-    overflow-y: scroll;
+  height: auto;
+  max-height: calc(100dvh - 90px);
+  overflow-y: scroll;
 }
 
 #nav-content::-webkit-scrollbar {
-    width: 5px;
+  width: 5px;
 }
 
 #nav-content::-webkit-scrollbar-thumb {
-    background-color: var(--bs-gray-600);
-    opacity: 50%;
-    border-radius: 3px;
+  background-color: var(--bs-gray-600);
+  opacity: 50%;
+  border-radius: 3px;
 }
 
 .nav-link {
-    color: var(--bs-light);
+  color: var(--bs-light);
 }
 
 .nav-link:hover {
-    color: var(--bs-light);
+  color: var(--bs-light);
 }
 
 .nav-link-disabled {
-    color: var(--bs-gray);
-    text-decoration: none;
-    cursor: default;
+  color: var(--bs-gray);
+  text-decoration: none;
+  cursor: default;
 }
 
 .nav-link-disabled:hover {
-    color: var(--bs-gray);
+  color: var(--bs-gray);
 }
 
 .episode-table-link:hover {
-    background-color: var(--bs-gray);
+  background-color: var(--bs-gray);
 }
 
 .main {
-    display: flex;
-    flex-direction: column;
-    min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
 }

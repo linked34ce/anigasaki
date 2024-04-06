@@ -1,15 +1,15 @@
-import { TIMEOUT } from "./const/timeout.js";
-import { controlScroll } from "./controlScroll.js";
-import type { AdjustPage, Queue } from "../types.js";
+import { TIMEOUT } from './const/timeout.js';
+import { controlScroll } from './controlScroll.js';
+import type { AdjustPage, Queue } from '../types.js';
 
 export const controlPageAdjustment = (adjustPage: AdjustPage) => {
-    adjustPage();
-    controlScroll();
+  adjustPage();
+  controlScroll();
 
-    let queue: Queue;
+  let queue: Queue;
 
-    window.addEventListener("resize", () => {
-        clearTimeout(queue);
-        queue = setTimeout(adjustPage, TIMEOUT);
-    });
+  window.addEventListener('resize', () => {
+    clearTimeout(queue);
+    queue = setTimeout(adjustPage, TIMEOUT);
+  });
 };
