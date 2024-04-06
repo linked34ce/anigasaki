@@ -80,7 +80,13 @@ rt {
 }
 
 #nav-content::-webkit-scrollbar {
-    width: 3px;
+    width: 5px;
+}
+
+#nav-content::-webkit-scrollbar-thumb {
+    background-color: var(--bs-gray-600);
+    opacity: 50%;
+    border-radius: 3px;
 }
 
 .nav-link {
