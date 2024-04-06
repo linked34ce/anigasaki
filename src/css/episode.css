@@ -54,19 +54,19 @@
 }
 
 .to-home-page {
-    border-bottom: var(--bs-gray-400) 1px solid;
+    display: block;
+    height: 30px;
+    text-decoration: none;
+}
+
+.to-home-page span {
     color: var(--bs-gray-400);
+    border-bottom: var(--bs-gray-400) 1px solid;
 }
 
-.to-home-page:hover {
-    border-bottom: var(--bs-gray-200) 1px solid;
+.to-home-page span:hover {
     color: var(--bs-gray-200);
-}
-
-@media screen and (max-height: 790px) {
-    .to-home-page {
-        font-size: 0.9rem;
-    }
+    border-bottom: var(--bs-gray-200) 1px solid;
 }
 
 .thumbnail-small {
