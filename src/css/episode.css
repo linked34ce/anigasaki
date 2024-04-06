@@ -56,15 +56,15 @@
 .to-home-page {
     display: block;
     height: 30px;
-    text-decoration: none;
 }
 
-.to-home-page span {
+.to-home-page a {
     color: var(--bs-gray-400);
+    text-decoration: none;
     border-bottom: var(--bs-gray-400) 1px solid;
 }
 
-.to-home-page span:hover {
+.to-home-page a:hover {
     color: var(--bs-gray-200);
     border-bottom: var(--bs-gray-200) 1px solid;
 }
