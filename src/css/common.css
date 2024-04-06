@@ -73,6 +73,15 @@ rt {
     pointer-events: all;
 }
 
+.nav-content {
+    max-height: calc(100dvh - 90px);
+    overflow-y: scroll;
+}
+
+.nav-content::-webkit-scrollbar {
+    width: 5px;
+}
+
 @media screen and (max-height: 790px) {
     .nav-title {
         font-size: 1.6rem;
