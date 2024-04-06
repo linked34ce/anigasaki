@@ -3,7 +3,7 @@ import { SONG_TYPES } from "./const/songTypes.js";
 import type { AccordionStates } from "../types.js";
 
 export const controllAccordions = () => {
-    const accordionOpenedStates = {
+    const accordionOpenStates = {
         opening: false,
         ending: false,
     } satisfies AccordionStates;
@@ -13,7 +13,7 @@ export const controllAccordions = () => {
         ending: false,
     } satisfies AccordionStates;
 
-    for (let songType of SONG_TYPES) {
+    SONG_TYPES.forEach((songType) => {
         const accrodion = document.getElementById(
             songType,
         ) as HTMLButtonElement;
@@ -23,11 +23,11 @@ export const controllAccordions = () => {
                 if (!accordionClickedStates[songType]) {
                     openAccordion(
                         songType,
-                        accordionOpenedStates,
+                        accordionOpenStates,
                         accordionClickedStates,
                     );
                 }
             });
         }
-    }
+    });
 };

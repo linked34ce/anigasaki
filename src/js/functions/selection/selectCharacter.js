@@ -1,6 +1,6 @@
 import { CHARACTERS } from "./const/characters.js";
 export const selectCharacter = () => {
-    for (let character of CHARACTERS) {
+    CHARACTERS.forEach((character) => {
         const characterButton = document.getElementById(character);
         if (characterButton) {
             characterButton.addEventListener("click", () => {
@@ -16,5 +16,5 @@ export const selectCharacter = () => {
                 }
             });
         }
-    }
+    });
 };

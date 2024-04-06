@@ -1,7 +1,7 @@
 export const controlScroll = () => {
-    let navOpened = false;
+    let navOpen = false;
     let clientY: number;
-    const navContent = document.getElementById("nav-content");
+    const navContent = document.getElementById("nav-content") as HTMLDivElement;
 
     const handleScrollPage = (e: WheelEvent) => {
         e.preventDefault();
@@ -13,18 +13,23 @@ export const controlScroll = () => {
         }
     };
 
-    const handleScrollNavigation = (e: WheelEvent) => {
-        const isScrolledToTop = (navContent?.scrollTop as number) < 1;
-        const isScrolledToBottom =
+    const getScrollStates = (content: HTMLDivElement) => {
+        const scrolledToTop = (content.scrollTop as number) < 1;
+        const scrolledToBottom =
             Math.abs(
-                (navContent?.scrollHeight as number) -
-                    (navContent?.clientHeight as number) -
-                    (navContent?.scrollTop as number),
+                (content.scrollHeight as number) -
+                    (content.clientHeight as number) -
+                    (content.scrollTop as number),
             ) < 1;
+        return { scrolledToTop, scrolledToBottom };
+    };
+
+    const handleScrollNavigation = (e: WheelEvent) => {
+        const { scrolledToTop, scrolledToBottom } = getScrollStates(navContent);
 
         if (
-            (isScrolledToTop && (e as WheelEvent).deltaY < 0) ||
-            (isScrolledToBottom && (e as WheelEvent).deltaY > 0)
+            (scrolledToTop && (e as WheelEvent).deltaY < 0) ||
+            (scrolledToBottom && (e as WheelEvent).deltaY > 0)
         ) {
             e.preventDefault();
         } else {
@@ -33,20 +38,11 @@ export const controlScroll = () => {
     };
 
     const handleTouchMoveNavigation = (e: TouchEvent) => {
-        const isScrolledToTop = (navContent?.scrollTop as number) < 1;
-        const isScrolledToBottom =
-            Math.abs(
-                (navContent?.scrollHeight as number) -
-                    (navContent?.clientHeight as number) -
-                    (navContent?.scrollTop as number),
-            ) < 1;
+        const { scrolledToTop, scrolledToBottom } = getScrollStates(navContent);
 
         const deltaY = clientY - e.touches[0].clientY;
 
-        if (
-            (isScrolledToTop && deltaY < 0) ||
-            (isScrolledToBottom && deltaY > 0)
-        ) {
+        if ((scrolledToTop && deltaY < 0) || (scrolledToBottom && deltaY > 0)) {
             if (e.cancelable) {
                 e.preventDefault();
             }
@@ -55,25 +51,25 @@ export const controlScroll = () => {
         }
     };
 
-    document.getElementById("nav-button")?.addEventListener("click", () => {
-        navOpened = !navOpened;
+    const navButton = document.getElementById(
+        "nav-button",
+    ) as HTMLButtonElement;
 
-        navContent?.addEventListener(
-            "touchstart",
-            (e) => {
-                clientY = e.touches[0].clientY;
-            },
-            false,
-        );
+    navButton.addEventListener("click", () => {
+        navOpen = !navOpen;
 
-        navContent?.addEventListener("wheel", handleScrollNavigation, {
-            passive: false,
-        });
-        navContent?.addEventListener("touchmove", handleTouchMoveNavigation, {
-            passive: false,
+        navContent.addEventListener("touchstart", (e) => {
+            clientY = e.touches[0].clientY;
         });
 
-        if (navOpened) {
+        navContent.addEventListener("wheel", handleScrollNavigation, {
+            passive: false,
+        });
+        navContent.addEventListener("touchmove", handleTouchMoveNavigation, {
+            passive: false,
+        });
+
+        if (navOpen) {
             document.addEventListener("wheel", handleScrollPage, {
                 passive: false,
             });

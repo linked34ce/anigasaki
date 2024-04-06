@@ -2,7 +2,7 @@ import { CHARACTERS } from "./const/characters.js";
 import type { HTMLSpeechElement } from "../types.js";
 
 export const selectCharacter = () => {
-    for (let character of CHARACTERS) {
+    CHARACTERS.forEach((character) => {
         const characterButton = document.getElementById(
             character,
         ) as HTMLButtonElement;
@@ -25,5 +25,5 @@ export const selectCharacter = () => {
                 }
             });
         }
-    }
+    });
 };

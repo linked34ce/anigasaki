@@ -1,5 +1,5 @@
 export const controlScroll = () => {
-    let navOpened = false;
+    let navOpen = false;
     let clientY;
     const navContent = document.getElementById("nav-content");
     const handleScrollPage = (e) => {
@@ -10,13 +10,17 @@ export const controlScroll = () => {
             e.preventDefault();
         }
     };
+    const getScrollStates = (content) => {
+        const scrolledToTop = content.scrollTop < 1;
+        const scrolledToBottom = Math.abs(content.scrollHeight -
+            content.clientHeight -
+            content.scrollTop) < 1;
+        return { scrolledToTop, scrolledToBottom };
+    };
     const handleScrollNavigation = (e) => {
-        const isScrolledToTop = navContent?.scrollTop < 1;
-        const isScrolledToBottom = Math.abs(navContent?.scrollHeight -
-            navContent?.clientHeight -
-            navContent?.scrollTop) < 1;
-        if ((isScrolledToTop && e.deltaY < 0) ||
-            (isScrolledToBottom && e.deltaY > 0)) {
+        const { scrolledToTop, scrolledToBottom } = getScrollStates(navContent);
+        if ((scrolledToTop && e.deltaY < 0) ||
+            (scrolledToBottom && e.deltaY > 0)) {
             e.preventDefault();
         }
         else {
@@ -24,13 +28,9 @@ export const controlScroll = () => {
         }
     };
     const handleTouchMoveNavigation = (e) => {
-        const isScrolledToTop = navContent?.scrollTop < 1;
-        const isScrolledToBottom = Math.abs(navContent?.scrollHeight -
-            navContent?.clientHeight -
-            navContent?.scrollTop) < 1;
+        const { scrolledToTop, scrolledToBottom } = getScrollStates(navContent);
         const deltaY = clientY - e.touches[0].clientY;
-        if ((isScrolledToTop && deltaY < 0) ||
-            (isScrolledToBottom && deltaY > 0)) {
+        if ((scrolledToTop && deltaY < 0) || (scrolledToBottom && deltaY > 0)) {
             if (e.cancelable) {
                 e.preventDefault();
             }
@@ -39,18 +39,19 @@ export const controlScroll = () => {
             e.stopPropagation();
         }
     };
-    document.getElementById("nav-button")?.addEventListener("click", () => {
-        navOpened = !navOpened;
-        navContent?.addEventListener("touchstart", (e) => {
+    const navButton = document.getElementById("nav-button");
+    navButton.addEventListener("click", () => {
+        navOpen = !navOpen;
+        navContent.addEventListener("touchstart", (e) => {
             clientY = e.touches[0].clientY;
-        }, false);
-        navContent?.addEventListener("wheel", handleScrollNavigation, {
+        });
+        navContent.addEventListener("wheel", handleScrollNavigation, {
             passive: false,
         });
-        navContent?.addEventListener("touchmove", handleTouchMoveNavigation, {
+        navContent.addEventListener("touchmove", handleTouchMoveNavigation, {
             passive: false,
         });
-        if (navOpened) {
+        if (navOpen) {
             document.addEventListener("wheel", handleScrollPage, {
                 passive: false,
             });
