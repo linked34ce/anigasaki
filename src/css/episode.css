@@ -214,6 +214,18 @@ ruby[data-rb-length="11"][data-rt-length="15"] {
   color: var(--bs-black);
 }
 
+@media screen and (max-width: 427px) {
+  .break-for-long-title::after {
+    content: "　";
+  }
+}
+
+@media screen and (min-width: 428px) {
+  .break-for-long-title {
+    display: none;
+  }
+}
+
 .buttons-description {
   list-style-type: none;
   margin-left: -0.8rem;
